@@ -1,32 +1,35 @@
 import React from 'react';
 import {Button} from "react-bootstrap";
+import GlobalStore from "../stores/GlobalStore";
+import {observer} from "mobx-react";
 
+@observer
 class App extends React.Component {
-    state = {test: true};
-
-    flipButton = () => {
-        this.setState({test: !this.state.test});
-    };
-
     render = () => {
-        const buttonClass = "btn " + (this.state.test ? "btn-success" : "btn-danger");
+        const globalStore = this.props.globalStore;
+
+        const buttonClass = "btn " + (globalStore.test ? "btn-success" : "btn-danger");
 
         return (
             <div className="row">
                 <div className="col-sm-4">
-                    <Button onClick={this.flipButton}
+                    <Button onClick={globalStore.toggle}
                             className={buttonClass}
                             style={{float:"right"}}
                     >
-                        {this.state.test ? "On" : "Off"}
+                        {globalStore.test ? "On" : "Off"}
                     </Button>
                 </div>
                 <div className="col-sm-4">
-                    The button is {this.state.test ? "on" : "off"}.
+                    The button is {globalStore.test ? "on" : "off"}.
                 </div>
             </div>
         );
     };
 }
+
+App.defaultProps = {
+    globalStore: new GlobalStore()
+};
 
 export default App;

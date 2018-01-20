@@ -2,18 +2,13 @@ import React from 'react';
 import {Button} from "react-bootstrap";
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {test: true};
+    state = {test: true};
 
-        this.flipButton = this.flipButton.bind(this);
-    }
-
-    flipButton() {
+    flipButton = () => {
         this.setState({test: !this.state.test});
-    }
+    };
 
-    render() {
+    render = () => {
         const buttonClass = "btn " + (this.state.test ? "btn-success" : "btn-danger");
 
         return (
@@ -31,7 +26,7 @@ class App extends React.Component {
                 </div>
             </div>
         );
-    }
+    };
 }
 
 export default App;

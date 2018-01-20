@@ -26280,13 +26280,29 @@ var App = function (_React$Component) {
     }, {
         key: "render",
         value: function render() {
+            var buttonClass = "btn " + (this.state.test ? "btn-success" : "btn-danger");
+
             return _react2.default.createElement(
                 "div",
-                null,
+                { className: "row" },
                 _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { onClick: this.flipButton },
-                    this.state.test ? "On" : "Off"
+                    "div",
+                    { className: "col-sm-4" },
+                    _react2.default.createElement(
+                        _reactBootstrap.Button,
+                        { onClick: this.flipButton,
+                            className: buttonClass,
+                            style: { float: "right" }
+                        },
+                        this.state.test ? "On" : "Off"
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "col-sm-4" },
+                    "The button is ",
+                    this.state.test ? "on" : "off",
+                    "."
                 )
             );
         }

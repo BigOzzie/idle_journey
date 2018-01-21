@@ -1,13 +1,19 @@
-import {MAIN_CHARACTER_NAME, MAIN_CHARACTER_GENDER} from "./EventHelper";
+import {CHARACTER_NAME, CHARACTER_GENDER, CHARACTER_FIRST_NAME} from "./EventHelper";
 import EventHelper from "./EventHelper";
 
 class Opening {
     title = "The Journey Begins";
 
     getBody = (gameData) => {
-        let body = `Okay so we got this ${MAIN_CHARACTER_GENDER} named ${MAIN_CHARACTER_NAME}.`;
-        body = EventHelper.subInText(body,MAIN_CHARACTER_NAME,gameData.party.mainCharacter.name);
-        body = EventHelper.subInText(body,MAIN_CHARACTER_GENDER,gameData.party.mainCharacter.gender);
+        const character = gameData.party.mainCharacter;
+        let body = [];
+        body.push(`Okay so we got this ${CHARACTER_GENDER} named ${CHARACTER_NAME}.`);
+        body.push(`${CHARACTER_FIRST_NAME} is pretty damn great.`)
+        body = EventHelper.subInBody(body,[
+            [CHARACTER_NAME,character.name],
+            [CHARACTER_GENDER,character.gender],
+            [CHARACTER_FIRST_NAME,character.firstName]
+        ]);
 
         return body;
     };

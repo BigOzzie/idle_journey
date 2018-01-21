@@ -1,15 +1,21 @@
-import {observable, action} from "mobx";
+import {observable, action, computed} from "mobx";
 const chance = require("chance").Chance();
 
 const gender = chance.gender();
-const name = chance.name({gender: gender.toLowerCase()});
+const firstName = chance.first({gender: gender.toLowerCase()});
+const lastName = chance.last();
 
 class Character {
     @observable gender = gender;
-    @observable name = name;
+    @observable firstName = firstName;
+    @observable lastName = lastName;
 
-    @action changeName = (name) => {
-        this.name = name;
+    @computed get name() {
+        return this.firstName + " " + this.lastName;
+    }
+
+    @action changeFirstName = (firstName) => {
+        this.firstName = firstName;
     }
 }
 

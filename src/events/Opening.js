@@ -1,5 +1,4 @@
-import {CHARACTER_NAME, CHARACTER_GENDER, CHARACTER_FIRST_NAME} from "./EventHelper";
-import EventHelper from "./EventHelper";
+import * as h from "./EventHelper";
 
 class Opening {
     title = "The Journey Begins";
@@ -7,16 +6,20 @@ class Opening {
     getBody = (gameData) => {
         const character = gameData.party.mainCharacter;
         let body = [];
-        body.push(`Okay so we got this ${CHARACTER_GENDER} named ${CHARACTER_NAME}.`);
-        body.push(`${CHARACTER_FIRST_NAME} is pretty damn great.`)
-        body = EventHelper.subInBody(body,[
-            [CHARACTER_NAME,character.name],
-            [CHARACTER_GENDER,character.gender],
-            [CHARACTER_FIRST_NAME,character.firstName]
+        body.push(`${h.wrap("name")} is a teenage ${h.wrap("gender")} from a small village.  Today ${h.wrap("he_she")} is going out into the world to make a name for ${h.wrap("him_her")}self.`);
+        body = h.subInBody(body,[
+            ["name",character.name],
+            ["gender",character.gender === "Male" ? "boy" : "girl"],
+            ["he_she",character.gender === "Male" ? "he" : "she"],
+            ["him_her",character.gender === "Male" ? "him" : "her"]
         ]);
 
         return body;
     };
+
+    options = [
+        {text: "Embark"}
+    ];
 }
 
 export default Opening;

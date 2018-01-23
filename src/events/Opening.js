@@ -17,7 +17,7 @@ class Opening {
         return body;
     };
 
-    options = [
+    eventOptions = [
         {text: "Embark"}
     ];
 }

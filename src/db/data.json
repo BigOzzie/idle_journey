@@ -1,0 +1,854 @@
+{
+  "hand_scanner": {
+    "description": "Buy the Hand Scanner from a shop in the Surface."
+  },
+  "reader": {
+    "description": "Buy reader.exe from a shop in the Surface."
+  },
+  "xmailer": {
+    "description": "Get xmailer.exe from Xelpud in the Surface."
+  },
+  "shell_horn": {
+    "description": "Get the Shell Horn in the Surface."
+  },
+  "holy_grail": {
+    "description": "Get the Holy Grail from the Gate of Guidance."
+  },
+  "chain_whip": {
+    "requirements": [
+      "feather",
+      "samaranta",
+      "bronze_mirror"
+    ],
+    "description": "Get the Flail Whip from the Tower of the Goddess."
+  },
+  "flail_whip": {
+    "requirements": [
+      "birth_seal",
+      "grapple_claw"
+    ],
+    "description": "Get the Chain Whip from the Inferno Cavern."
+  },
+  "knife": {
+    "requirements": [
+      "shuriken"
+    ],
+    "description": "Get the Knife from the Temple of the Sun."
+  },
+  "key_sword": {
+    "requirements": [
+      "key_of_eternity"
+    ],
+    "description": "Get the Key Sword from the Endless Corridor."
+  },
+  "axe": {
+    "requirements": [
+      "hermes_boots"
+    ],
+    "description": "Get the Axe from the Temple of Moonlight."
+  },
+  "katana": {
+    "requirements": [
+      "twin_statue"
+    ],
+    "description": "Get the Katana from the Twin Labyrinths."
+  },
+  "shuriken": {
+    "description": "Get the Shuriken from the Gate of Guidance."
+  },
+  "rolling_shuriken": {
+    "description": "Get the Rolling Shuriken from the Mausoleum of the Giants."
+  },
+  "earth_spear": {
+    "requirements": [
+      "feather",
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get the Earth Spear from the Tower of Ruin."
+  },
+  "flare_gun": {
+    "description": "Get the Flare Gun from the Inferno Cavern."
+  },
+  "bomb": {
+    "requirements": [
+      "plane_model"
+    ],
+    "description": "Get the Bomb from the Graveyard of the Giants."
+  },
+  "chakram": {
+    "requirements": [
+      "flare_gun",
+      "birth_seal",
+      "flood_temple"
+    ],
+    "description": "Get the Chakram from the Chamber of Extinction."
+  },
+  "caltrops": {
+    "requirements": [
+      "helmet"
+    ],
+    "description": "Get the Caltrops from the Spring in the Sky."
+  },
+  "pistol": {
+    "description": "Buy the Pistol from a shop in the Surface."
+  },
+  "angel_shield": {
+    "requirements": [
+      "dimensional_key",
+      "crystal_skull",
+      "bronze_mirror"
+    ],
+    "description": "Get the Angel Shield from the Dimensional Corridor."
+  },
+  "silver_shield": {
+    "requirements": [
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get the Silver Shield from the Graveyard of the Giants."
+  },
+  "buckler": {
+    "description": "Buy the Buckler from a shop in the Surface."
+  },
+  "djed_pillar": {
+    "requirements": [
+      "coe_boss",
+      "tl_boss"
+    ],
+    "description": "Get the Djed Pillar from the Tower of Ruin."
+  },
+  "mini_doll": {
+    "requirements": [
+      "fruit_of_eden",
+      "anchor"
+    ],
+    "description": "Get the Mini Doll from the Gate of Illusion."
+  },
+  "magatama_jewel": {
+    "requirements": [
+      "mulana_talisman",
+      "dimensional_key",
+      "crystal_skull"
+    ],
+    "description": "Get the Magatama Jewel from the Dimensional Corridor."
+  },
+  "cog_of_the_soul": {
+    "requirements": [
+      "fruit_of_eden",
+      "lamp_of_time"
+    ],
+    "description": "Get the Cog of the Soul from the Gate of Illusion."
+  },
+  "lamp_of_time": {
+    "requirements": [
+      "bomb"
+    ],
+    "description": "Buy the Lamp of Time from a shop in the Twin Labyrinths."
+  },
+  "pochette_key": {
+    "requirements": [
+      "cog_of_the_soul",
+      "bronze_mirror"
+    ],
+    "description": "Get the Pochette Key from the Chamber of Birth."
+  },
+  "dragon_bone": {
+    "requirements": [
+      "twin_statue"
+    ],
+    "description": "Get the Dragon Bone from the Twin Labyrinths."
+  },
+  "crystal_skull": {
+    "requirements": [
+      "life_seal",
+      "mulana_talisman"
+    ],
+    "description": "Get the Crystal Skull from the Shrine of the Mother."
+  },
+  "vessel": {
+    "requirements": [
+      "angel_shield",
+      "bronze_mirror"
+    ],
+    "description": "Get the Vessel from the Chamber of Birth."
+  },
+  "pepper": {
+    "requirements": [
+      "fruit_of_eden"
+    ],
+    "description": "Get the Pepper from the Gate of Illusion."
+  },
+  "maternity_statue": {
+    "description": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun."
+  },
+  "woman_statue": {
+    "requirements": [
+      "pochette_key",
+      "bronze_mirror",
+      "dance_of_life"
+    ],
+    "description": "Get the Woman Statue from the Chamber of Birth."
+  },
+  "key_of_eternity": {
+    "requirements": [
+      "fruit_of_eden",
+      "birth_seal",
+      "sacrifices",
+      "book_of_the_dead"
+    ],
+    "description": "Get the Key of Eternity from the Gate of Illusion."
+  },
+  "serpent_staff": {
+    "requirements": [
+      "book_of_the_dead"
+    ],
+    "description": "Get the Serpent Staff from the Temple of Moonlight."
+  },
+  "mulana_talisman": {
+    "description": "Get the Mulana Talisman from Xelpud in the Surface."
+  },
+  "diary": {
+    "requirements": [
+      "skull_walls_removed"
+    ],
+    "description": "Get the Diary from the Shrine of the Mother."
+  },
+  "talisman": {
+    "requirements": [
+      "ic_boss"
+    ],
+    "description": "Get the Talisman from the Temple of the Sun."
+  },
+  "origin_seal": {
+    "requirements": [
+      "helmet"
+    ],
+    "description": "Get the Origin Seal from the Spring in the Sky."
+  },
+  "birth_seal": {
+    "requirements": [
+      "origin_seal",
+      "scalesphere"
+    ],
+    "description": "Get the Birth Seal from the Surface."
+  },
+  "life_seal": {
+    "requirements": [
+      "birth_seal",
+      "flare_gun",
+      "flood_temple"
+    ],
+    "description": "Get the Life Seal from the Chamber of Extinction."
+  },
+  "death_seal": {
+    "requirements": [
+      "life_seal",
+      "giltoriyo",
+      "skull_walls_removed"
+    ],
+    "description": "Get the Death Seal from the Shrine of the Mother."
+  },
+  "yagomap": {
+    "description": "Buy yagomap.exe from a shop in the Surface."
+  },
+  "yagostr": {
+    "requirements": [
+      "fruit_of_eden"
+    ],
+    "description": "Get yagostr.exe from the Gate of Guidance."
+  },
+  "bunemon": {
+    "description": "Buy bunemon.exe from a shop in the Temple of the Sun."
+  },
+  "bunplus": {
+    "description": "Get bunplus.com from the Inferno Cavern."
+  },
+  "torude": {
+    "requirements": [
+      "feather",
+      "bronze_mirror"
+    ],
+    "description": "Buy torude.exe from a shop in the Tower of Ruin."
+  },
+  "guild": {
+    "description": "Get guild.exe from the Gate of Guidance."
+  },
+  "mantra": {
+    "requirements": [
+      "magatama_jewel",
+      "torude",
+      "som_la_mulanese",
+      "cob_la_mulanese",
+      "tor_la_mulanese"
+    ],
+    "description": "Get mantra.exe from the Chamber of Extinction."
+  },
+  "emusic": {
+    "requirements": [
+      "bomb",
+      "torude",
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get emusic.exe from the Graveyard of the Giants."
+  },
+  "beolamu": {
+    "requirements": [
+      "dimensional_key",
+      "torude"
+    ],
+    "description": "Get beolamu.exe from the Dimensional Corridor."
+  },
+  "deathv": {
+    "description": "Get deathv.exe from the Surface."
+  },
+  "randc": {
+    "requirements": [
+      "isis_pendant",
+      "helmet"
+    ],
+    "description": "Get randc.exe from the Spring in the Sky."
+  },
+  "capstar": {
+    "description": "Buy capstar.exe from a shop in the Inferno Cavern."
+  },
+  "move": {
+    "requirements": [
+      "fruit_of_eden"
+    ],
+    "description": "Get move.exe from the Gate of Illusion."
+  },
+  "mekuri": {
+    "requirements": [
+      "feather"
+    ],
+    "description": "Get mekuri.exe from the Surface."
+  },
+  "bounce": {
+    "requirements": [
+      "feather"
+    ],
+    "description": "Get bounce.exe from the Shrine of the Mother."
+  },
+  "miracle": {
+    "requirements": [
+      "lamp_of_time",
+      "bronze_mirror"
+    ],
+    "description": "Get miracle.exe from the Tower of the Goddess."
+  },
+  "mirai": {
+    "requirements": [
+      "feather",
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get mirai.exe from the Graveyard of the Giants."
+  },
+  "lamulana": {
+    "requirements": [
+      "feather",
+      "isis_pendant"
+    ],
+    "description": "Get lamulana.exe from the Gate of Time."
+  },
+  "mobile_super_x": {
+    "num_of_bosses": 3,
+    "description": "Buy the Mobile Super X2 from a shop in the Surface."
+  },
+  "waterproof_case": {
+    "description": "Buy the Waterproof Case from a shop in the Surface."
+  },
+  "heatproof_case": {
+    "description": "Buy the Heatproof Case from a shop in the Temple of the Sun."
+  },
+  "glove": {
+    "requirements": [
+      "helmet"
+    ],
+    "description": "Get the Glove from the Spring in the Sky."
+  },
+  "isis_pendant": {
+    "description": "Get the Isis Pendant from the Temple of the Sun."
+  },
+  "crucifix": {
+    "requirements": [
+      "life_seal"
+    ],
+    "description": "Get the Crucifix from the Gate of Guidance."
+  },
+  "helmet": {
+    "description": "Get the Helmet from the Twin Labyrinths."
+  },
+  "grapple_claw": {
+    "description": "Get the Grapple Claw from the Temple of Moonlight."
+  },
+  "bronze_mirror": {
+    "requirements": [
+      "birth_seal",
+      "flare_gun",
+      "flood_temple"
+    ],
+    "description": "Get the Bronze Mirror from the Temple of the Sun."
+  },
+  "eye_of_truth": {
+    "requirements": [
+      "feather",
+      "bronze_mirror",
+      "flood_tower"
+    ],
+    "description": "Get the Eye of Truth from the Tower of the Goddess."
+  },
+  "ring": {
+    "requirements": [
+      "twin_statue"
+    ],
+    "description": "Get the Ring from the Twin Labyrinths."
+  },
+  "scalesphere": {
+    "requirements": [
+      "helmet"
+    ],
+    "description": "Get the Scalesphere from the Spring in the Sky."
+  },
+  "gauntlet": {
+    "requirements": [
+      "feather",
+      "grapple_claw",
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get the Gauntlet from the Graveyard of the Giants."
+  },
+  "anchor": {
+    "description": "Get the Anchor from the Gate of Illusion.<br>"
+  },
+  "treasures": {
+    "requirements": [
+      "pepper"
+    ],
+    "description": "Get the Treasures from the Gate of Guidance."
+  },
+  "plane_model": {
+    "requirements": [
+      "eye_of_truth"
+    ],
+    "description": "Get the Plane Model from the Tower of the Goddess."
+  },
+  "philosophers_ocarina": {
+    "requirements": [
+      "maternity_statue"
+    ],
+    "description": "Get the Philosopher's Ocarina from the Temple of Moonlight."
+  },
+  "feather": {
+    "requirements": [
+      "serpent_staff"
+    ],
+    "description": "Get the Feather from the Surface."
+  },
+  "book_of_the_dead": {
+    "requirements": [
+      "bronze_mirror",
+      "mulbruk"
+    ],
+    "description": "Get the Book of the Dead from Mulbruk in the Temple of the Sun."
+  },
+  "fairy_clothes": {
+    "requirements": [
+      "bronze_mirror",
+      "fruit_of_eden",
+      "isis_pendant"
+    ],
+    "description": "Get the Fairy Clothes from the Gate of Illusion."
+  },
+  "scriptures": {
+    "requirements": [
+      "bronze_mirror",
+      "bomb"
+    ],
+    "description": "Get the Scriptures from the Temple of Moonlight."
+  },
+  "hermes_boots": {
+    "description": "Buy the Hermes' Boots in the Mausoleum of the Giants."
+  },
+  "fruit_of_eden": {
+    "requirements": [
+      "bronze_mirror"
+    ],
+    "description": "Get the Fruit of Eden in the Temple of Moonlight."
+  },
+  "twin_statue": {
+    "requirements": [
+      "key_of_eternity"
+    ],
+    "description": "Get the Twin Statue in the Endless Corridor."
+  },
+  "bracelet": {
+    "requirements": [
+      "twin_statue"
+    ],
+    "description": "Get the Bracelet in the Twin Labyrinths."
+  },
+  "perfume": {
+    "requirements": [
+      "cog_of_the_soul",
+      "bronze_mirror"
+    ],
+    "description": "Get the Perfume in the Chamber of Birth."
+  },
+  "spaulder": {
+    "requirements": [
+      "bronze_mirror",
+      "feather"
+    ],
+    "description": "Get the Spaulder in the Chamber of Birth."
+  },
+  "dimensional_key": {
+    "requirements": [
+      "maternity_statue",
+      "dragon_bone",
+      "key_of_eternity",
+      "mulana_talisman",
+      "crystal_skull",
+      "cog_of_the_soul",
+      "dance_of_life"
+    ],
+    "description": "Get the Dimensional Key in the Chamber of Birth."
+  },
+  "ice_cape": {
+    "description": "Get the Ice Cape in the Inferno Cavern."
+  },
+  "surf_so": {
+    "requirements": [
+      "sits_boss"
+    ],
+    "description": "Get the Sacred Orb from the Surface."
+  },
+  "gog_so": {
+    "description": "Get the Sacred Orb from the Gate of Guidance."
+  },
+  "gog_jewel": {
+    "description": "Get the Ankh Jewel from the Gate of Guidance."
+  },
+  "gog_ankh": {
+    "description": "Reveal Amphisbaena's Ankh in the Gate of Guidance."
+  },
+  "gog_boss": {
+    "requirements": [
+      "gog_ankh"
+    ],
+    "description": "Defeat Amphisbaena!"
+  },
+  "motg_so": {
+    "description": "Get the Sacred Orb from the Mausoleum of the Giants."
+  },
+  "motg_jewel": {
+    "description": "Get the Ankh Jewel from the Mausoleum of the Giants."
+  },
+  "motg_ankh": {
+    "description": "Reveal Sakit's Ankh in the Mausoleum of the Giants."
+  },
+  "motg_boss": {
+    "requirements": [
+      "motg_ankh"
+    ],
+    "description": "Defeat Sakit!"
+  },
+  "prove_small": {
+    "requirements": [
+      "mini_doll"
+    ],
+    "description": "\"Prove Thou Art Small\" in the Mausoleum of the Giants."
+  },
+  "tots_so": {
+    "description": "Get the Sacred Orb from the Temple of the Sun."
+  },
+  "tots_jewel": {
+    "description": "Get the Ankh Jewel from the Temple of the Sun."
+  },
+  "tots_ankh": {
+    "description": "Reveal Ellmac's Ankh in the Temple of the Sun."
+  },
+  "tots_boss": {
+    "requirements": [
+      "tots_ankh"
+    ],
+    "description": "Defeat Ellmac!"
+  },
+  "mulbruk": {
+    "requirements": [
+      "origin_seal"
+    ],
+    "num_of_bosses": 3,
+    "description": "Wake up Mulbruk."
+  },
+  "sits_so": {
+    "requirements": [
+      "birth_seal"
+    ],
+    "description": "Get the Sacred Orb from the Spring in the Sky."
+  },
+  "sits_jewel": {
+    "requirements": [
+      "scalesphere"
+    ],
+    "description": "Get the Ankh Jewel from the Spring in the Sky."
+  },
+  "sits_ankh": {
+    "requirements": [
+      "scalesphere"
+    ],
+    "description": "Reveal Bahamut's Ankh in the Spring in the Sky."
+  },
+  "sits_boss": {
+    "requirements": [
+      "sits_ankh"
+    ],
+    "description": "Defeat Bahamut!"
+  },
+  "flood_temple": {
+    "requirements": [
+      "scalesphere"
+    ],
+    "description": "Flood the Temple of the Sun."
+  },
+  "flood_tower": {
+    "requirements": [
+      "ic_boss"
+    ],
+    "description": "Flood the Tower of the Goddess."
+  },
+  "giltoriyo": {
+    "requirements": [
+      "philosophers_ocarina"
+    ],
+    "description": "Talk to Giltoriyo in the Spring in the Sky."
+  },
+  "coe_so": {
+    "requirements": [
+      "flare_gun",
+      "birth_seal",
+      "flood_temple"
+    ],
+    "description": "Get the Sacred Orb from the Chamber of Extinction."
+  },
+  "coe_ankh": {
+    "requirements": [
+      "pochette_key"
+    ],
+    "description": "Reveal Palenque's Ankh in the Chamber of Extinction."
+  },
+  "coe_boss": {
+    "requirements": [
+      "plane_model",
+      "coe_ankh"
+    ],
+    "description": "Defeat Palenque!"
+  },
+  "light_chamber": {
+    "requirements": [
+      "plane_model",
+      "life_seal"
+    ],
+    "description": "Light the Chamber of Extinction permanently."
+  },
+  "ic_ankh": {
+    "requirements": [
+      "earth_spear",
+      "sits_boss"
+    ],
+    "description": "Reveal Viy's Ankh in the Inferno Cavern."
+  },
+  "ic_boss": {
+    "requirements": [
+      "ic_ankh"
+    ],
+    "description": "Defeat Viy!"
+  },
+  "tl_so": {
+    "requirements": [
+      "poison_lifted"
+    ],
+    "description": "Get the Sacred Orb from the Twin Labyrinths."
+  },
+  "tl_jewel": {
+    "requirements": [
+      "poison_lifted",
+      "flare_gun"
+    ],
+    "description": "Get the Ankh Jewel from the Twin Labyrinths."
+  },
+  "tl_ankh": {
+    "requirements": [
+      "poison_lifted"
+    ],
+    "description": "Reveal Baphomet's Ankh in the Twin Labyrinths."
+  },
+  "tl_boss": {
+    "requirements": [
+      "tl_ankh"
+    ],
+    "description": "Defeat Baphomet!"
+  },
+  "poison_lifted": {
+    "requirements": [
+      "twin_statue"
+    ],
+    "description": "Lift the poison in the Twin Labyrinths."
+  },
+  "som_so": {
+    "requirements": [
+      "key_of_eternity"
+    ],
+    "description": "Get the Sacred Orb from the Shrine of the Mother."
+  },
+  "skull_walls_removed": {
+    "requirements": [
+      "key_of_eternity",
+      "dragon_bone",
+      "yagomap",
+      "yagostr"
+    ],
+    "description": "Remove the skull walls from the Shrine of the Mother."
+  },
+  "som_la_mulanese": {
+    "requirements": [
+      "giltoriyo",
+      "key_of_eternity"
+    ],
+    "description": "Learn some of La-Mulanese in the Shrine of the Mother."
+  },
+  "sacrifices": {
+    "requirements": [
+      "prove_small"
+    ],
+    "description": "Stop the maiden sacrifices in the Gate of Illusion."
+  },
+  "alsedana": {
+    "requirements": [
+      "philosophers_ocarina"
+    ],
+    "description": "Talk to Alsedana in the Temple of Moonlight."
+  },
+  "samaranta": {
+    "requirements": [
+      "philosophers_ocarina"
+    ],
+    "description": "Talk to Samaranta in the Tower of the Goddess."
+  },
+  "cob_jewel": {
+    "requirements": [
+      "ic_boss"
+    ],
+    "description": "Buy the Ankh Jewel from the Chamber of Birth."
+  },
+  "dance_of_life": {
+    "requirements": [
+      "ic_boss",
+      "serpent_staff",
+      "chakram"
+    ],
+    "description": "Perform the Dance of Life in the Chamber of Birth."
+  },
+  "cob_la_mulanese": {
+    "requirements": [
+      "coe_boss"
+    ],
+    "description": "Learn some of La-Mulanese in the Chamber of Birth."
+  },
+  "tor_so": {
+    "requirements": [
+      "bronze_mirror",
+      "motg_boss"
+    ],
+    "description": "Get the Sacred Orb from the Tower of Ruin."
+  },
+  "tor_jewel": {
+    "requirements": [
+      "bronze_mirror",
+      "motg_boss",
+      "feather"
+    ],
+    "description": "Get the Ankh Jewel from the Tower of Ruin."
+  },
+  "tor_la_mulanese": {
+    "requirements": [
+      "bronze_mirror",
+      "motg_boss",
+      "feather"
+    ],
+    "description": "Learn some of La-Mulanese in the Tower of Ruin."
+  },
+  "dc_so": {
+    "requirements": [
+      "crystal_skull",
+      "lamp_of_time",
+      "dimensional_key"
+    ],
+    "description": "Get the Sacred Orb from the Dimensional Corridor."
+  },
+  "dc_jewel": {
+    "requirements": [
+      "crystal_skull",
+      "dimensional_key"
+    ],
+    "description": "Get the Ankh Jewel from the Dimensional Corridor."
+  },
+  "dc_ankh": {
+    "requirements": [
+      "crystal_skull",
+      "dimensional_key"
+    ],
+    "description": "Reveal Tiamat's Ankh in the Dimensional Corridor."
+  },
+  "dc_boss": {
+    "requirements": [
+      "dc_ankh"
+    ],
+    "description": "Defeat Tiamat!"
+  },
+  "fobos": {
+    "requirements": [
+      "philosophers_ocarina",
+      "dimensional_key"
+    ],
+    "description": "Talk to Fobos in the Dimensional Corridor."
+  },
+  "powered_grail": {
+    "requirements": [
+      "dimensional_key"
+    ],
+    "description": "Power the Holy Grail by reading all the Grail Tablets."
+  },
+  "mantras": {
+    "requirements": [
+      "djed_pillar",
+      "mantra",
+      "fobos",
+      "samaranta",
+      "alsedana",
+      "giltoriyo"
+    ],
+    "description": "Chant the mantras throughout the ruins."
+  },
+  "medicine": {
+    "requirements": [
+      "vessel",
+      "fobos",
+      "lamp_of_time"
+    ],
+    "description": "Collect the Medicine of the Mind in the Tower of Ruin."
+  },
+  "mother": {
+    "requirements": [
+      "powered_grail",
+      "medicine",
+      "mantras",
+      "key_sword"
+    ],
+    "num_of_bosses": 8,
+    "description": "Defeat Mother!"
+  }
+}

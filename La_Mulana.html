@@ -1,0 +1,524 @@
+<script type="text/javascript">
+    document.write("\<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'>\<\/script>");
+</script>
+
+<style>
+table {
+	border:1px solid black;
+	border-collapse:collapse;
+	width:1050px;
+}
+thead, tfoot, .head {
+	text-align: center;
+}
+td {
+	padding: 5px;
+	border:1px solid black;
+}
+</style>
+
+<button type="button" onclick="$('#item_table').show(); $('#adventure_table').hide(); $('#result_div').hide();">ITEMS</button>
+<button type="button" onclick="$('#adventure_table').show(); $('#item_table').hide(); $('#result_div').hide();">PROGRESS</button>
+<button type="button" onclick="nextStep();">WHAT DO I DO?!</button>
+
+<table id="item_table">
+	<thead>
+		<td colspan=3>
+			I CURRENTLY HAVE ...
+		</td>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<div class='head'>WEAPONS</div>
+				<select id="whip">
+					<option value=0>Whip</option>
+					<option value=1>Chain Whip</option>
+					<option value=2>Flail Whip</option>
+				</select><br>
+				<input type="checkbox" id="knife">Knife<br>
+				<input type="checkbox" id="key_sword">Key Sword<br>
+				<input type="checkbox" id="axe">Axe<br>
+				<input type="checkbox" id="katana">Katana<br>
+			</td>
+			<td>
+				<div class='head'>SUB-WEAPONS</div>
+				<div style="float:left;">
+					<input type="checkbox" id="shuriken">Shuriken<br>
+					<input type="checkbox" id="rolling_shuriken">Rolling Shuriken<br>
+					<input type="checkbox" id="earth_spear">Earth Spear<br>
+					<input type="checkbox" id="flare_gun">Flare Gun<br>
+				</div>
+				<div style="float:right;">
+					<input type="checkbox" id="bomb">Bomb<br>
+					<input type="checkbox" id="chakram">Chakram<br>
+					<input type="checkbox" id="caltrops">Caltrops<br>
+					<input type="checkbox" id="pistol">Pistol<br>
+				</div> <br>
+				<div class='head'>
+					<select id="shield" style="display:block; clear:both; margin:auto;">
+						<option value=0>None</option>
+						<option value=1>Buckler</option>
+						<option value=2>Silver Shield</option>
+						<option value=3>Angel Shield</option>
+					</select>
+				</div>
+			</td>
+			<td>
+				<div class='head'>USABLE ITEMS</div>
+				<div style="float:left; width:33%;">
+					<input type="checkbox" id="hand_scanner">Hand Scanner<br>
+					<input type="checkbox" id="djed_pillar">Djed Pillar<br>
+					<input type="checkbox" id="mini_doll">Mini Doll<br>
+					<input type="checkbox" id="magatama_jewel">Magatama Jewel<br>
+					<input type="checkbox" id="cog_of_the_soul">Cog of the Soul<br>
+				</div>
+				<div style="float:left; width:33%;">
+					<input type="checkbox" id="lamp_of_time">Lamp of Time<br>
+					<input type="checkbox" id="pochette_key">Pochette Key<br>
+					<input type="checkbox" id="dragon_bone">Dragon Bone<br>
+					<input type="checkbox" id="crystal_skull">Crystal Skull<br>
+					<input type="checkbox" id="vessel">Vessel<br>
+				</div>
+				<div style="float:left; width:33%;">
+					<input type="checkbox" id="pepper">Pepper<br>
+					<select id="woman_statue">
+						<option value=0>None</option>
+						<option value=1>Woman Statue</option>
+						<option value=2>Maternity Statue</option>
+					</select><br>
+					<input type="checkbox" id="key_of_eternity">Key of Eternity<br>
+					<input type="checkbox" id="serpent_staff">Serpent Staff<br>
+					<select id="mulana_talisman">
+						<option value=0>None</option>
+						<option value=1>Talisman</option>
+						<option value=2>Diary</option>
+						<option value=3>Mulana Talisman</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class='head'>SEALS</div>
+				<input type="checkbox" id="origin_seal">Origin<br>
+				<input type="checkbox" id="birth_seal">Birth<br>
+				<input type="checkbox" id="life_seal">Life<br>
+				<input type="checkbox" id="death_seal">Death<br>
+			</td>
+			<td colspan=2>
+				<div class='head'>SOFTWARE</div>
+				<div style="float:left; width:25%;">
+					<input type="checkbox" id="reader">reader.exe<br>
+					<input type="checkbox" id="xmailer">xmailer.exe<br>
+					<input type="checkbox" id="yagomap">yagomap.exe<br>
+					<input type="checkbox" id="yagostr">yagostr.exe<br>
+					<input type="checkbox" id="bunemon">bunemon.exe<br>
+				</div>
+				<div style="float:left; width:25%;">
+					<input type="checkbox" id="bunplus">bunplus.com<br>
+					<input type="checkbox" id="torude">torude.exe<br>
+					<input type="checkbox" id="guild">guild.exe<br>
+					<input type="checkbox" id="mantra">mantra.exe<br>
+					<input type="checkbox" id="emusic">emusic.exe<br>
+				</div>
+				<div style="float:left; width:25%;">
+					<input type="checkbox" id="beolamu">beolamu.exe<br>
+					<input type="checkbox" id="deathv">deathv.exe<br>
+					<input type="checkbox" id="randc">randc.exe<br>
+					<input type="checkbox" id="capstar">capstar.exe<br>
+					<input type="checkbox" id="move">move.exe<br>
+				</div>
+				<div style="float:left; width:25%;">
+					<input type="checkbox" id="mekuri">mekuri.exe<br>
+					<input type="checkbox" id="bounce">bounce.exe<br>
+					<input type="checkbox" id="miracle">miracle.exe<br>
+					<input type="checkbox" id="mirai">mirai.exe<br>
+					<input type="checkbox" id="lamulana">lamulana.exe<br>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<div class='head'>TREASURES</div>
+				<div style="float:left; width:20%;">
+					<select id="mobile_super_x">
+						<option value=0>Mobile Super X</option>
+						<option value=1>Mobile Super X2</option>
+					</select><br>
+					<input type="checkbox" id="waterproof_case">Waterproof Case<br>
+					<input type="checkbox" id="heatproof_case">Heatproof Case<br>
+					<input type="checkbox" id="shell_horn">Shell Horn<br>
+					<input type="checkbox" id="glove">Glove<br>
+					<select id="holy_grail">
+						<option value=0>None</option>
+						<option value=1>Holy Grail</option>
+						<option value=2>Holy Grail (powered)</option>
+					</select><br>
+				</div>
+				<div style="float:left; width:20%;">
+					<input type="checkbox" id="isis_pendant">Isis' Pendant<br>
+					<input type="checkbox" id="crucifix">Crucifix<br>
+					<input type="checkbox" id="helmet">Helmet<br>
+					<input type="checkbox" id="grapple_claw">Grapple Claw<br>
+					<input type="checkbox" id="bronze_mirror">Bronze Mirror<br>
+					<input type="checkbox" id="eye_of_truth">Eye of Truth<br>
+				</div>
+				<div style="float:left; width:20%;">
+					<input type="checkbox" id="ring">Ring<br>
+					<input type="checkbox" id="scalesphere">Scalesphere<br>
+					<input type="checkbox" id="gauntlet">Gauntlet<br>
+					<select id="anchor">
+						<option value=0>None</option>
+						<option value=1>Treasures</option>
+						<option value=2>Anchor</option>
+					</select><br>
+					<input type="checkbox" id="plane_model">Plane Model<br>
+					<input type="checkbox" id="philosophers_ocarina">Philosophers' Ocarina<br>
+				</div>
+				<div style="float:left; width:20%;">
+					<input type="checkbox" id="feather">Feather<br>
+					<input type="checkbox" id="book_of_the_dead">Book of the Dead<br>
+					<input type="checkbox" id="fairy_clothes">Fairy Clothes<br>
+					<input type="checkbox" id="scriptures">Scriptures<br>
+					<input type="checkbox" id="hermes_boots">Hermes' Boots<br>
+					<input type="checkbox" id="fruit_of_eden">Fruit of Eden<br>
+				</div>
+				<div style="float:left; width:20%;">
+					<input type="checkbox" id="twin_statue">Twin Statue<br>
+					<input type="checkbox" id="bracelet">Bracelet<br>
+					<input type="checkbox" id="perfume">Perfume<br>
+					<input type="checkbox" id="spaulder">Spaulder<br>
+					<input type="checkbox" id="dimensional_key">Dimensional Key<br>
+					<input type="checkbox" id="ice_cape">Ice Cape
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table id="adventure_table" style="display:none;">
+	<thead>
+		<td colspan=5>
+			I HAVE ACCOMPLISHED ...
+		</td>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<div class='head'>SURFACE</div>
+				<input type="checkbox" id="surf_so">Sacred Orb<br>
+			</td>
+			<td>
+				<div class='head'>GATE OF GUIDANCE</div>
+				<input type="checkbox" id="gog_so">Sacred Orb<br>
+				<input type="checkbox" id="gog_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="gog_ankh">Amphisbaena's Ankh<br>
+				<input type="checkbox" id="gog_boss">Amphisbaena Defeated<br>
+			</td>
+			<td>
+				<div class='head'>MAUSOLEUM OF THE GIANTS</div>
+				<input type="checkbox" id="motg_so">Sacred Orb<br>
+				<input type="checkbox" id="motg_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="motg_ankh">Sakit's Ankh<br>
+				<input type="checkbox" id="motg_boss">Sakit Defeated<br>
+				<hr>
+				<input type="checkbox" id="prove_small">"Prove Thou Art Small"<br>
+			</td>
+			<td>
+				<div class='head'>TEMPLE OF THE SUN</div>
+				<input type="checkbox" id="tots_so">Sacred Orb<br>
+				<input type="checkbox" id="tots_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="tots_ankh">Ellmac's Ankh<br>
+				<input type="checkbox" id="tots_boss">Ellmac Defeated<br>
+				<hr>
+				<input type="checkbox" id="mulbruk">Mulbruk Woken<br>
+			</td>
+			<td>
+				<div class='head'>SPRING IN THE SKY</div>
+				<input type="checkbox" id="sits_so">Sacred Orb<br>
+				<input type="checkbox" id="sits_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="sits_ankh">Bahamut's Ankh<br>
+				<input type="checkbox" id="sits_boss">Bahamut Defeated<br>
+				<hr>
+				<input type="checkbox" id="flood_temple">Temple of the Sun Flooded<br>
+				<input type="checkbox" id="flood_tower">Tower of the Goddess Flooded<br>
+				<input type="checkbox" id="giltoriyo">Talked to Giltoriyo<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class='head'>CHAMBER OF EXTINCTION</div>
+				<input type="checkbox" id="coe_so">Sacred Orb<br>
+				<input type="checkbox" id="coe_ankh">Palenque's Ankh<br>
+				<input type="checkbox" id="coe_boss">Palenque Defeated<br>
+				<hr>
+				<input type="checkbox" id="light_chamber">Chamber of Extinction Lit<br>
+			</td>
+			<td>
+				<div class='head'>INFERNO CAVERN</div>
+				<input type="checkbox" id="ic_ankh">Viy's Ankh<br>
+				<input type="checkbox" id="ic_boss">Viy Defeated<br>
+			</td>
+			<td>
+				<div class='head'>TWIN LABYRINTHS</div>
+				<input type="checkbox" id="tl_so">Sacred Orb<br>
+				<input type="checkbox" id="tl_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="tl_ankh">Baphomet's Ankh<br>
+				<input type="checkbox" id="tl_boss">Baphomet Defeated<br>
+				<hr>
+				<input type="checkbox" id="poison_lifted">Poison Lifted<br>
+			</td>
+			<td>
+				<div class='head'>ENDLESS CORRIDOR</div>
+				None
+			</td>
+			<td>
+				<div class='head'>SHRINE OF THE MOTHER</div>
+				<input type="checkbox" id="som_so">Sacred Orb<br>
+				<input type="checkbox" id="skull_walls_removed">Removed Skull Walls<br>
+				<input type="checkbox" id="som_la_mulanese">Learned La-Mulanese<br>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>
+				<div class='head'>GATE OF ILLUSION</div>
+				<input type="checkbox" id="sacrifices">Maiden Sacrifices Stopped<br>
+			</td>
+			<td>
+				<div class='head'>GRAVEYARD OF THE GIANTS</div>
+				None
+			</td>
+			<td>
+				<div class='head'>TEMPLE OF MOONLIGHT</div>
+				<input type="checkbox" id="alsedana">Talked to Alsedana<br>
+			</td>
+			<td>
+				<div class='head'>TOWER OF THE GODDESS</div>
+				<input type="checkbox" id="samaranta">Talked to Samaranta<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class='head'>CHAMBER OF BIRTH</div>
+				<input type="checkbox" id="cob_jewel">Ankh Jewel Purchased<br>
+				<input type="checkbox" id="dance_of_life">Dance of Life Performed<br>
+				<input type="checkbox" id="cob_la_mulanese">Learned La-Mulanese<br>
+			</td>
+			<td>
+				<div class='head'>TOWER OF RUIN</div>
+				<input type="checkbox" id="tor_so">Sacred Orb<br>
+				<input type="checkbox" id="tor_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="tor_la_mulanese">Learned La-Mulanese<br>
+				<input type="checkbox" id="medicine">Collected Medicine of the Mind<br>
+			</td>
+			<td>
+				<div class='head'>DIMENSIONAL CORRIDOR</div>
+				<input type="checkbox" id="dc_so">Sacred Orb<br>
+				<input type="checkbox" id="dc_jewel">Ankh Jewel<br>
+				<input type="checkbox" id="dc_ankh">Tiamat's Ankh<br>
+				<input type="checkbox" id="dc_boss">Tiamat Defeated<br>
+				<hr>
+				<input type="checkbox" id="fobos">Talked to Fobos<br>
+			</td>
+			<td colspan=2>
+				<div class='head'>TRUE SHRINE OF THE MOTHER</div>
+				<input type="checkbox" id="mantras">All mantras performed.<br>
+				<input type="checkbox" id="mother">Mother Defeated!<br>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br>
+<div id="result_div" style = "width:1050px; float:left; margin-top:20px;">
+	<div id="result" style = "width:50%; float:left;">
+	</div>
+	<div id="result2" style = "width:50%; float:left;">
+	</div>
+</div>
+
+<script>
+function nextStep() {
+	$('#result').html("Loading . . .");
+	$('#result2').html('');
+	$('#adventure_table').hide();
+	$('#item_table').hide();
+	$('#result_div').show();
+	
+	var r = '';
+	var r2 = '';
+	var item = [];
+	
+	var numBosses = 0;
+	var numJewels = 0;
+	
+	$('input:checkbox').each(function () {
+		if ( this.checked && $(this).attr('id').indexOf("_boss") != -1 ) numBosses += 1;
+		if ( this.checked && $(this).attr('id').indexOf("_jewel") != -1 ) numJewels += 1;
+		
+		if (this.checked) item[$(this).attr('id')] = true;
+		else item[$(this).attr('id')] = false;
+	});
+	$('select').each(function () {
+		item[$(this).attr('id')] = $(this).val();
+	});
+	
+	if ( !item['hand_scanner']) r += "Buy the Hand Scanner from a shop in the Surface.<br>";
+	if ( !item['reader']) r += "Buy reader.exe from a shop in the Surface.<br>";
+	if ( !item['xmailer']) r += "Get xmailer.exe from Xelpud in the Surface.<br>";
+	if ( !item['shell_horn']) r += "Get the Shell Horn in the Surface.<br>";	
+	
+	if ( r != '') {
+		$('#result').html(r);
+		return 0;
+	}
+	
+	
+	if ( item['holy_grail'] == 0) r += "Get the Holy Grail from the Gate of Guidance.<br>";
+	if ( item['whip'] < 2 && item['feather'] && item['samaranta'] && item['bronze_mirror']) r += "Get the Flail Whip from the Tower of the Goddess.<br>";
+	else if ( item['whip'] < 1 && item['birth_seal'] && item['grapple_claw']) r += "Get the Chain Whip from the Inferno Cavern.<br>";
+	if ( !item['knife'] && item['shuriken']) r += "Get the Knife from the Temple of the Sun.<br>";
+	if ( !item['key_sword'] && item['key_of_eternity']) r += "Get the Key Sword from the Endless Corridor.<br>";
+	if ( !item['axe'] && item['hermes_boots']) r += "Get the Axe from the Temple of Moonlight.<br>";
+	if ( !item['katana'] && item['twin_statue']) r += "Get the Katana from the Twin Labyrinths.<br>";
+	if ( !item['shuriken']) r += "Get the Shuriken from the Gate of Guidance.<br>";
+	if ( !item['rolling_shuriken']) r += "Get the Rolling Shuriken from the Mausoleum of the Giants.<br>";
+	if ( !item['earth_spear'] && item['feather'] && item['bronze_mirror'] && item['motg_boss']) r += "Get the Earth Spear from the Tower of Ruin.<br>";
+	if ( !item['flare_gun']) r += "Get the Flare Gun from the Inferno Cavern.<br>";
+	if ( !item['bomb'] && item['plane_model']) r += "Get the Bomb from the Graveyard of the Giants.<br>";
+	if ( !item['chakram'] && item['flare_gun'] && item['birth_seal'] && item['flood_temple']) r += "Get the Chakram from the Chamber of Extinction.<br>";
+	if ( !item['caltrops'] && item['helmet']) r2 += "Get the Caltrops from the Spring in the Sky.<br>";
+	if ( !item['pistol']) r2 += "Buy the Pistol from a shop in the Surface.<br>";
+	if ( item['shield'] < 3 && item['dimensional_key'] && item['crystal_skull'] && item['bronze_mirror']) r += "Get the Angel Shield from the Dimensional Corridor.<br>";
+	else if ( item['shield'] < 2 && item['bronze_mirror'] && item['motg_boss']) r += "Get the Silver Shield from the Graveyard of the Giants.<br>";
+	else if ( item['shield'] < 1) r2 += "Buy the Buckler from a shop in the Surface.<br>";
+	if ( !item['djed_pillar'] && item['coe_boss'] && item['tl_boss']) r += "Get the Djed Pillar from the Tower of Ruin.<br>";
+	if ( !item['mini_doll'] && item['fruit_of_eden'] && item['anchor']==2) r += "Get the Mini Doll from the Gate of Illusion.<br>";
+	if ( !item['magatama_jewel'] && item['mulana_talisman']==3 && item['dimensional_key'] && item['crystal_skull']) r += "Get the Magatama Jewel from the Dimensional Corridor.<br>";
+	if ( !item['cog_of_the_soul'] && item['fruit_of_eden'] && item['lamp_of_time']) r += "Get the Cog of the Soul from the Gate of Illusion.<br>";
+	if ( !item['lamp_of_time'] && item['bomb']) r += "Buy the Lamp of Time from a shop in the Twin Labyrinths.<br>";
+	if ( !item['pochette_key'] && item['cog_of_the_soul'] && item['bronze_mirror']) r += "Get the Pochette Key from the Chamber of Birth.<br>";
+	if ( !item['dragon_bone'] && item['twin_statue']) r += "Get the Dragon Bone from the Twin Labyrinths.<br>";
+	if ( !item['crystal_skull'] && item['life_seal'] && item['mulana_talisman']==3) r += "Get the Crystal Skull from the Shrine of the Mother.<br>";
+	if ( !item['vessel'] && item['shield']==3 && item['bronze_mirror']) r += "Get the Vessel from the Chamber of Birth.<br>";
+	if ( !item['pepper'] && item['fruit_of_eden']) r += "Get the Pepper from the Gate of Illusion.<br>";
+	if ( item['woman_statue']==1) r += "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun.<br>";
+	else if ( item['woman_statue']==0 && item['pochette_key'] && item['bronze_mirror'] && item['dance_of_life']) r += "Get the Woman Statue from the Chamber of Birth.<br>";
+	if ( !item['key_of_eternity'] && item['fruit_of_eden'] && item['birth_seal'] && item['sacrifices'] && item['book_of_the_dead']) r += "Get the Key of Eternity from the Gate of Illusion.<br>";
+	if ( !item['serpent_staff'] && item['book_of_the_dead']) r += "Get the Serpent Staff from the Temple of Moonlight.<br>";
+	if ( item['mulana_talisman'] == 2) r += "Get the Mulana Talisman from Xelpud in the Surface.<br>";
+	else if ( item['mulana_talisman'] == 1 && item['skull_walls_removed']) r += "Get the Diary from the Shrine of the Mother.<br>";
+	else if ( item['mulana_talisman'] == 0 && item['ic_boss']) r += "Get the Talisman from the Temple of the Sun.<br>";
+	if ( !item['origin_seal'] && item['helmet']) r += "Get the Origin Seal from the Spring in the Sky.<br>";
+	if ( !item['birth_seal'] && item['origin_seal'] && item['scalesphere']) r += "Get the Birth Seal from the Surface.<br>";
+	if ( !item['life_seal'] && item['birth_seal'] && item['flare_gun'] && item['flood_temple']) r += "Get the Life Seal from the Chamber of Extinction.<br>";
+	if ( !item['death_seal'] && item['life_seal'] && item['giltoriyo'] && item['skull_walls_removed']) r += "Get the Death Seal from the Shrine of the Mother.<br>";
+	if ( !item['yagomap']) r += "Buy yagomap.exe from a shop in the Surface.<br>";
+	if ( !item['yagostr'] && item['fruit_of_eden']) r += "Get yagostr.exe from the Gate of Guidance.<br>";
+	if ( !item['bunemon']) r2 += "Buy bunemon.exe from a shop in the Temple of the Sun.<br>";
+	if ( !item['bunplus']) r2 += "Get bunplus.com from the Inferno Cavern.<br>";
+	if ( !item['torude'] && item['feather'] && item['bronze_mirror']) r += "Buy torude.exe from a shop in the Tower of Ruin.<br>";
+	if ( !item['guild']) r2 += "Get guild.exe from the Gate of Guidance.<br>";
+	if ( !item['mantra'] && item['magatama_jewel'] && item['torude'] && item['som_la_mulanese'] && item['cob_la_mulanese'] && item['tor_la_mulanese']) r += "Get mantra.exe from the Chamber of Extinction.<br>";
+	if ( !item['emusic'] && item['bomb'] && item['torude'] && item['bronze_mirror'] && item['motg_boss']) r2 += "Get emusic.exe from the Graveyard of the Giants.<br>";
+	if ( !item['beolamu'] && item['dimensional_key'] && item['torude']) r2 += "Get beolamu.exe from the Dimensional Corridor.<br>";
+	if ( !item['deathv']) r2 += "Get deathv.exe from the Surface.<br>";
+	if ( !item['randc'] && item['isis_pendant'] && item['helmet']) r2 += "Get randc.exe from the Spring in the Sky.<br>";
+	if ( !item['capstar']) r2 += "Buy capstar.exe from a shop in the Inferno Cavern.<br>";
+	if ( !item['move'] && item['fruit_of_eden']) r2 += "Get move.exe from the Gate of Illusion.<br>";
+	if ( !item['mekuri'] && item['feather']) r2 += "Get mekuri.exe from the Surface.<br>";
+	if ( !item['bounce'] && item['feather']) r2 += "Get bounce.exe from the Shrine of the Mother.<br>";
+	if ( !item['miracle'] && item['lamp_of_time'] && item['bronze_mirror']) r2 += "Get miracle.exe from the Tower of the Goddess.<br>";
+	if ( !item['mirai'] && item['feather'] && item['bronze_mirror'] && item['motg_boss']) r += "Get mirai.exe from the Graveyard of the Giants.<br>";
+	if ( !item['lamulana'] && item['feather'] && item['isis_pendant']) r2 += "Get lamulana.exe from the Gate of Time.<br>";
+	if ( item['mobile_super_x']==0 && numBosses > 3) r2 += "Buy the Mobile Super X2 from a shop in the Surface.<br>";
+	if ( !item['waterproof_case']) r2 += "Buy the Waterproof Case from a shop in the Surface.<br>";
+	if ( !item['heatproof_case']) r2 += "Buy the Heatproof Case from a shop in the Temple of the Sun.<br>";
+	if ( !item['glove'] && item['helmet']) r2 += "Get the Glove from the Spring in the Sky.<br>";
+	if ( !item['isis_pendant']) r += "Get the Isis Pendant from the Temple of the Sun.<br>";
+	if ( !item['crucifix'] && item['life_seal']) r2 += "Get the Crucifix from the Gate of Guidance.<br>";
+	if ( !item['helmet']) r += "Get the Helmet from the Twin Labyrinths.<br>";
+	if ( !item['grapple_claw']) r += "Get the Grapple Claw from the Temple of Moonlight.<br>";
+	if ( !item['bronze_mirror'] && item['birth_seal'] && item['flare_gun'] && item['flood_temple']) r += "Get the Bronze Mirror from the Temple of the Sun.<br>";
+	if ( !item['eye_of_truth'] && item['feather'] && item['bronze_mirror'] && item['flood_tower']) r += "Get the Eye of Truth from the Tower of the Goddess.<br>";
+	if ( !item['ring'] && item['twin_statue']) r2 += "Get the Ring from the Twin Labyrinths.<br>";
+	if ( !item['scalesphere'] && item['helmet']) r += "Get the Scalesphere from the Spring in the Sky.<br>";
+	if ( !item['gauntlet'] && item['feather'] && item['grapple_claw'] && item['bronze_mirror'] && item['motg_boss']) r2 += "Get the Gauntlet from the Graveyard of the Giants.<br>";
+	if (item['anchor'] == 1) r += "Get the Anchor from the Gate of Illusion.<br>"
+	else if ( item['anchor'] == 0 && item['pepper']) r += "Get the Treasures from the Gate of Guidance.<br>";
+	if ( !item['plane_model'] && item['eye_of_truth']) r += "Get the Plane Model from the Tower of the Goddess.<br>";
+	if ( !item['philosophers_ocarina'] && item['woman_statue']==2) r += "Get the Philosopher's Ocarina from the Temple of Moonlight.<br>";
+	if ( !item['feather'] && item['serpent_staff']) r += "Get the Feather from the Surface.<br>";
+	if ( !item['book_of_the_dead'] && item['bronze_mirror'] && (item['tots_boss'] || item['motg_boss']) && item['mulbruk']) r += "Get the Book of the Dead from Mulbruk in the Temple of the Sun.<br>";
+	if ( !item['fairy_clothes'] && item['bronze_mirror'] && item['fruit_of_eden'] && item['isis_pendant']) r2 += "Get the Fairy Clothes from the Gate of Illusion.<br>";
+	if ( !item['scriptures'] && item['bronze_mirror'] && item['bomb']) r2 += "Get the Scriptures from the Temple of Moonlight.<br>";
+	if ( !item['hermes_boots']) r += "Buy the Hermes' Boots in the Mausoleum of the Giants.<br>";
+	if ( !item['fruit_of_eden'] && item['bronze_mirror'] && (item['tots_boss'] || item['motg_boss'])) r += "Get the Fruit of Eden in the Temple of Moonlight.<br>";
+	if ( !item['twin_statue'] && item['key_of_eternity']) r += "Get the Twin Statue in the Endless Corridor.<br>";
+	if ( !item['bracelet'] && item['twin_statue']) r2 += "Get the Bracelet in the Twin Labyrinths.<br>";
+	if ( !item['perfume'] && item['cog_of_the_soul'] && item['bronze_mirror']) r2 += "Get the Perfume in the Chamber of Birth.<br>";
+	if ( !item['spaulder'] && item['bronze_mirror'] && item['feather']) r2 += "Get the Spaulder in the Chamber of Birth.<br>";
+	if ( !item['dimensional_key'] && item['woman_statue']==2 && item['dragon_bone'] && item['key_of_eternity'] && item['mulana_talisman']==3 && item['crystal_skull'] && item['cog_of_the_soul'] && item['dance_of_life']) r += "Get the Dimensional Key in the Chamber of Birth.<br>";
+	if ( !item['ice_cape']) r += "Get the Ice Cape in the Inferno Cavern.<br>";
+	if (r != '') r += "<br>";
+	if ( !item['surf_so'] && item['sits_boss']) r += "Get the Sacred Orb from the Surface.<br>";
+	if ( !item['gog_so']) r += "Get the Sacred Orb from the Gate of Guidance.<br>";
+	if ( !item['gog_jewel']) r += "Get the Ankh Jewel from the Gate of Guidance.<br>";
+	if ( !item['gog_ankh']) r += "Reveal Amphisbaena's Ankh in the Gate of Guidance.<br>";
+	if ( !item['gog_boss'] && item['gog_ankh'] && numJewels > numBosses) r += "Defeat Amphisbaena!<br>";
+	if ( !item['motg_so']) r += "Get the Sacred Orb from the Mausoleum of the Giants.<br>";
+	if ( !item['motg_jewel']) r += "Get the Ankh Jewel from the Mausoleum of the Giants.<br>";
+	if ( !item['motg_ankh']) r += "Reveal Sakit's Ankh in the Mausoleum of the Giants.<br>";
+	if ( !item['motg_boss'] && item['motg_ankh'] && numJewels > numBosses) r += "Defeat Sakit!<br>";
+	if ( !item['prove_small'] && item['mini_doll']) r += "\"Prove Thou Art Small\" in the Mausoleum of the Giants.<br>";
+	if ( !item['tots_so']) r += "Get the Sacred Orb from the Temple of the Sun.<br>";
+	if ( !item['tots_jewel']) r += "Get the Ankh Jewel from the Temple of the Sun.<br>";
+	if ( !item['tots_ankh']) r += "Reveal Ellmac's Ankh in the Temple of the Sun.<br>";
+	if ( !item['tots_boss'] && item['tots_ankh'] && numJewels > numBosses) r += "Defeat Ellmac!<br>";
+	if ( !item['mulbruk'] && item['origin_seal'] && numBosses) r += "Wake up Mulbruk.<br>";
+	if ( !item['sits_so'] && item['birth_seal']) r += "Get the Sacred Orb from the Spring in the Sky.<br>";
+	if ( !item['sits_jewel'] && item['scalesphere']) r += "Get the Ankh Jewel from the Spring in the Sky.<br>";
+	if ( !item['sits_ankh'] && item['scalesphere']) r += "Reveal Bahamut's Ankh in the Spring in the Sky.<br>";
+	if ( !item['sits_boss'] && item['sits_ankh'] && numJewels > numBosses) r += "Defeat Bahamut!<br>";
+	if ( !item['flood_temple'] && item['scalesphere']) r += "Flood the Temple of the Sun.<br>";
+	if ( !item['flood_tower'] && item['ic_boss']) r += "Flood the Tower of the Goddess.<br>";
+	if ( !item['giltoriyo'] && item['philosophers_ocarina']) r += "Talk to Giltoriyo in the Spring in the Sky.<br>";
+	if ( !item['coe_so'] && item['flare_gun'] && item['birth_seal'] && item['flood_temple']) r += "Get the Sacred Orb from the Chamber of Extinction.<br>";
+	if ( !item['coe_ankh'] && item['pochette_key']) r += "Reveal Palenque's Ankh in the Chamber of Extinction.<br>";
+	if ( !item['coe_boss'] && item['plane_model'] && item['coe_ankh'] && numJewels > numBosses) r += "Defeat Palenque!<br>";
+	if ( !item['light_chamber'] && item['plane_model'] && item['life_seal']) r += "Light the Chamber of Extinction permanently.<br>";
+	if ( !item['ic_ankh'] && item['earth_spear'] && item['sits_boss']) r += "Reveal Viy's Ankh in the Inferno Cavern.<br>";
+	if ( !item['ic_boss'] && item['ic_ankh'] && numJewels > numBosses) r += "Defeat Viy!<br>";
+	if ( !item['tl_so'] && item['poison_lifted']) r += "Get the Sacred Orb from the Twin Labyrinths.<br>";
+	if ( !item['tl_jewel'] && item['poison_lifted'] && item['flare_gun']) r += "Get the Ankh Jewel from the Twin Labyrinths.<br>";
+	if ( !item['tl_ankh'] && item['poison_lifted']) r += "Reveal Baphomet's Ankh in the Twin Labyrinths.<br>";
+	if ( !item['tl_boss'] && item['tl_ankh'] && numJewels > numBosses) r += "Defeat Baphomet!<br>";
+	if ( !item['poison_lifted'] && item['twin_statue']) r += "Lift the poison in the Twin Labyrinths.<br>";
+	if ( !item['som_so'] && item['key_of_eternity']) r += "Get the Sacred Orb from the Shrine of the Mother.<br>";
+	if ( !item['skull_walls_removed'] && item['key_of_eternity'] && item['dragon_bone'] && item['yagomap'] && item['yagostr']) r += "Remove the skull walls from the Shrine of the Mother.<br>";
+	if ( !item['som_la_mulanese'] && item['giltoriyo'] && item['key_of_eternity']) r += "Learn some of La-Mulanese in the Shrine of the Mother.<br>";
+	if ( !item['sacrifices'] && item['prove_small']) r += "Stop the maiden sacrifices in the Gate of Illusion.<br>";
+	if ( !item['alsedana'] && item['philosophers_ocarina']) r += "Talk to Alsedana in the Temple of Moonlight.<br>";
+	if ( !item['samaranta'] && item['philosophers_ocarina']) r += "Talk to Samaranta in the Tower of the Goddess.<br>";
+	if ( !item['cob_jewel'] && item['ic_boss']) r += "Buy the Ankh Jewel from the Chamber of Birth.<br>";
+	if ( !item['dance_of_life'] && item['ic_boss'] && item['serpent_staff'] && item['chakram']) r += "Perform the Dance of Life in the Chamber of Birth.<br>";
+	if ( !item['cob_la_mulanese'] && item['coe_boss']) r += "Learn some of La-Mulanese in the Chamber of Birth.<br>";
+	if ( !item['tor_so'] && item['bronze_mirror'] && item['motg_boss']) r += "Get the Sacred Orb from the Tower of Ruin.<br>";
+	if ( !item['tor_jewel'] && item['bronze_mirror'] && item['motg_boss'] && item['feather']) r += "Get the Ankh Jewel from the Tower of Ruin.<br>";
+	if ( !item['tor_la_mulanese'] && item['bronze_mirror'] && item['motg_boss'] && item['feather']) r += "Learn some of La-Mulanese in the Tower of Ruin.<br>";
+	if ( !item['dc_so'] && item['crystal_skull'] && item['lamp_of_time'] && item['dimensional_key']) r += "Get the Sacred Orb from the Dimensional Corridor.<br>";
+	if ( !item['dc_jewel'] && item['crystal_skull'] && item['dimensional_key']) r += "Get the Ankh Jewel from the Dimensional Corridor.<br>";
+	if ( !item['dc_ankh'] && item['crystal_skull'] && item['dimensional_key']) r += "Reveal Tiamat's Ankh in the Dimensional Corridor.<br>";
+	if ( !item['dc_boss'] && item['dc_ankh'] && numJewels > numBosses) r += "Defeat Tiamat!<br>";
+	if ( !item['fobos'] && item['philosophers_ocarina'] && item['dimensional_key']) r += "Talk to Fobos in the Dimensional Corridor.<br>";
+	if (item['holy_grail'] == 1 && item['dimensional_key']) r += "Power the Holy Grail by reading all the Grail Tablets.<br>";
+	if ( !item['mantras'] && item['djed_pillar'] && item['mantra'] && item['fobos'] && item['samaranta'] && item['alsedana'] && item['giltoriyo']) r += "Chant the mantras throughout the ruins.<br>";
+	if ( !item['medicine'] && item['vessel'] && item['fobos'] && item['lamp_of_time']) r += "Collect the Medicine of the Mind in the Tower of Ruin.<br>";
+	if ( !item['mother'] && item['holy_grail'] == 2 && numBosses == 8 && item['medicine'] && item['mantras'] && item['key_sword']) r += "Defeat Mother!<br>";
+	
+	
+	$('#result').html(r);
+	$('#result2').html(r2);
+}
+</script>

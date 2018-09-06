@@ -180,6 +180,9 @@
     "description": "Get the Pepper from the Gate of Illusion."
   },
   "maternity_statue": {
+    "requirements": [
+      "woman_statue"
+    ],
     "description": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun."
   },
   "woman_statue": {

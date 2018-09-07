@@ -14,7 +14,7 @@
   "holy_grail": {
     "description": "Get the Holy Grail from the Gate of Guidance."
   },
-  "chain_whip": {
+  "flail_whip": {
     "requirements": [
       "feather",
       "samaranta",
@@ -22,7 +22,7 @@
     ],
     "description": "Get the Flail Whip from the Tower of the Goddess."
   },
-  "flail_whip": {
+  "chain_whip": {
     "requirements": [
       "birth_seal",
       "grapple_claw"
@@ -88,9 +88,11 @@
     "requirements": [
       "helmet"
     ],
+    "optional": true,
     "description": "Get the Caltrops from the Spring in the Sky."
   },
   "pistol": {
+    "optional": true,
     "description": "Buy the Pistol from a shop in the Surface."
   },
   "angel_shield": {
@@ -109,6 +111,7 @@
     "description": "Get the Silver Shield from the Graveyard of the Giants."
   },
   "buckler": {
+    "optional": true,
     "description": "Buy the Buckler from a shop in the Surface."
   },
   "djed_pillar": {
@@ -262,9 +265,11 @@
     "description": "Get yagostr.exe from the Gate of Guidance."
   },
   "bunemon": {
+    "optional": true,
     "description": "Buy bunemon.exe from a shop in the Temple of the Sun."
   },
   "bunplus": {
+    "optional": true,
     "description": "Get bunplus.com from the Inferno Cavern."
   },
   "torude": {
@@ -275,6 +280,7 @@
     "description": "Buy torude.exe from a shop in the Tower of Ruin."
   },
   "guild": {
+    "optional": true,
     "description": "Get guild.exe from the Gate of Guidance."
   },
   "mantra": {
@@ -294,6 +300,7 @@
       "bronze_mirror",
       "motg_boss"
     ],
+    "optional": true,
     "description": "Get emusic.exe from the Graveyard of the Giants."
   },
   "beolamu": {
@@ -301,9 +308,11 @@
       "dimensional_key",
       "torude"
     ],
+    "optional": true,
     "description": "Get beolamu.exe from the Dimensional Corridor."
   },
   "deathv": {
+    "optional": true,
     "description": "Get deathv.exe from the Surface."
   },
   "randc": {
@@ -311,27 +320,32 @@
       "isis_pendant",
       "helmet"
     ],
+    "optional": true,
     "description": "Get randc.exe from the Spring in the Sky."
   },
   "capstar": {
+    "optional": true,
     "description": "Buy capstar.exe from a shop in the Inferno Cavern."
   },
   "move": {
     "requirements": [
       "fruit_of_eden"
     ],
+    "optional": true,
     "description": "Get move.exe from the Gate of Illusion."
   },
   "mekuri": {
     "requirements": [
       "feather"
     ],
+    "optional": true,
     "description": "Get mekuri.exe from the Surface."
   },
   "bounce": {
     "requirements": [
       "feather"
     ],
+    "optional": true,
     "description": "Get bounce.exe from the Shrine of the Mother."
   },
   "miracle": {
@@ -339,6 +353,7 @@
       "lamp_of_time",
       "bronze_mirror"
     ],
+    "optional": true,
     "description": "Get miracle.exe from the Tower of the Goddess."
   },
   "mirai": {
@@ -354,22 +369,27 @@
       "feather",
       "isis_pendant"
     ],
+    "optional": true,
     "description": "Get lamulana.exe from the Gate of Time."
   },
   "mobile_super_x": {
     "num_of_bosses": 3,
+    "optional": true,
     "description": "Buy the Mobile Super X2 from a shop in the Surface."
   },
   "waterproof_case": {
+    "optional": true,
     "description": "Buy the Waterproof Case from a shop in the Surface."
   },
   "heatproof_case": {
+    "optional": true,
     "description": "Buy the Heatproof Case from a shop in the Temple of the Sun."
   },
   "glove": {
     "requirements": [
       "helmet"
     ],
+    "optional": true,
     "description": "Get the Glove from the Spring in the Sky."
   },
   "isis_pendant": {
@@ -379,6 +399,7 @@
     "requirements": [
       "life_seal"
     ],
+    "optional": true,
     "description": "Get the Crucifix from the Gate of Guidance."
   },
   "helmet": {
@@ -407,6 +428,7 @@
     "requirements": [
       "twin_statue"
     ],
+    "optional": true,
     "description": "Get the Ring from the Twin Labyrinths."
   },
   "scalesphere": {
@@ -422,6 +444,7 @@
       "bronze_mirror",
       "motg_boss"
     ],
+    "optional": true,
     "description": "Get the Gauntlet from the Graveyard of the Giants."
   },
   "anchor": {
@@ -464,6 +487,7 @@
       "fruit_of_eden",
       "isis_pendant"
     ],
+    "optional": true,
     "description": "Get the Fairy Clothes from the Gate of Illusion."
   },
   "scriptures": {
@@ -471,6 +495,7 @@
       "bronze_mirror",
       "bomb"
     ],
+    "optional": true,
     "description": "Get the Scriptures from the Temple of Moonlight."
   },
   "hermes_boots": {
@@ -492,6 +517,7 @@
     "requirements": [
       "twin_statue"
     ],
+    "optional": true,
     "description": "Get the Bracelet in the Twin Labyrinths."
   },
   "perfume": {
@@ -499,6 +525,7 @@
       "cog_of_the_soul",
       "bronze_mirror"
     ],
+    "optional": true,
     "description": "Get the Perfume in the Chamber of Birth."
   },
   "spaulder": {
@@ -506,6 +533,7 @@
       "bronze_mirror",
       "feather"
     ],
+    "optional": true,
     "description": "Get the Spaulder in the Chamber of Birth."
   },
   "dimensional_key": {

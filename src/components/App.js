@@ -1,28 +1,29 @@
 import React from 'react';
-import GameDataStore from "../stores/GameDataStore";
+import dataStore from "../stores/DataStore";
 import {observer} from "mobx-react";
-import Character from "../stores/Character";
 import PartyDisplay from "./Characters/PartyDisplay";
 import MainContainer from "./MainContainer";
 
 @observer
 class App extends React.Component {
+
+
     render = () => {
-        const gameDataStore = this.props.gameDataStore;
+        const dataStore = this.props.dataStore;
 
         return (
             <div>
                 <div className="row">
                     <div className="col-sm-12">
-                        <h2 style={{textAlign: "center"}}>Journey</h2>
+                        <h2 style={{textAlign: "center"}}>HOW TO LA MULANA</h2>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-2">
-                        <PartyDisplay party={gameDataStore.party}/>
+                        <PartyDisplay party={dataStore.party}/>
                     </div>
                     <div className="col-sm-8">
-                        <MainContainer gameDataStore={gameDataStore}/>
+                        <MainContainer dataStore={dataStore}/>
                     </div>
                     <div className="col-sm-2">
                     </div>
@@ -32,11 +33,8 @@ class App extends React.Component {
     };
 }
 
-let gameDataStore = new GameDataStore();
-gameDataStore.party.mainCharacter = new Character();
-
 App.defaultProps = {
-    gameDataStore: gameDataStore
+    dataStore: dataStore
 };
 
 export default App;

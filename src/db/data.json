@@ -18,13 +18,13 @@
     }
   },
   "shell_horn": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Shell Horn in the Surface."
     }
   },
   "holy_grail": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Holy Grail from the Gate of Guidance."
     }
@@ -214,6 +214,7 @@
   "cog_of_the_soul": {
     "requirements": [
       "fruit_of_eden",
+      "mulana_talisman",
       "lamp_of_time"
     ],
     "category": "usable_items",
@@ -320,6 +321,9 @@
     }
   },
   "mulana_talisman": {
+    "requirements": [
+      "diary"
+    ],
     "category": "usable_items",
     "description": {
       "vague": "Get the Mulana Talisman from Xelpud in the Surface."
@@ -327,7 +331,8 @@
   },
   "diary": {
     "requirements": [
-      "skull_walls_removed"
+      "skull_walls_removed",
+      "talisman"
     ],
     "category": "usable_items",
     "description": {
@@ -556,23 +561,23 @@
     }
   },
   "mobile_super_x": {
-    "num_of_bosses": 3,
+    "num_of_bosses": 4,
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Buy the Mobile Super X2 from a shop in the Surface."
     }
   },
   "waterproof_case": {
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Buy the Waterproof Case from a shop in the Surface."
     }
   },
   "heatproof_case": {
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Buy the Heatproof Case from a shop in the Temple of the Sun."
     }
@@ -582,13 +587,13 @@
       "helmet"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Glove from the Spring in the Sky."
     }
   },
   "isis_pendant": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Isis Pendant from the Temple of the Sun."
     }
@@ -598,19 +603,19 @@
       "life_seal"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Crucifix from the Gate of Guidance."
     }
   },
   "helmet": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Helmet from the Twin Labyrinths."
     }
   },
   "grapple_claw": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Grapple Claw from the Temple of Moonlight."
     }
@@ -621,7 +626,7 @@
       "flare_gun",
       "flood_temple"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Bronze Mirror from the Temple of the Sun."
     }
@@ -632,7 +637,7 @@
       "bronze_mirror",
       "flood_tower"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Eye of Truth from the Tower of the Goddess."
     }
@@ -642,7 +647,7 @@
       "twin_statue"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Ring from the Twin Labyrinths."
     }
@@ -651,7 +656,7 @@
     "requirements": [
       "helmet"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Scalesphere from the Spring in the Sky."
     }
@@ -664,13 +669,16 @@
       "motg_boss"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Gauntlet from the Graveyard of the Giants."
     }
   },
   "anchor": {
-    "category": "treasures",
+    "requirements": [
+      "treasures"
+    ],
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Anchor from the Gate of Illusion.<br>"
     }
@@ -679,7 +687,7 @@
     "requirements": [
       "pepper"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Treasures from the Gate of Guidance."
     }
@@ -688,7 +696,7 @@
     "requirements": [
       "eye_of_truth"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Plane Model from the Tower of the Goddess."
     }
@@ -697,7 +705,7 @@
     "requirements": [
       "maternity_statue"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Philosopher's Ocarina from the Temple of Moonlight."
     }
@@ -706,7 +714,7 @@
     "requirements": [
       "serpent_staff"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Feather from the Surface."
     }
@@ -716,7 +724,7 @@
       "bronze_mirror",
       "mulbruk"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Book of the Dead from Mulbruk in the Temple of the Sun."
     }
@@ -728,7 +736,7 @@
       "isis_pendant"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Fairy Clothes from the Gate of Illusion."
     }
@@ -739,13 +747,13 @@
       "bomb"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Scriptures from the Temple of Moonlight."
     }
   },
   "hermes_boots": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Buy the Hermes' Boots in the Mausoleum of the Giants."
     }
@@ -754,7 +762,7 @@
     "requirements": [
       "bronze_mirror"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Fruit of Eden in the Temple of Moonlight."
     }
@@ -763,7 +771,7 @@
     "requirements": [
       "key_of_eternity"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Twin Statue in the Endless Corridor."
     }
@@ -773,7 +781,7 @@
       "twin_statue"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Bracelet in the Twin Labyrinths."
     }
@@ -784,7 +792,7 @@
       "bronze_mirror"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Perfume in the Chamber of Birth."
     }
@@ -795,7 +803,7 @@
       "feather"
     ],
     "optional": true,
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Spaulder in the Chamber of Birth."
     }
@@ -810,13 +818,13 @@
       "cog_of_the_soul",
       "dance_of_life"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Dimensional Key in the Chamber of Birth."
     }
   },
   "ice_cape": {
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Get the Ice Cape in the Inferno Cavern."
     }
@@ -1319,9 +1327,10 @@
   },
   "powered_grail": {
     "requirements": [
+      "holy_grail",
       "dimensional_key"
     ],
-    "category": "treasures",
+    "category": "treasures_category",
     "description": {
       "vague": "Power the Holy Grail by reading all the Grail Tablets."
     }

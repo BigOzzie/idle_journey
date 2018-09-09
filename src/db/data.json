@@ -1,4 +1,18 @@
 {
+  "whip": {
+    "category": "weapons",
+    "start": true,
+    "description": {
+      "vague": "You should have started with this.  How are you reading this?  WHAT HAVE YOU DONE??"
+    }
+  },
+  "mobile_super_x": {
+    "category": "treasures_category",
+    "start": true,
+    "description": {
+      "vague": "Seriously, stop messing around with stuff.  You're gonna break it."
+    }
+  },
   "hand_scanner": {
     "category": "usable_items",
     "description": {
@@ -29,6 +43,17 @@
       "vague": "Get the Holy Grail from the Gate of Guidance."
     }
   },
+  "chain_whip": {
+    "requirements": [
+      "birth_seal",
+      "grapple_claw"
+    ],
+    "category": "weapons",
+    "parent": "whip",
+    "description": {
+      "vague": "Get the Chain Whip from the Inferno Cavern."
+    }
+  },
   "flail_whip": {
     "requirements": [
       "feather",
@@ -36,18 +61,9 @@
       "bronze_mirror"
     ],
     "category": "weapons",
+    "parent": "whip",
     "description": {
       "vague": "Get the Flail Whip from the Tower of the Goddess."
-    }
-  },
-  "chain_whip": {
-    "requirements": [
-      "birth_seal",
-      "grapple_claw"
-    ],
-    "category": "weapons",
-    "description": {
-      "vague": "Get the Chain Whip from the Inferno Cavern."
     }
   },
   "knife": {
@@ -152,15 +168,11 @@
       "vague": "Buy the Pistol from a shop in the Surface."
     }
   },
-  "angel_shield": {
-    "requirements": [
-      "dimensional_key",
-      "crystal_skull",
-      "bronze_mirror"
-    ],
+  "buckler": {
+    "optional": true,
     "category": "sub_weapons",
     "description": {
-      "vague": "Get the Angel Shield from the Dimensional Corridor."
+      "vague": "Buy the Buckler from a shop in the Surface."
     }
   },
   "silver_shield": {
@@ -168,16 +180,22 @@
       "bronze_mirror",
       "motg_boss"
     ],
+    "parent": "buckler",
     "category": "sub_weapons",
     "description": {
       "vague": "Get the Silver Shield from the Graveyard of the Giants."
     }
   },
-  "buckler": {
-    "optional": true,
+  "angel_shield": {
+    "requirements": [
+      "dimensional_key",
+      "crystal_skull",
+      "bronze_mirror"
+    ],
+    "parent": "buckler",
     "category": "sub_weapons",
     "description": {
-      "vague": "Buy the Buckler from a shop in the Surface."
+      "vague": "Get the Angel Shield from the Dimensional Corridor."
     }
   },
   "djed_pillar": {
@@ -279,15 +297,6 @@
       "vague": "Get the Pepper from the Gate of Illusion."
     }
   },
-  "maternity_statue": {
-    "requirements": [
-      "woman_statue"
-    ],
-    "category": "usable_items",
-    "description": {
-      "vague": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun."
-    }
-  },
   "woman_statue": {
     "requirements": [
       "pochette_key",
@@ -297,6 +306,16 @@
     "category": "usable_items",
     "description": {
       "vague": "Get the Woman Statue from the Chamber of Birth."
+    }
+  },
+  "maternity_statue": {
+    "requirements": [
+      "woman_statue"
+    ],
+    "parent": "woman_statue",
+    "category": "usable_items",
+    "description": {
+      "vague": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun."
     }
   },
   "key_of_eternity": {
@@ -320,25 +339,6 @@
       "vague": "Get the Serpent Staff from the Temple of Moonlight."
     }
   },
-  "mulana_talisman": {
-    "requirements": [
-      "diary"
-    ],
-    "category": "usable_items",
-    "description": {
-      "vague": "Get the Mulana Talisman from Xelpud in the Surface."
-    }
-  },
-  "diary": {
-    "requirements": [
-      "skull_walls_removed",
-      "talisman"
-    ],
-    "category": "usable_items",
-    "description": {
-      "vague": "Get the Diary from the Shrine of the Mother."
-    }
-  },
   "talisman": {
     "requirements": [
       "ic_boss"
@@ -346,6 +346,27 @@
     "category": "usable_items",
     "description": {
       "vague": "Get the Talisman from the Temple of the Sun."
+    }
+  },
+  "diary": {
+    "requirements": [
+      "skull_walls_removed",
+      "talisman"
+    ],
+    "parent": "talisman",
+    "category": "usable_items",
+    "description": {
+      "vague": "Get the Diary from the Shrine of the Mother."
+    }
+  },
+  "mulana_talisman": {
+    "requirements": [
+      "diary"
+    ],
+    "parent": "talisman",
+    "category": "usable_items",
+    "description": {
+      "vague": "Get the Mulana Talisman from Xelpud in the Surface."
     }
   },
   "origin_seal": {
@@ -481,7 +502,7 @@
   },
   "randc": {
     "requirements": [
-      "isis_pendant",
+      "fairies",
       "helmet"
     ],
     "optional": true,
@@ -552,7 +573,7 @@
   "lamulana": {
     "requirements": [
       "feather",
-      "isis_pendant"
+      "fairies"
     ],
     "optional": true,
     "category": "software",
@@ -560,10 +581,11 @@
       "vague": "Get lamulana.exe from the Gate of Time."
     }
   },
-  "mobile_super_x": {
+  "mobile_super_x2": {
     "num_of_bosses": 4,
     "optional": true,
     "category": "treasures_category",
+    "parent": "mobile_super_x",
     "description": {
       "vague": "Buy the Mobile Super X2 from a shop in the Surface."
     }
@@ -674,15 +696,6 @@
       "vague": "Get the Gauntlet from the Graveyard of the Giants."
     }
   },
-  "anchor": {
-    "requirements": [
-      "treasures"
-    ],
-    "category": "treasures_category",
-    "description": {
-      "vague": "Get the Anchor from the Gate of Illusion.<br>"
-    }
-  },
   "treasures": {
     "requirements": [
       "pepper"
@@ -690,6 +703,16 @@
     "category": "treasures_category",
     "description": {
       "vague": "Get the Treasures from the Gate of Guidance."
+    }
+  },
+  "anchor": {
+    "requirements": [
+      "treasures"
+    ],
+    "parent": "treasures",
+    "category": "treasures_category",
+    "description": {
+      "vague": "Get the Anchor from the Gate of Illusion.<br>"
     }
   },
   "plane_model": {
@@ -733,7 +756,7 @@
     "requirements": [
       "bronze_mirror",
       "fruit_of_eden",
-      "isis_pendant"
+      "fairies"
     ],
     "optional": true,
     "category": "treasures_category",
@@ -1139,6 +1162,16 @@
       "vague": "Lift the poison in the Twin Labyrinths."
     }
   },
+  "fairies": {
+    "requirements": [
+      "isis_pendant"
+    ],
+    "category": "accomplishments",
+    "location": "endless_corridor",
+    "description": {
+      "vague": "Show the fairy queen Isis' Pendant to gain her trust."
+    }
+  },
   "som_so": {
     "requirements": [
       "key_of_eternity"
@@ -1330,6 +1363,7 @@
       "holy_grail",
       "dimensional_key"
     ],
+    "parent": "holy_grail",
     "category": "treasures_category",
     "description": {
       "vague": "Power the Holy Grail by reading all the Grail Tablets."

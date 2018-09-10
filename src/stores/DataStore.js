@@ -1,4 +1,4 @@
-import {observable, action} from "mobx";
+import {observable, action, computed} from "mobx";
 import data from "../db/data.json";
 
 class DataStore {
@@ -6,12 +6,18 @@ class DataStore {
     VIEW_ACCOMPLISHMENTS = "accomplishments";
     VIEW_WHAT_TO_DO = "what_do_i_do";
 
-    @observable data = null;
+    @observable data = [];
     @observable view = this.VIEW_INVENTORY;
+    @observable i = 0;
 
     @action changeView = (view) => {
-        this.view = view;
+        // this.view = view;
+        this.i++;
     };
+
+    @computed get dataFiltered() {
+        return this.data[this.i];
+    }
 }
 
 const dataStore = new DataStore();

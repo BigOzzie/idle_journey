@@ -1,462 +1,514 @@
-{
-  "whip": {
-    "category": "weapons",
+[
+  {
+    "name": "whip",
+    "category": "inventory", "sub_category": "weapons",
     "owned": true,
     "description": {
       "vague": "You should have started with this.  How are you reading this?  WHAT HAVE YOU DONE??"
     }
   },
-  "mobile_super_x": {
-    "category": "treasures_category",
+  {
+    "name": "mobile_super_x",
+    "category": "inventory", "sub_category": "treasures_category",
     "owned": true,
     "description": {
       "vague": "Seriously, stop messing around with stuff.  You're gonna break it."
     }
   },
-  "hand_scanner": {
-    "category": "usable_items",
+  {
+    "name": "hand_scanner",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Buy the Hand Scanner from a shop in the Surface."
     }
   },
-  "reader": {
-    "category": "software",
+  {
+    "name": "reader",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Buy reader.exe from a shop in the Surface."
     }
   },
-  "xmailer": {
-    "category": "software",
+  {
+    "name": "xmailer",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get xmailer.exe from Xelpud in the Surface."
     }
   },
-  "shell_horn": {
-    "category": "treasures_category",
+  {
+    "name": "shell_horn",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Shell Horn in the Surface."
     }
   },
-  "holy_grail": {
-    "category": "treasures_category",
+  {
+    "name": "holy_grail",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Holy Grail from the Gate of Guidance."
     }
   },
-  "chain_whip": {
+  {
+    "name": "chain_whip",
     "requirements": [
       "birth_seal",
       "grapple_claw"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "parent": "whip",
     "description": {
       "vague": "Get the Chain Whip from the Inferno Cavern."
     }
   },
-  "flail_whip": {
+  {
+    "name": "flail_whip",
     "requirements": [
       "feather",
       "samaranta",
       "bronze_mirror"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "parent": "whip",
     "description": {
       "vague": "Get the Flail Whip from the Tower of the Goddess."
     }
   },
-  "knife": {
+  {
+    "name": "knife",
     "requirements": [
       "shuriken"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "description": {
       "vague": "Get the Knife from the Temple of the Sun."
     }
   },
-  "key_sword": {
+  {
+    "name": "key_sword",
     "requirements": [
       "key_of_eternity"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "description": {
       "vague": "Get the Key Sword from the Endless Corridor."
     }
   },
-  "axe": {
+  {
+    "name": "axe",
     "requirements": [
       "hermes_boots"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "description": {
       "vague": "Get the Axe from the Temple of Moonlight."
     }
   },
-  "katana": {
+  {
+    "name": "katana",
     "requirements": [
       "twin_statue"
     ],
-    "category": "weapons",
+    "category": "inventory", "sub_category": "weapons",
     "description": {
       "vague": "Get the Katana from the Twin Labyrinths."
     }
   },
-  "shuriken": {
-    "category": "sub_weapons",
+  {
+    "name": "shuriken",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Shuriken from the Gate of Guidance."
     }
   },
-  "rolling_shuriken": {
-    "category": "sub_weapons",
+  {
+    "name": "rolling_shuriken",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Rolling Shuriken from the Mausoleum of the Giants."
     }
   },
-  "earth_spear": {
+  {
+    "name": "earth_spear",
     "requirements": [
       "feather",
       "bronze_mirror",
       "motg_boss"
     ],
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Earth Spear from the Tower of Ruin."
     }
   },
-  "flare_gun": {
-    "category": "sub_weapons",
+  {
+    "name": "flare_gun",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Flare Gun from the Inferno Cavern."
     }
   },
-  "bomb": {
+  {
+    "name": "bomb",
     "requirements": [
       "plane_model"
     ],
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Bomb from the Graveyard of the Giants."
     }
   },
-  "chakram": {
+  {
+    "name": "chakram",
     "requirements": [
       "flare_gun",
       "birth_seal",
       "flood_temple"
     ],
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Chakram from the Chamber of Extinction."
     }
   },
-  "caltrops": {
+  {
+    "name": "caltrops",
     "requirements": [
       "helmet"
     ],
     "optional": true,
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Caltrops from the Spring in the Sky."
     }
   },
-  "pistol": {
+  {
+    "name": "pistol",
     "optional": true,
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Buy the Pistol from a shop in the Surface."
     }
   },
-  "buckler": {
+  {
+    "name": "buckler",
     "optional": true,
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Buy the Buckler from a shop in the Surface."
     }
   },
-  "silver_shield": {
+  {
+    "name": "silver_shield",
     "requirements": [
       "bronze_mirror",
       "motg_boss"
     ],
     "parent": "buckler",
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Silver Shield from the Graveyard of the Giants."
     }
   },
-  "angel_shield": {
+  {
+    "name": "angel_shield",
     "requirements": [
       "dimensional_key",
       "crystal_skull",
       "bronze_mirror"
     ],
     "parent": "buckler",
-    "category": "sub_weapons",
+    "category": "inventory", "sub_category": "sub_weapons",
     "description": {
       "vague": "Get the Angel Shield from the Dimensional Corridor."
     }
   },
-  "djed_pillar": {
+  {
+    "name": "djed_pillar",
     "requirements": [
       "coe_boss",
       "tl_boss"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Djed Pillar from the Tower of Ruin."
     }
   },
-  "mini_doll": {
+  {
+    "name": "mini_doll",
     "requirements": [
       "fruit_of_eden",
       "anchor"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Mini Doll from the Gate of Illusion."
     }
   },
-  "magatama_jewel": {
+  {
+    "name": "magatama_jewel",
     "requirements": [
       "mulana_talisman",
       "dimensional_key",
       "crystal_skull"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Magatama Jewel from the Dimensional Corridor."
     }
   },
-  "cog_of_the_soul": {
+  {
+    "name": "cog_of_the_soul",
     "requirements": [
       "fruit_of_eden",
       "mulana_talisman",
       "lamp_of_time"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Cog of the Soul from the Gate of Illusion."
     }
   },
-  "lamp_of_time": {
+  {
+    "name": "lamp_of_time",
     "requirements": [
       "bomb"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Buy the Lamp of Time from a shop in the Twin Labyrinths."
     }
   },
-  "pochette_key": {
+  {
+    "name": "pochette_key",
     "requirements": [
       "cog_of_the_soul",
       "bronze_mirror"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Pochette Key from the Chamber of Birth."
     }
   },
-  "dragon_bone": {
+  {
+    "name": "dragon_bone",
     "requirements": [
       "twin_statue"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Dragon Bone from the Twin Labyrinths."
     }
   },
-  "crystal_skull": {
+  {
+    "name": "crystal_skull",
     "requirements": [
       "life_seal",
       "mulana_talisman"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Crystal Skull from the Shrine of the Mother."
     }
   },
-  "vessel": {
+  {
+    "name": "vessel",
     "requirements": [
       "angel_shield",
       "bronze_mirror"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Vessel from the Chamber of Birth."
     }
   },
-  "pepper": {
+  {
+    "name": "pepper",
     "requirements": [
       "fruit_of_eden"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Pepper from the Gate of Illusion."
     }
   },
-  "woman_statue": {
+  {
+    "name": "woman_statue",
     "requirements": [
       "pochette_key",
       "bronze_mirror",
       "dance_of_life"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Woman Statue from the Chamber of Birth."
     }
   },
-  "maternity_statue": {
+  {
+    "name": "maternity_statue",
     "requirements": [
       "woman_statue"
     ],
     "parent": "woman_statue",
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun."
     }
   },
-  "key_of_eternity": {
+  {
+    "name": "key_of_eternity",
     "requirements": [
       "fruit_of_eden",
       "birth_seal",
       "sacrifices",
       "book_of_the_dead"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Key of Eternity from the Gate of Illusion."
     }
   },
-  "serpent_staff": {
+  {
+    "name": "serpent_staff",
     "requirements": [
       "book_of_the_dead"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Serpent Staff from the Temple of Moonlight."
     }
   },
-  "talisman": {
+  {
+    "name": "talisman",
     "requirements": [
       "ic_boss"
     ],
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Talisman from the Temple of the Sun."
     }
   },
-  "diary": {
+  {
+    "name": "diary",
     "requirements": [
       "skull_walls_removed",
       "talisman"
     ],
     "parent": "talisman",
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Diary from the Shrine of the Mother."
     }
   },
-  "mulana_talisman": {
+  {
+    "name": "mulana_talisman",
     "requirements": [
       "diary"
     ],
     "parent": "talisman",
-    "category": "usable_items",
+    "category": "inventory", "sub_category": "usable_items",
     "description": {
       "vague": "Get the Mulana Talisman from Xelpud in the Surface."
     }
   },
-  "origin_seal": {
+  {
+    "name": "origin_seal",
     "requirements": [
       "helmet"
     ],
-    "category": "seals",
+    "category": "inventory", "sub_category": "seals",
     "description": {
       "vague": "Get the Origin Seal from the Spring in the Sky."
     }
   },
-  "birth_seal": {
+  {
+    "name": "birth_seal",
     "requirements": [
       "origin_seal",
       "scalesphere"
     ],
-    "category": "seals",
+    "category": "inventory", "sub_category": "seals",
     "description": {
       "vague": "Get the Birth Seal from the Surface."
     }
   },
-  "life_seal": {
+  {
+    "name": "life_seal",
     "requirements": [
       "birth_seal",
       "flare_gun",
       "flood_temple"
     ],
-    "category": "seals",
+    "category": "inventory", "sub_category": "seals",
     "description": {
       "vague": "Get the Life Seal from the Chamber of Extinction."
     }
   },
-  "death_seal": {
+  {
+    "name": "death_seal",
     "requirements": [
       "life_seal",
       "giltoriyo",
       "skull_walls_removed"
     ],
-    "category": "seals",
+    "category": "inventory", "sub_category": "seals",
     "description": {
       "vague": "Get the Death Seal from the Shrine of the Mother."
     }
   },
-  "yagomap": {
-    "category": "software",
+  {
+    "name": "yagomap",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Buy yagomap.exe from a shop in the Surface."
     }
   },
-  "yagostr": {
+  {
+    "name": "yagostr",
     "requirements": [
       "fruit_of_eden"
     ],
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get yagostr.exe from the Gate of Guidance."
     }
   },
-  "bunemon": {
+  {
+    "name": "bunemon",
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Buy bunemon.exe from a shop in the Temple of the Sun."
     }
   },
-  "bunplus": {
+  {
+    "name": "bunplus",
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get bunplus.com from the Inferno Cavern."
     }
   },
-  "torude": {
+  {
+    "name": "torude",
     "requirements": [
       "feather",
       "bronze_mirror"
     ],
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Buy torude.exe from a shop in the Tower of Ruin."
     }
   },
-  "guild": {
+  {
+    "name": "guild",
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get guild.exe from the Gate of Guidance."
     }
   },
-  "mantra": {
+  {
+    "name": "mantra",
     "requirements": [
       "magatama_jewel",
       "torude",
@@ -464,12 +516,13 @@
       "cob_la_mulanese",
       "tor_la_mulanese"
     ],
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get mantra.exe from the Chamber of Extinction."
     }
   },
-  "emusic": {
+  {
+    "name": "emusic",
     "requirements": [
       "bomb",
       "torude",
@@ -477,213 +530,236 @@
       "motg_boss"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get emusic.exe from the Graveyard of the Giants."
     }
   },
-  "beolamu": {
+  {
+    "name": "beolamu",
     "requirements": [
       "dimensional_key",
       "torude"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get beolamu.exe from the Dimensional Corridor."
     }
   },
-  "deathv": {
+  {
+    "name": "deathv",
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get deathv.exe from the Surface."
     }
   },
-  "randc": {
+  {
+    "name": "randc",
     "requirements": [
       "fairies",
       "helmet"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get randc.exe from the Spring in the Sky."
     }
   },
-  "capstar": {
+  {
+    "name": "capstar",
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Buy capstar.exe from a shop in the Inferno Cavern."
     }
   },
-  "move": {
+  {
+    "name": "move",
     "requirements": [
       "fruit_of_eden"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get move.exe from the Gate of Illusion."
     }
   },
-  "mekuri": {
+  {
+    "name": "mekuri",
     "requirements": [
       "feather"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get mekuri.exe from the Surface."
     }
   },
-  "bounce": {
+  {
+    "name": "bounce",
     "requirements": [
       "feather"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get bounce.exe from the Shrine of the Mother."
     }
   },
-  "miracle": {
+  {
+    "name": "miracle",
     "requirements": [
       "lamp_of_time",
       "bronze_mirror"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get miracle.exe from the Tower of the Goddess."
     }
   },
-  "mirai": {
+  {
+    "name": "mirai",
     "requirements": [
       "feather",
       "bronze_mirror",
       "motg_boss"
     ],
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get mirai.exe from the Graveyard of the Giants."
     }
   },
-  "lamulana": {
+  {
+    "name": "lamulana",
     "requirements": [
       "feather",
       "fairies"
     ],
     "optional": true,
-    "category": "software",
+    "category": "inventory", "sub_category": "software",
     "description": {
       "vague": "Get lamulana.exe from the Gate of Time."
     }
   },
-  "mobile_super_x2": {
+  {
+    "name": "mobile_super_x2",
     "num_of_bosses": 4,
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "parent": "mobile_super_x",
     "description": {
       "vague": "Buy the Mobile Super X2 from a shop in the Surface."
     }
   },
-  "waterproof_case": {
+  {
+    "name": "waterproof_case",
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Buy the Waterproof Case from a shop in the Surface."
     }
   },
-  "heatproof_case": {
+  {
+    "name": "heatproof_case",
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Buy the Heatproof Case from a shop in the Temple of the Sun."
     }
   },
-  "glove": {
+  {
+    "name": "glove",
     "requirements": [
       "helmet"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Glove from the Spring in the Sky."
     }
   },
-  "isis_pendant": {
-    "category": "treasures_category",
+  {
+    "name": "isis_pendant",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Isis Pendant from the Temple of the Sun."
     }
   },
-  "crucifix": {
+  {
+    "name": "crucifix",
     "requirements": [
       "life_seal"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Crucifix from the Gate of Guidance."
     }
   },
-  "helmet": {
-    "category": "treasures_category",
+  {
+    "name": "helmet",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Helmet from the Twin Labyrinths."
     }
   },
-  "grapple_claw": {
-    "category": "treasures_category",
+  {
+    "name": "grapple_claw",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Grapple Claw from the Temple of Moonlight."
     }
   },
-  "bronze_mirror": {
+  {
+    "name": "bronze_mirror",
     "requirements": [
       "birth_seal",
       "flare_gun",
       "flood_temple"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Bronze Mirror from the Temple of the Sun."
     }
   },
-  "eye_of_truth": {
+  {
+    "name": "eye_of_truth",
     "requirements": [
       "feather",
       "bronze_mirror",
       "flood_tower"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Eye of Truth from the Tower of the Goddess."
     }
   },
-  "ring": {
+  {
+    "name": "ring",
     "requirements": [
       "twin_statue"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Ring from the Twin Labyrinths."
     }
   },
-  "scalesphere": {
+  {
+    "name": "scalesphere",
     "requirements": [
       "helmet"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Scalesphere from the Spring in the Sky."
     }
   },
-  "gauntlet": {
+  {
+    "name": "gauntlet",
     "requirements": [
       "feather",
       "grapple_claw",
@@ -691,147 +767,162 @@
       "motg_boss"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Gauntlet from the Graveyard of the Giants."
     }
   },
-  "treasures": {
+  {
+    "name": "treasures",
     "requirements": [
       "pepper"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Treasures from the Gate of Guidance."
     }
   },
-  "anchor": {
+  {
+    "name": "anchor",
     "requirements": [
       "treasures"
     ],
     "parent": "treasures",
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Anchor from the Gate of Illusion.<br>"
     }
   },
-  "plane_model": {
+  {
+    "name": "plane_model",
     "requirements": [
       "eye_of_truth"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Plane Model from the Tower of the Goddess."
     }
   },
-  "philosophers_ocarina": {
+  {
+    "name": "philosophers_ocarina",
     "requirements": [
       "maternity_statue"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Philosopher's Ocarina from the Temple of Moonlight."
     }
   },
-  "feather": {
+  {
+    "name": "feather",
     "requirements": [
       "serpent_staff"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Feather from the Surface."
     }
   },
-  "book_of_the_dead": {
+  {
+    "name": "book_of_the_dead",
     "requirements": [
       "bronze_mirror",
       "mulbruk"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Book of the Dead from Mulbruk in the Temple of the Sun."
     }
   },
-  "fairy_clothes": {
+  {
+    "name": "fairy_clothes",
     "requirements": [
       "bronze_mirror",
       "fruit_of_eden",
       "fairies"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Fairy Clothes from the Gate of Illusion."
     }
   },
-  "scriptures": {
+  {
+    "name": "scriptures",
     "requirements": [
       "bronze_mirror",
       "bomb"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Scriptures from the Temple of Moonlight."
     }
   },
-  "hermes_boots": {
-    "category": "treasures_category",
+  {
+    "name": "hermes_boots",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Buy the Hermes' Boots in the Mausoleum of the Giants."
     }
   },
-  "fruit_of_eden": {
+  {
+    "name": "fruit_of_eden",
     "requirements": [
       "bronze_mirror"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Fruit of Eden in the Temple of Moonlight."
     }
   },
-  "twin_statue": {
+  {
+    "name": "twin_statue",
     "requirements": [
       "key_of_eternity"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Twin Statue in the Endless Corridor."
     }
   },
-  "bracelet": {
+  {
+    "name": "bracelet",
     "requirements": [
       "twin_statue"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Bracelet in the Twin Labyrinths."
     }
   },
-  "perfume": {
+  {
+    "name": "perfume",
     "requirements": [
       "cog_of_the_soul",
       "bronze_mirror"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Perfume in the Chamber of Birth."
     }
   },
-  "spaulder": {
+  {
+    "name": "spaulder",
     "requirements": [
       "bronze_mirror",
       "feather"
     ],
     "optional": true,
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Spaulder in the Chamber of Birth."
     }
   },
-  "dimensional_key": {
+  {
+    "name": "dimensional_key",
     "requirements": [
       "maternity_statue",
       "dragon_bone",
@@ -841,348 +932,385 @@
       "cog_of_the_soul",
       "dance_of_life"
     ],
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Dimensional Key in the Chamber of Birth."
     }
   },
-  "ice_cape": {
-    "category": "treasures_category",
+  {
+    "name": "ice_cape",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Get the Ice Cape in the Inferno Cavern."
     }
   },
-  "surf_so": {
+  {
+    "name": "surf_so",
     "requirements": [
       "sits_boss"
     ],
     "category": "accomplishments",
-    "location": "surface",
+    "sub_category": "surface",
     "description": {
       "vague": "Get the Sacred Orb from the Surface."
     }
   },
-  "gog_so": {
+  {
+    "name": "gog_so",
     "category": "accomplishments",
-    "location": "gate_of_guidance",
+    "sub_category": "gate_of_guidance",
     "description": {
       "vague": "Get the Sacred Orb from the Gate of Guidance."
     }
   },
-  "gog_jewel": {
+  {
+    "name": "gog_jewel",
     "category": "accomplishments",
-    "location": "gate_of_guidance",
+    "sub_category": "gate_of_guidance",
     "description": {
       "vague": "Get the Ankh Jewel from the Gate of Guidance."
     }
   },
-  "gog_ankh": {
+  {
+    "name": "gog_ankh",
     "category": "accomplishments",
-    "location": "gate_of_guidance",
+    "sub_category": "gate_of_guidance",
     "description": {
       "vague": "Reveal Amphisbaena's Ankh in the Gate of Guidance."
     }
   },
-  "gog_boss": {
+  {
+    "name": "gog_boss",
     "requirements": [
       "gog_ankh"
     ],
     "category": "accomplishments",
-    "location": "gate_of_guidance",
+    "sub_category": "gate_of_guidance",
     "description": {
       "vague": "Defeat Amphisbaena!"
     }
   },
-  "motg_so": {
+  {
+    "name": "motg_so",
     "category": "accomplishments",
-    "location": "mausoleum_of_the_giants",
+    "sub_category": "mausoleum_of_the_giants",
     "description": {
       "vague": "Get the Sacred Orb from the Mausoleum of the Giants."
     }
   },
-  "motg_jewel": {
+  {
+    "name": "motg_jewel",
     "category": "accomplishments",
-    "location": "mausoleum_of_the_giants",
+    "sub_category": "mausoleum_of_the_giants",
     "description": {
       "vague": "Get the Ankh Jewel from the Mausoleum of the Giants."
     }
   },
-  "motg_ankh": {
+  {
+    "name": "motg_ankh",
     "category": "accomplishments",
-    "location": "mausoleum_of_the_giants",
+    "sub_category": "mausoleum_of_the_giants",
     "description": {
       "vague": "Reveal Sakit's Ankh in the Mausoleum of the Giants."
     }
   },
-  "motg_boss": {
+  {
+    "name": "motg_boss",
     "requirements": [
       "motg_ankh"
     ],
     "category": "accomplishments",
-    "location": "mausoleum_of_the_giants",
+    "sub_category": "mausoleum_of_the_giants",
     "description": {
       "vague": "Defeat Sakit!"
     }
   },
-  "prove_small": {
+  {
+    "name": "prove_small",
     "requirements": [
       "mini_doll"
     ],
     "category": "accomplishments",
-    "location": "mausoleum_of_the_giants",
+    "sub_category": "mausoleum_of_the_giants",
     "description": {
       "vague": "\"Prove Thou Art Small\" in the Mausoleum of the Giants."
     }
   },
-  "tots_so": {
+  {
+    "name": "tots_so",
     "category": "accomplishments",
-    "location": "temple_of_the_sun",
+    "sub_category": "temple_of_the_sun",
     "description": {
       "vague": "Get the Sacred Orb from the Temple of the Sun."
     }
   },
-  "tots_jewel": {
+  {
+    "name": "tots_jewel",
     "category": "accomplishments",
-    "location": "temple_of_the_sun",
+    "sub_category": "temple_of_the_sun",
     "description": {
       "vague": "Get the Ankh Jewel from the Temple of the Sun."
     }
   },
-  "tots_ankh": {
+  {
+    "name": "tots_ankh",
     "category": "accomplishments",
-    "location": "temple_of_the_sun",
+    "sub_category": "temple_of_the_sun",
     "description": {
       "vague": "Reveal Ellmac's Ankh in the Temple of the Sun."
     }
   },
-  "tots_boss": {
+  {
+    "name": "tots_boss",
     "requirements": [
       "tots_ankh"
     ],
     "category": "accomplishments",
-    "location": "temple_of_the_sun",
+    "sub_category": "temple_of_the_sun",
     "description": {
       "vague": "Defeat Ellmac!"
     }
   },
-  "mulbruk": {
+  {
+    "name": "mulbruk",
     "requirements": [
       "origin_seal"
     ],
     "num_of_bosses": 1,
     "category": "accomplishments",
-    "location": "temple_of_the_sun",
+    "sub_category": "temple_of_the_sun",
     "description": {
       "vague": "Wake up Mulbruk."
     }
   },
-  "sits_so": {
+  {
+    "name": "sits_so",
     "requirements": [
       "birth_seal"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Get the Sacred Orb from the Spring in the Sky."
     }
   },
-  "sits_jewel": {
+  {
+    "name": "sits_jewel",
     "requirements": [
       "scalesphere"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Get the Ankh Jewel from the Spring in the Sky."
     }
   },
-  "sits_ankh": {
+  {
+    "name": "sits_ankh",
     "requirements": [
       "scalesphere"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Reveal Bahamut's Ankh in the Spring in the Sky."
     }
   },
-  "sits_boss": {
+  {
+    "name": "sits_boss",
     "requirements": [
       "sits_ankh"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Defeat Bahamut!"
     }
   },
-  "flood_temple": {
+  {
+    "name": "flood_temple",
     "requirements": [
       "scalesphere"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Flood the Temple of the Sun."
     }
   },
-  "flood_tower": {
+  {
+    "name": "flood_tower",
     "requirements": [
       "ic_boss"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Flood the Tower of the Goddess."
     }
   },
-  "giltoriyo": {
+  {
+    "name": "giltoriyo",
     "requirements": [
       "philosophers_ocarina"
     ],
     "category": "accomplishments",
-    "location": "spring_in_the_sky",
+    "sub_category": "spring_in_the_sky",
     "description": {
       "vague": "Talk to Giltoriyo in the Spring in the Sky."
     }
   },
-  "coe_so": {
+  {
+    "name": "coe_so",
     "requirements": [
       "flare_gun",
       "birth_seal",
       "flood_temple"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_extinction",
+    "sub_category": "chamber_of_extinction",
     "description": {
       "vague": "Get the Sacred Orb from the Chamber of Extinction."
     }
   },
-  "coe_ankh": {
+  {
+    "name": "coe_ankh",
     "requirements": [
       "pochette_key"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_extinction",
+    "sub_category": "chamber_of_extinction",
     "description": {
       "vague": "Reveal Palenque's Ankh in the Chamber of Extinction."
     }
   },
-  "coe_boss": {
+  {
+    "name": "coe_boss",
     "requirements": [
       "plane_model",
       "coe_ankh"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_extinction",
+    "sub_category": "chamber_of_extinction",
     "description": {
       "vague": "Defeat Palenque!"
     }
   },
-  "light_chamber": {
+  {
+    "name": "light_chamber",
     "requirements": [
       "plane_model",
       "life_seal"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_extinction",
+    "sub_category": "chamber_of_extinction",
     "description": {
       "vague": "Light the Chamber of Extinction permanently."
     }
   },
-  "ic_ankh": {
+  {
+    "name": "ic_ankh",
     "requirements": [
       "earth_spear",
       "sits_boss"
     ],
     "category": "accomplishments",
-    "location": "inferno_cavern",
+    "sub_category": "inferno_cavern",
     "description": {
       "vague": "Reveal Viy's Ankh in the Inferno Cavern."
     }
   },
-  "ic_boss": {
+  {
+    "name": "ic_boss",
     "requirements": [
       "ic_ankh"
     ],
     "category": "accomplishments",
-    "location": "inferno_cavern",
+    "sub_category": "inferno_cavern",
     "description": {
       "vague": "Defeat Viy!"
     }
   },
-  "tl_so": {
+  {
+    "name": "tl_so",
     "requirements": [
       "poison_lifted"
     ],
     "category": "accomplishments",
-    "location": "twin_labyrinths",
+    "sub_category": "twin_labyrinths",
     "description": {
       "vague": "Get the Sacred Orb from the Twin Labyrinths."
     }
   },
-  "tl_jewel": {
+  {
+    "name": "tl_jewel",
     "requirements": [
       "poison_lifted",
       "flare_gun"
     ],
     "category": "accomplishments",
-    "location": "twin_labyrinths",
+    "sub_category": "twin_labyrinths",
     "description": {
       "vague": "Get the Ankh Jewel from the Twin Labyrinths."
     }
   },
-  "tl_ankh": {
+  {
+    "name": "tl_ankh",
     "requirements": [
       "poison_lifted"
     ],
     "category": "accomplishments",
-    "location": "twin_labyrinths",
+    "sub_category": "twin_labyrinths",
     "description": {
       "vague": "Reveal Baphomet's Ankh in the Twin Labyrinths."
     }
   },
-  "tl_boss": {
+  {
+    "name": "tl_boss",
     "requirements": [
       "tl_ankh"
     ],
     "category": "accomplishments",
-    "location": "twin_labyrinths",
+    "sub_category": "twin_labyrinths",
     "description": {
       "vague": "Defeat Baphomet!"
     }
   },
-  "poison_lifted": {
+  {
+    "name": "poison_lifted",
     "requirements": [
       "twin_statue"
     ],
     "category": "accomplishments",
-    "location": "twin_labyrinths",
+    "sub_category": "twin_labyrinths",
     "description": {
       "vague": "Lift the poison in the Twin Labyrinths."
     }
   },
-  "fairies": {
+  {
+    "name": "fairies",
     "requirements": [
       "isis_pendant"
     ],
     "category": "accomplishments",
-    "location": "endless_corridor",
+    "sub_category": "endless_corridor",
     "description": {
       "vague": "Show the fairy queen Isis' Pendant to gain her trust."
     }
   },
-  "som_so": {
+  {
+    "name": "som_so",
     "requirements": [
       "key_of_eternity"
     ],
     "category": "accomplishments",
-    "location": "shrine_of_the_mother",
+    "sub_category": "shrine_of_the_mother",
     "description": {
       "vague": "Get the Sacred Orb from the Shrine of the Mother."
     }
   },
-  "skull_walls_removed": {
+  {
+    "name": "skull_walls_removed",
     "requirements": [
       "key_of_eternity",
       "dragon_bone",
@@ -1190,186 +1318,203 @@
       "yagostr"
     ],
     "category": "accomplishments",
-    "location": "shrine_of_the_mother",
+    "sub_category": "shrine_of_the_mother",
     "description": {
       "vague": "Remove the skull walls from the Shrine of the Mother."
     }
   },
-  "som_la_mulanese": {
+  {
+    "name": "som_la_mulanese",
     "requirements": [
       "giltoriyo",
       "key_of_eternity"
     ],
     "category": "accomplishments",
-    "location": "shrine_of_the_mother",
+    "sub_category": "shrine_of_the_mother",
     "description": {
       "vague": "Learn some of La-Mulanese in the Shrine of the Mother."
     }
   },
-  "sacrifices": {
+  {
+    "name": "sacrifices",
     "requirements": [
       "prove_small"
     ],
     "category": "accomplishments",
-    "location": "gate_of_illusion",
+    "sub_category": "gate_of_illusion",
     "description": {
       "vague": "Stop the maiden sacrifices in the Gate of Illusion."
     }
   },
-  "alsedana": {
+  {
+    "name": "alsedana",
     "requirements": [
       "philosophers_ocarina"
     ],
     "category": "accomplishments",
-    "location": "temple_of_moonlight",
+    "sub_category": "temple_of_moonlight",
     "description": {
       "vague": "Talk to Alsedana in the Temple of Moonlight."
     }
   },
-  "samaranta": {
+  {
+    "name": "samaranta",
     "requirements": [
       "philosophers_ocarina"
     ],
     "category": "accomplishments",
-    "location": "tower_of_the_goddess",
+    "sub_category": "tower_of_the_goddess",
     "description": {
       "vague": "Talk to Samaranta in the Tower of the Goddess."
     }
   },
-  "cob_jewel": {
+  {
+    "name": "cob_jewel",
     "requirements": [
       "ic_boss"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_birth",
+    "sub_category": "chamber_of_birth",
     "description": {
       "vague": "Buy the Ankh Jewel from the Chamber of Birth."
     }
   },
-  "dance_of_life": {
+  {
+    "name": "dance_of_life",
     "requirements": [
       "ic_boss",
       "serpent_staff",
       "chakram"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_birth",
+    "sub_category": "chamber_of_birth",
     "description": {
       "vague": "Perform the Dance of Life in the Chamber of Birth."
     }
   },
-  "cob_la_mulanese": {
+  {
+    "name": "cob_la_mulanese",
     "requirements": [
       "coe_boss"
     ],
     "category": "accomplishments",
-    "location": "chamber_of_birth",
+    "sub_category": "chamber_of_birth",
     "description": {
       "vague": "Learn some of La-Mulanese in the Chamber of Birth."
     }
   },
-  "tor_so": {
+  {
+    "name": "tor_so",
     "requirements": [
       "bronze_mirror",
       "motg_boss"
     ],
     "category": "accomplishments",
-    "location": "tower_of_ruin",
+    "sub_category": "tower_of_ruin",
     "description": {
       "vague": "Get the Sacred Orb from the Tower of Ruin."
     }
   },
-  "tor_jewel": {
+  {
+    "name": "tor_jewel",
     "requirements": [
       "bronze_mirror",
       "motg_boss",
       "feather"
     ],
     "category": "accomplishments",
-    "location": "tower_of_ruin",
+    "sub_category": "tower_of_ruin",
     "description": {
       "vague": "Get the Ankh Jewel from the Tower of Ruin."
     }
   },
-  "tor_la_mulanese": {
+  {
+    "name": "tor_la_mulanese",
     "requirements": [
       "bronze_mirror",
       "motg_boss",
       "feather"
     ],
     "category": "accomplishments",
-    "location": "tower_of_ruin",
+    "sub_category": "tower_of_ruin",
     "description": {
       "vague": "Learn some of La-Mulanese in the Tower of Ruin."
     }
   },
-  "dc_so": {
+  {
+    "name": "dc_so",
     "requirements": [
       "crystal_skull",
       "lamp_of_time",
       "dimensional_key"
     ],
     "category": "accomplishments",
-    "location": "dimensional_corridor",
+    "sub_category": "dimensional_corridor",
     "description": {
       "vague": "Get the Sacred Orb from the Dimensional Corridor."
     }
   },
-  "dc_jewel": {
+  {
+    "name": "dc_jewel",
     "requirements": [
       "crystal_skull",
       "dimensional_key"
     ],
     "category": "accomplishments",
-    "location": "dimensional_corridor",
+    "sub_category": "dimensional_corridor",
     "description": {
       "vague": "Get the Ankh Jewel from the Dimensional Corridor."
     }
   },
-  "dc_ankh": {
+  {
+    "name": "dc_ankh",
     "requirements": [
       "crystal_skull",
       "dimensional_key"
     ],
     "category": "accomplishments",
-    "location": "dimensional_corridor",
+    "sub_category": "dimensional_corridor",
     "description": {
       "vague": "Reveal Tiamat's Ankh in the Dimensional Corridor."
     }
   },
-  "dc_boss": {
+  {
+    "name": "dc_boss",
     "requirements": [
       "dc_ankh"
     ],
     "category": "accomplishments",
-    "location": "dimensional_corridor",
+    "sub_category": "dimensional_corridor",
     "description": {
       "vague": "Defeat Tiamat!"
     }
   },
-  "fobos": {
+  {
+    "name": "fobos",
     "requirements": [
       "philosophers_ocarina",
       "dimensional_key"
     ],
     "category": "accomplishments",
-    "location": "dimensional_corridor",
+    "sub_category": "dimensional_corridor",
     "description": {
       "vague": "Talk to Fobos in the Dimensional Corridor."
     }
   },
-  "powered_grail": {
+  {
+    "name": "powered_grail",
     "requirements": [
       "holy_grail",
       "dimensional_key"
     ],
     "parent": "holy_grail",
-    "category": "treasures_category",
+    "category": "inventory", "sub_category": "treasures_category",
     "description": {
       "vague": "Power the Holy Grail by reading all the Grail Tablets."
     }
   },
-  "mantras": {
+  {
+    "name": "mantras",
     "requirements": [
       "djed_pillar",
       "mantra",
@@ -1379,24 +1524,26 @@
       "giltoriyo"
     ],
     "category": "accomplishments",
-    "location": "true_shrine_of_the_mother",
+    "sub_category": "true_shrine_of_the_mother",
     "description": {
       "vague": "Chant the mantras throughout the ruins."
     }
   },
-  "medicine": {
+  {
+    "name": "medicine",
     "requirements": [
       "vessel",
       "fobos",
       "lamp_of_time"
     ],
     "category": "accomplishments",
-    "location": "tower_of_ruin",
+    "sub_category": "tower_of_ruin",
     "description": {
       "vague": "Collect the Medicine of the Mind in the Tower of Ruin."
     }
   },
-  "mother": {
+  {
+    "name": "mother",
     "requirements": [
       "powered_grail",
       "medicine",
@@ -1405,9 +1552,9 @@
     ],
     "num_of_bosses": 8,
     "category": "accomplishments",
-    "location": "true_shrine_of_the_mother",
+    "sub_category": "true_shrine_of_the_mother",
     "description": {
       "vague": "Defeat Mother!"
     }
   }
-}
+]

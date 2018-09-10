@@ -2,11 +2,15 @@ import {observable, action} from "mobx";
 import data from "../db/data.json";
 
 class DataStore {
-    @observable data = true;
-    @observable test = false;
+    VIEW_INVENTORY = "inventory";
+    VIEW_ACCOMPLISHMENTS = "accomplishments";
+    VIEW_WHAT_TO_DO = "what_do_i_do";
 
-    @action toggle = () => {
-        this.test = !this.test;
+    @observable data = null;
+    @observable view = this.VIEW_INVENTORY;
+
+    @action changeView = (view) => {
+        this.view = view;
     };
 }
 

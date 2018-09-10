@@ -19,13 +19,13 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-2">
-                        <PartyDisplay party={dataStore.party}/>
+                    <div className="col-sm-12">
+                        <button onClick={() => dataStore.changeView(dataStore.VIEW_INVENTORY)}>ITEMS</button>
+                        <button onClick={() => dataStore.changeView(dataStore.VIEW_ACCOMPLISHMENTS)}>PROGRESS</button>
+                        <button onClick={() => dataStore.changeView(dataStore.VIEW_WHAT_TO_DO)}>WHAT DO I DO?!</button>
                     </div>
-                    <div className="col-sm-8">
-                        <MainContainer dataStore={dataStore}/>
-                    </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-12">
+                        {/*<MainContainer dataStore={dataStore}/>*/}
                     </div>
                 </div>
             </div>

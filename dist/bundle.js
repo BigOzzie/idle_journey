@@ -43882,43 +43882,59 @@ var App = (0, _mobxReact.observer)(_class = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     "div",
-                    { className: "row" },
+                    { className: "row justify-content-center" },
                     _react2.default.createElement(
                         "div",
-                        { className: "col-sm-12" },
+                        { className: "col-sm-4 text-center" },
                         _react2.default.createElement(
                             "h2",
-                            { style: { textAlign: "center" } },
+                            null,
                             "HOW TO LA MULANA"
                         )
                     )
                 ),
                 _react2.default.createElement(
                     "div",
-                    { className: "row" },
+                    { className: "row justify-content-center" },
                     _react2.default.createElement(
                         "div",
-                        { className: "col-sm-12" },
+                        { className: "col-sm-4" },
                         _react2.default.createElement(
-                            "button",
-                            { onClick: function onClick() {
-                                    return dataStore.changeView(dataStore.VIEW_INVENTORY);
-                                } },
-                            "ITEMS"
-                        ),
-                        _react2.default.createElement(
-                            "button",
-                            { onClick: function onClick() {
-                                    return dataStore.changeView(dataStore.VIEW_ACCOMPLISHMENTS);
-                                } },
-                            "PROGRESS"
-                        ),
-                        _react2.default.createElement(
-                            "button",
-                            { onClick: function onClick() {
-                                    return dataStore.changeView(dataStore.VIEW_WHAT_TO_DO);
-                                } },
-                            "WHAT DO I DO?!"
+                            "div",
+                            { className: "row" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-sm-4 text-center" },
+                                _react2.default.createElement(
+                                    "button",
+                                    { className: "btn btn-info", onClick: function onClick() {
+                                            return dataStore.changeView(dataStore.VIEW_INVENTORY);
+                                        } },
+                                    "ITEMS"
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-sm-4 text-center" },
+                                _react2.default.createElement(
+                                    "button",
+                                    { className: "btn btn-warning", onClick: function onClick() {
+                                            return dataStore.changeView(dataStore.VIEW_ACCOMPLISHMENTS);
+                                        } },
+                                    "PROGRESS"
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-sm-4 text-center" },
+                                _react2.default.createElement(
+                                    "button",
+                                    { className: "btn btn-primary", onClick: function onClick() {
+                                            return dataStore.changeView(dataStore.VIEW_WHAT_TO_DO);
+                                        } },
+                                    "WHAT DO I DO?!"
+                                )
+                            )
                         )
                     ),
                     _react2.default.createElement("div", { className: "col-sm-12" })

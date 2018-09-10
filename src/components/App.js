@@ -13,16 +13,24 @@ class App extends React.Component {
 
         return (
             <div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <h2 style={{textAlign: "center"}}>HOW TO LA MULANA</h2>
+                <div className="row justify-content-center">
+                    <div className="col-sm-4 text-center">
+                        <h2>HOW TO LA MULANA</h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <button onClick={() => dataStore.changeView(dataStore.VIEW_INVENTORY)}>ITEMS</button>
-                        <button onClick={() => dataStore.changeView(dataStore.VIEW_ACCOMPLISHMENTS)}>PROGRESS</button>
-                        <button onClick={() => dataStore.changeView(dataStore.VIEW_WHAT_TO_DO)}>WHAT DO I DO?!</button>
+                <div className="row justify-content-center">
+                    <div className="col-sm-4">
+                        <div className="row">
+                            <div className="col-sm-4 text-center">
+                                <button className="btn btn-info" onClick={() => dataStore.changeView(dataStore.VIEW_INVENTORY)}>ITEMS</button>
+                            </div>
+                            <div className="col-sm-4 text-center">
+                                <button className="btn btn-warning" onClick={() => dataStore.changeView(dataStore.VIEW_ACCOMPLISHMENTS)}>PROGRESS</button>
+                            </div>
+                            <div className="col-sm-4 text-center">
+                                <button className="btn btn-primary" onClick={() => dataStore.changeView(dataStore.VIEW_WHAT_TO_DO)}>WHAT DO I DO?!</button>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-sm-12">
                         {/*<MainContainer dataStore={dataStore}/>*/}

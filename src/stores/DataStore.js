@@ -1,5 +1,6 @@
 import {observable, action, computed} from "mobx";
 import data from "../db/data.json";
+import _ from "lodash/core";
 
 class DataStore {
     VIEW_INVENTORY = "inventory";
@@ -14,9 +15,18 @@ class DataStore {
     };
 
     @computed get dataFiltered() {
-        return this.data.filter((el) => {
+        const filtered = this.data.filter((el) => {
             return el.category === this.view;
         }, this);
+        let by_category = {};
+        _.each(filtered, (el) => {
+            let cat = el.sub_category;
+            if(!by_category.hasOwnProperty(cat)) {
+                by_category[cat] = [];
+            }
+            by_category[cat].push(el);
+        });
+        return by_category;
     }
 }
 

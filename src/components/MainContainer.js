@@ -10,7 +10,7 @@ class MainContainer extends React.Component {
         return (
             <div className="row justify-content-center">
                 <div className="col-4">
-                    {data[0].name}
+                    {data.weapons[1].display_name}
                 </div>
             </div>
         );

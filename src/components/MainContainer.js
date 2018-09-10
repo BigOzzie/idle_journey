@@ -6,12 +6,11 @@ import {Button} from "react-bootstrap";
 class MainContainer extends React.Component {
     render = () => {
         const data = this.props.dataStore.dataFiltered;
-        window.console.debug(data);
 
         return (
             <div className="row justify-content-center">
                 <div className="col-4">
-                    {data.name}
+                    {data[0].name}
                 </div>
             </div>
         );

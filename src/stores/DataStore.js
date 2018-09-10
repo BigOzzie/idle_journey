@@ -8,15 +8,15 @@ class DataStore {
 
     @observable data = [];
     @observable view = this.VIEW_INVENTORY;
-    @observable i = 0;
 
     @action changeView = (view) => {
-        // this.view = view;
-        this.i++;
+        this.view = view;
     };
 
     @computed get dataFiltered() {
-        return this.data[this.i];
+        return this.data.filter((el) => {
+            return el.category === this.view;
+        }, this);
     }
 }
 

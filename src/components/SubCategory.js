@@ -1,6 +1,7 @@
 import React from 'react';
 import {observer} from "mobx-react";
 import _ from 'lodash/core';
+import Item from "./Item";
 
 @observer
 class SubCategory extends React.Component {
@@ -14,7 +15,7 @@ class SubCategory extends React.Component {
         let items = this.props.items;
         return _.map(items, (item) => {
             if(!item.parent) {
-                return <li className="list-group-item">{item.display_name}</li>;
+                return <Item item={item} category_items={items} dataStore={this.props.dataStore}/>;
             }
         });
     };

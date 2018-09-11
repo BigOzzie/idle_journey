@@ -14,6 +14,38 @@ class DataStore {
         this.view = view;
     };
 
+    @action toggleItemOwned = (id) => {
+        this.data = this.data.map((el) => {
+            if(el.id === id) {
+                el.owned = !el.owned;
+            }
+            return el;
+        });
+    };
+
+    @action setAllOwnedThroughItemId = (ids, target_id) => {
+        let owned = true;
+        _.each(ids, (id) => {
+            if(id !== -1) {
+                this.data = this.data.map((el) => {
+                    if(el.id === id) {
+                        el.owned = owned;
+                    }
+                    return el;
+                });
+            }
+            if(id === -1 || id === target_id) {
+                owned = false;
+            }
+        });
+    };
+
+    findChildren = (item_id) => {
+        return _.filter(this.data, (el) => {
+            return el.parent === item_id;
+        });
+    };
+
     @computed get dataFiltered() {
         const filtered = this.data.filter((el) => {
             return el.category === this.view;

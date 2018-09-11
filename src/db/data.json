@@ -6,7 +6,7 @@
     "sub_category": "weapons",
     "owned": true,
     "description": {
-      "vague": "You should have started with this.  How are you reading this?  WHAT HAVE YOU DONE??"
+      "vague": "You should have a whip.  Why don't you have a whip??"
     }
   },
   {
@@ -16,7 +16,7 @@
     "sub_category": "treasures_category",
     "owned": true,
     "description": {
-      "vague": "Seriously, stop messing around with stuff.  You're gonna break it."
+      "vague": "You don't have a Mobile Super X?  Seriously, stop messing around with stuff."
     }
   },
   {

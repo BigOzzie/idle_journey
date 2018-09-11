@@ -298,7 +298,7 @@
   },
   {
     "id": "magatama_jewel",
-    "display_name": "Magatama Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "mulana_talisman",
       "dimensional_key",
@@ -1130,7 +1130,7 @@
   },
   {
     "id": "surf_so",
-    "display_name": "Surf So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "sits_boss"
     ],
@@ -1142,7 +1142,7 @@
   },
   {
     "id": "gog_so",
-    "display_name": "Gog So",
+    "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
     "description": {
@@ -1151,7 +1151,7 @@
   },
   {
     "id": "gog_jewel",
-    "display_name": "Gog Jewel",
+    "display_name": "Ankh Jewel",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
     "description": {
@@ -1160,7 +1160,7 @@
   },
   {
     "id": "gog_ankh",
-    "display_name": "Gog Ankh",
+    "display_name": "Amphisbaena's Ankh",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
     "description": {
@@ -1169,7 +1169,7 @@
   },
   {
     "id": "gog_boss",
-    "display_name": "Gog Boss",
+    "display_name": "Amphisbaena Defeated",
     "requirements": [
       "gog_ankh"
     ],
@@ -1181,7 +1181,7 @@
   },
   {
     "id": "motg_so",
-    "display_name": "Motg So",
+    "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1190,7 +1190,7 @@
   },
   {
     "id": "motg_jewel",
-    "display_name": "Motg Jewel",
+    "display_name": "Ankh Jewel",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1199,7 +1199,7 @@
   },
   {
     "id": "motg_ankh",
-    "display_name": "Motg Ankh",
+    "display_name": "Sakit's Ankh",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1208,7 +1208,7 @@
   },
   {
     "id": "motg_boss",
-    "display_name": "Motg Boss",
+    "display_name": "Sakit Defeated",
     "requirements": [
       "motg_ankh"
     ],
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "prove_small",
-    "display_name": "Prove Small",
+    "display_name": "\"Prove Thou Art Small\"",
     "requirements": [
       "mini_doll"
     ],
@@ -1232,7 +1232,7 @@
   },
   {
     "id": "tots_so",
-    "display_name": "Tots So",
+    "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1241,7 +1241,7 @@
   },
   {
     "id": "tots_jewel",
-    "display_name": "Tots Jewel",
+    "display_name": "Ankh Jewel",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1250,7 +1250,7 @@
   },
   {
     "id": "tots_ankh",
-    "display_name": "Tots Ankh",
+    "display_name": "Ellmac's Ankh",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1259,7 +1259,7 @@
   },
   {
     "id": "tots_boss",
-    "display_name": "Tots Boss",
+    "display_name": "Ellmac Defeated",
     "requirements": [
       "tots_ankh"
     ],
@@ -1271,7 +1271,7 @@
   },
   {
     "id": "mulbruk",
-    "display_name": "Mulbruk",
+    "display_name": "Mulbruk Woken",
     "requirements": [
       "origin_seal"
     ],
@@ -1284,7 +1284,7 @@
   },
   {
     "id": "sits_so",
-    "display_name": "Sits So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "birth_seal"
     ],
@@ -1296,7 +1296,7 @@
   },
   {
     "id": "sits_jewel",
-    "display_name": "Sits Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "scalesphere"
     ],
@@ -1308,7 +1308,7 @@
   },
   {
     "id": "sits_ankh",
-    "display_name": "Sits Ankh",
+    "display_name": "Bahamut's Ankh",
     "requirements": [
       "scalesphere"
     ],
@@ -1320,7 +1320,7 @@
   },
   {
     "id": "sits_boss",
-    "display_name": "Sits Boss",
+    "display_name": "Bahamut Defeated",
     "requirements": [
       "sits_ankh"
     ],
@@ -1332,7 +1332,7 @@
   },
   {
     "id": "flood_temple",
-    "display_name": "Flood Temple",
+    "display_name": "Temple of the Sun Flooded",
     "requirements": [
       "scalesphere"
     ],
@@ -1344,7 +1344,7 @@
   },
   {
     "id": "flood_tower",
-    "display_name": "Flood Tower",
+    "display_name": "Tower of the Goddess Flooded",
     "requirements": [
       "ic_boss"
     ],
@@ -1356,7 +1356,7 @@
   },
   {
     "id": "giltoriyo",
-    "display_name": "Giltoriyo",
+    "display_name": "Talked to Giltoriyo",
     "requirements": [
       "philosophers_ocarina"
     ],
@@ -1368,7 +1368,7 @@
   },
   {
     "id": "coe_so",
-    "display_name": "Coe So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "flare_gun",
       "birth_seal",
@@ -1382,7 +1382,7 @@
   },
   {
     "id": "coe_ankh",
-    "display_name": "Coe Ankh",
+    "display_name": "Palenque's Ankh",
     "requirements": [
       "pochette_key"
     ],
@@ -1394,7 +1394,7 @@
   },
   {
     "id": "coe_boss",
-    "display_name": "Coe Boss",
+    "display_name": "Palenque Defeated",
     "requirements": [
       "plane_model",
       "coe_ankh"
@@ -1407,7 +1407,7 @@
   },
   {
     "id": "light_chamber",
-    "display_name": "Light Chamber",
+    "display_name": "Chamber of Extinction Lit",
     "requirements": [
       "plane_model",
       "life_seal"
@@ -1420,7 +1420,7 @@
   },
   {
     "id": "ic_ankh",
-    "display_name": "Ic Ankh",
+    "display_name": "Viy's Ankh",
     "requirements": [
       "earth_spear",
       "sits_boss"
@@ -1433,7 +1433,7 @@
   },
   {
     "id": "ic_boss",
-    "display_name": "Ic Boss",
+    "display_name": "Viy Defeated",
     "requirements": [
       "ic_ankh"
     ],
@@ -1445,7 +1445,7 @@
   },
   {
     "id": "tl_so",
-    "display_name": "Tl So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "poison_lifted"
     ],
@@ -1457,7 +1457,7 @@
   },
   {
     "id": "tl_jewel",
-    "display_name": "Tl Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "poison_lifted",
       "flare_gun"
@@ -1470,7 +1470,7 @@
   },
   {
     "id": "tl_ankh",
-    "display_name": "Tl Ankh",
+    "display_name": "Baphomet's Ankh",
     "requirements": [
       "poison_lifted"
     ],
@@ -1482,7 +1482,7 @@
   },
   {
     "id": "tl_boss",
-    "display_name": "Tl Boss",
+    "display_name": "Baphomet Defeated",
     "requirements": [
       "tl_ankh"
     ],
@@ -1518,7 +1518,7 @@
   },
   {
     "id": "som_so",
-    "display_name": "Som So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "key_of_eternity"
     ],
@@ -1530,7 +1530,7 @@
   },
   {
     "id": "skull_walls_removed",
-    "display_name": "Skull Walls Removed",
+    "display_name": "Removed Skull Walls",
     "requirements": [
       "key_of_eternity",
       "dragon_bone",
@@ -1545,7 +1545,7 @@
   },
   {
     "id": "som_la_mulanese",
-    "display_name": "Som La Mulanese",
+    "display_name": "Learned La-Mulanese",
     "requirements": [
       "giltoriyo",
       "key_of_eternity"
@@ -1558,7 +1558,7 @@
   },
   {
     "id": "sacrifices",
-    "display_name": "Sacrifices",
+    "display_name": "Maiden Sacrifices Stopped",
     "requirements": [
       "prove_small"
     ],
@@ -1570,7 +1570,7 @@
   },
   {
     "id": "alsedana",
-    "display_name": "Alsedana",
+    "display_name": "Talked to Alsedana",
     "requirements": [
       "philosophers_ocarina"
     ],
@@ -1582,7 +1582,7 @@
   },
   {
     "id": "samaranta",
-    "display_name": "Samaranta",
+    "display_name": "Talked to Samaranta",
     "requirements": [
       "philosophers_ocarina"
     ],
@@ -1594,7 +1594,7 @@
   },
   {
     "id": "cob_jewel",
-    "display_name": "Cob Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "ic_boss"
     ],
@@ -1606,7 +1606,7 @@
   },
   {
     "id": "dance_of_life",
-    "display_name": "Dance of Life",
+    "display_name": "Dance of Life Performed",
     "requirements": [
       "ic_boss",
       "serpent_staff",
@@ -1620,7 +1620,7 @@
   },
   {
     "id": "cob_la_mulanese",
-    "display_name": "Cob La Mulanese",
+    "display_name": "Learned La-Mulanese",
     "requirements": [
       "coe_boss"
     ],
@@ -1632,7 +1632,7 @@
   },
   {
     "id": "tor_so",
-    "display_name": "Tor So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "bronze_mirror",
       "motg_boss"
@@ -1645,7 +1645,7 @@
   },
   {
     "id": "tor_jewel",
-    "display_name": "Tor Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "bronze_mirror",
       "motg_boss",
@@ -1659,7 +1659,7 @@
   },
   {
     "id": "tor_la_mulanese",
-    "display_name": "Tor La Mulanese",
+    "display_name": "Learned La-Mulanese",
     "requirements": [
       "bronze_mirror",
       "motg_boss",
@@ -1673,7 +1673,7 @@
   },
   {
     "id": "dc_so",
-    "display_name": "Dc So",
+    "display_name": "Sacred Orb",
     "requirements": [
       "crystal_skull",
       "lamp_of_time",
@@ -1687,7 +1687,7 @@
   },
   {
     "id": "dc_jewel",
-    "display_name": "Dc Jewel",
+    "display_name": "Ankh Jewel",
     "requirements": [
       "crystal_skull",
       "dimensional_key"
@@ -1700,7 +1700,7 @@
   },
   {
     "id": "dc_ankh",
-    "display_name": "Dc Ankh",
+    "display_name": "Tiamat's Ankh",
     "requirements": [
       "crystal_skull",
       "dimensional_key"
@@ -1713,7 +1713,7 @@
   },
   {
     "id": "dc_boss",
-    "display_name": "Dc Boss",
+    "display_name": "Tiamat Defeated",
     "requirements": [
       "dc_ankh"
     ],
@@ -1725,7 +1725,7 @@
   },
   {
     "id": "fobos",
-    "display_name": "Fobos",
+    "display_name": "Talked to Fobos",
     "requirements": [
       "philosophers_ocarina",
       "dimensional_key"
@@ -1752,7 +1752,7 @@
   },
   {
     "id": "mantras",
-    "display_name": "Mantras",
+    "display_name": "All Mantras Performed",
     "requirements": [
       "djed_pillar",
       "mantra",
@@ -1783,7 +1783,7 @@
   },
   {
     "id": "mother",
-    "display_name": "Mother",
+    "display_name": "Mother Defeated!",
     "requirements": [
       "powered_grail",
       "medicine",

@@ -67,10 +67,12 @@
   {
     "id": "chain_whip",
     "display_name": "Chain Whip",
-    "requirements": [
-      "birth_seal",
-      "grapple_claw"
-    ],
+    "requirements": {
+      "owned": [
+        "birth_seal",
+        "grapple_claw"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "parent": "whip",
@@ -81,11 +83,13 @@
   {
     "id": "flail_whip",
     "display_name": "Flail Whip",
-    "requirements": [
-      "feather",
-      "samaranta",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "samaranta",
+        "bronze_mirror"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "parent": "whip",
@@ -96,9 +100,11 @@
   {
     "id": "knife",
     "display_name": "Knife",
-    "requirements": [
-      "shuriken"
-    ],
+    "requirements": {
+      "owned": [
+        "shuriken"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "description": {
@@ -108,9 +114,11 @@
   {
     "id": "key_sword",
     "display_name": "Key Sword",
-    "requirements": [
-      "key_of_eternity"
-    ],
+    "requirements": {
+      "owned": [
+        "key_of_eternity"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "description": {
@@ -120,9 +128,11 @@
   {
     "id": "axe",
     "display_name": "Axe",
-    "requirements": [
-      "hermes_boots"
-    ],
+    "requirements": {
+      "owned": [
+        "hermes_boots"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "description": {
@@ -132,9 +142,11 @@
   {
     "id": "katana",
     "display_name": "Katana",
-    "requirements": [
-      "twin_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "twin_statue"
+      ]
+    },
     "category": "inventory",
     "sub_category": "weapons",
     "description": {
@@ -162,11 +174,13 @@
   {
     "id": "earth_spear",
     "display_name": "Earth Spear",
-    "requirements": [
-      "feather",
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "category": "inventory",
     "sub_category": "sub_weapons",
     "description": {
@@ -185,9 +199,11 @@
   {
     "id": "bomb",
     "display_name": "Bomb",
-    "requirements": [
-      "plane_model"
-    ],
+    "requirements": {
+      "owned": [
+        "plane_model"
+      ]
+    },
     "category": "inventory",
     "sub_category": "sub_weapons",
     "description": {
@@ -197,11 +213,13 @@
   {
     "id": "chakram",
     "display_name": "Chakram",
-    "requirements": [
-      "flare_gun",
-      "birth_seal",
-      "flood_temple"
-    ],
+    "requirements": {
+      "owned": [
+        "flare_gun",
+        "birth_seal",
+        "flood_temple"
+      ]
+    },
     "category": "inventory",
     "sub_category": "sub_weapons",
     "description": {
@@ -211,9 +229,11 @@
   {
     "id": "caltrops",
     "display_name": "Caltrops",
-    "requirements": [
-      "helmet"
-    ],
+    "requirements": {
+      "owned": [
+        "helmet"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -244,10 +264,12 @@
   {
     "id": "silver_shield",
     "display_name": "Silver Shield",
-    "requirements": [
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "parent": "buckler",
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -258,11 +280,13 @@
   {
     "id": "angel_shield",
     "display_name": "Angel Shield",
-    "requirements": [
-      "dimensional_key",
-      "crystal_skull",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "dimensional_key",
+        "crystal_skull",
+        "bronze_mirror"
+      ]
+    },
     "parent": "buckler",
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -273,10 +297,12 @@
   {
     "id": "djed_pillar",
     "display_name": "Djed Pillar",
-    "requirements": [
-      "coe_boss",
-      "tl_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "coe_boss",
+        "tl_boss"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -286,10 +312,12 @@
   {
     "id": "mini_doll",
     "display_name": "Mini Doll",
-    "requirements": [
-      "fruit_of_eden",
-      "anchor"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden",
+        "anchor"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -299,11 +327,14 @@
   {
     "id": "magatama_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "mulana_talisman",
-      "dimensional_key",
-      "crystal_skull"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "mulana_talisman",
+        "dimensional_key",
+        "crystal_skull"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -313,11 +344,13 @@
   {
     "id": "cog_of_the_soul",
     "display_name": "Cog of the Soul",
-    "requirements": [
-      "fruit_of_eden",
-      "mulana_talisman",
-      "lamp_of_time"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden",
+        "mulana_talisman",
+        "lamp_of_time"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -327,9 +360,11 @@
   {
     "id": "lamp_of_time",
     "display_name": "Lamp of Time",
-    "requirements": [
-      "bomb"
-    ],
+    "requirements": {
+      "owned": [
+        "bomb"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -339,10 +374,12 @@
   {
     "id": "pochette_key",
     "display_name": "Pochette Key",
-    "requirements": [
-      "cog_of_the_soul",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "cog_of_the_soul",
+        "bronze_mirror"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -352,9 +389,11 @@
   {
     "id": "dragon_bone",
     "display_name": "Dragon Bone",
-    "requirements": [
-      "twin_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "twin_statue"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -364,10 +403,12 @@
   {
     "id": "crystal_skull",
     "display_name": "Crystal Skull",
-    "requirements": [
-      "life_seal",
-      "mulana_talisman"
-    ],
+    "requirements": {
+      "owned": [
+        "life_seal",
+        "mulana_talisman"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -377,10 +418,12 @@
   {
     "id": "vessel",
     "display_name": "Vessel",
-    "requirements": [
-      "angel_shield",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "angel_shield",
+        "bronze_mirror"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -390,9 +433,11 @@
   {
     "id": "pepper",
     "display_name": "Pepper",
-    "requirements": [
-      "fruit_of_eden"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -402,11 +447,13 @@
   {
     "id": "woman_statue",
     "display_name": "Woman Statue",
-    "requirements": [
-      "pochette_key",
-      "bronze_mirror",
-      "dance_of_life"
-    ],
+    "requirements": {
+      "owned": [
+        "pochette_key",
+        "bronze_mirror",
+        "dance_of_life"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -416,9 +463,11 @@
   {
     "id": "maternity_statue",
     "display_name": "Maternity Statue",
-    "requirements": [
-      "woman_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "woman_statue"
+      ]
+    },
     "parent": "woman_statue",
     "category": "inventory",
     "sub_category": "usable_items",
@@ -429,12 +478,14 @@
   {
     "id": "key_of_eternity",
     "display_name": "Key of Eternity",
-    "requirements": [
-      "fruit_of_eden",
-      "birth_seal",
-      "sacrifices",
-      "book_of_the_dead"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden",
+        "birth_seal",
+        "sacrifices",
+        "book_of_the_dead"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -444,9 +495,11 @@
   {
     "id": "serpent_staff",
     "display_name": "Serpent Staff",
-    "requirements": [
-      "book_of_the_dead"
-    ],
+    "requirements": {
+      "owned": [
+        "book_of_the_dead"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -456,9 +509,11 @@
   {
     "id": "talisman",
     "display_name": "Talisman",
-    "requirements": [
-      "ic_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "ic_boss"
+      ]
+    },
     "category": "inventory",
     "sub_category": "usable_items",
     "description": {
@@ -468,10 +523,12 @@
   {
     "id": "diary",
     "display_name": "Diary",
-    "requirements": [
-      "skull_walls_removed",
-      "talisman"
-    ],
+    "requirements": {
+      "owned": [
+        "skull_walls_removed",
+        "talisman"
+      ]
+    },
     "parent": "talisman",
     "category": "inventory",
     "sub_category": "usable_items",
@@ -482,9 +539,11 @@
   {
     "id": "mulana_talisman",
     "display_name": "Mulana Talisman",
-    "requirements": [
-      "diary"
-    ],
+    "requirements": {
+      "owned": [
+        "diary"
+      ]
+    },
     "parent": "talisman",
     "category": "inventory",
     "sub_category": "usable_items",
@@ -495,9 +554,11 @@
   {
     "id": "origin_seal",
     "display_name": "Origin Seal",
-    "requirements": [
-      "helmet"
-    ],
+    "requirements": {
+      "owned": [
+        "helmet"
+      ]
+    },
     "category": "inventory",
     "sub_category": "seals",
     "description": {
@@ -507,10 +568,12 @@
   {
     "id": "birth_seal",
     "display_name": "Birth Seal",
-    "requirements": [
-      "origin_seal",
-      "scalesphere"
-    ],
+    "requirements": {
+      "owned": [
+        "origin_seal",
+        "scalesphere"
+      ]
+    },
     "category": "inventory",
     "sub_category": "seals",
     "description": {
@@ -520,11 +583,13 @@
   {
     "id": "life_seal",
     "display_name": "Life Seal",
-    "requirements": [
-      "birth_seal",
-      "flare_gun",
-      "flood_temple"
-    ],
+    "requirements": {
+      "owned": [
+        "birth_seal",
+        "flare_gun",
+        "flood_temple"
+      ]
+    },
     "category": "inventory",
     "sub_category": "seals",
     "description": {
@@ -534,11 +599,13 @@
   {
     "id": "death_seal",
     "display_name": "Death Seal",
-    "requirements": [
-      "life_seal",
-      "giltoriyo",
-      "skull_walls_removed"
-    ],
+    "requirements": {
+      "owned": [
+        "life_seal",
+        "giltoriyo",
+        "skull_walls_removed"
+      ]
+    },
     "category": "inventory",
     "sub_category": "seals",
     "description": {
@@ -557,9 +624,11 @@
   {
     "id": "yagostr",
     "display_name": "Yagostr",
-    "requirements": [
-      "fruit_of_eden"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden"
+      ]
+    },
     "category": "inventory",
     "sub_category": "software",
     "description": {
@@ -589,10 +658,12 @@
   {
     "id": "torude",
     "display_name": "Torude",
-    "requirements": [
-      "feather",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "bronze_mirror"
+      ]
+    },
     "category": "inventory",
     "sub_category": "software",
     "description": {
@@ -612,13 +683,15 @@
   {
     "id": "mantra",
     "display_name": "Mantra",
-    "requirements": [
-      "magatama_jewel",
-      "torude",
-      "som_la_mulanese",
-      "cob_la_mulanese",
-      "tor_la_mulanese"
-    ],
+    "requirements": {
+      "owned": [
+        "magatama_jewel",
+        "torude",
+        "som_la_mulanese",
+        "cob_la_mulanese",
+        "tor_la_mulanese"
+      ]
+    },
     "category": "inventory",
     "sub_category": "software",
     "description": {
@@ -628,12 +701,14 @@
   {
     "id": "emusic",
     "display_name": "Emusic",
-    "requirements": [
-      "bomb",
-      "torude",
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "bomb",
+        "torude",
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -644,10 +719,12 @@
   {
     "id": "beolamu",
     "display_name": "Beolamu",
-    "requirements": [
-      "dimensional_key",
-      "torude"
-    ],
+    "requirements": {
+      "owned": [
+        "dimensional_key",
+        "torude"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -668,10 +745,12 @@
   {
     "id": "randc",
     "display_name": "Randc",
-    "requirements": [
-      "fairies",
-      "helmet"
-    ],
+    "requirements": {
+      "owned": [
+        "fairies",
+        "helmet"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -692,9 +771,11 @@
   {
     "id": "move",
     "display_name": "Move",
-    "requirements": [
-      "fruit_of_eden"
-    ],
+    "requirements": {
+      "owned": [
+        "fruit_of_eden"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -705,9 +786,11 @@
   {
     "id": "mekuri",
     "display_name": "Mekuri",
-    "requirements": [
-      "feather"
-    ],
+    "requirements": {
+      "owned": [
+        "feather"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -718,9 +801,11 @@
   {
     "id": "bounce",
     "display_name": "Bounce",
-    "requirements": [
-      "feather"
-    ],
+    "requirements": {
+      "owned": [
+        "feather"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -731,10 +816,12 @@
   {
     "id": "miracle",
     "display_name": "Miracle",
-    "requirements": [
-      "lamp_of_time",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "lamp_of_time",
+        "bronze_mirror"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -745,11 +832,13 @@
   {
     "id": "mirai",
     "display_name": "Mirai",
-    "requirements": [
-      "feather",
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "category": "inventory",
     "sub_category": "software",
     "description": {
@@ -759,10 +848,12 @@
   {
     "id": "lamulana",
     "display_name": "Lamulana",
-    "requirements": [
-      "feather",
-      "fairies"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "fairies"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -773,7 +864,12 @@
   {
     "id": "mobile_super_x2",
     "display_name": "Mobile Super X2",
-    "num_of_bosses": 4,
+    "requirements": {
+      "greater_than": [
+        "num_of_bosses",
+        3
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -805,9 +901,11 @@
   {
     "id": "glove",
     "display_name": "Glove",
-    "requirements": [
-      "helmet"
-    ],
+    "requirements": {
+      "owned": [
+        "helmet"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -827,9 +925,11 @@
   {
     "id": "crucifix",
     "display_name": "Crucifix",
-    "requirements": [
-      "life_seal"
-    ],
+    "requirements": {
+      "owned": [
+        "life_seal"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -858,11 +958,13 @@
   {
     "id": "bronze_mirror",
     "display_name": "Bronze Mirror",
-    "requirements": [
-      "birth_seal",
-      "flare_gun",
-      "flood_temple"
-    ],
+    "requirements": {
+      "owned": [
+        "birth_seal",
+        "flare_gun",
+        "flood_temple"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -872,11 +974,13 @@
   {
     "id": "eye_of_truth",
     "display_name": "Eye of Truth",
-    "requirements": [
-      "feather",
-      "bronze_mirror",
-      "flood_tower"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "bronze_mirror",
+        "flood_tower"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -886,9 +990,11 @@
   {
     "id": "ring",
     "display_name": "Ring",
-    "requirements": [
-      "twin_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "twin_statue"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -899,9 +1005,11 @@
   {
     "id": "scalesphere",
     "display_name": "Scalesphere",
-    "requirements": [
-      "helmet"
-    ],
+    "requirements": {
+      "owned": [
+        "helmet"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -911,12 +1019,14 @@
   {
     "id": "gauntlet",
     "display_name": "Gauntlet",
-    "requirements": [
-      "feather",
-      "grapple_claw",
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "feather",
+        "grapple_claw",
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -927,9 +1037,11 @@
   {
     "id": "treasures",
     "display_name": "Treasures",
-    "requirements": [
-      "pepper"
-    ],
+    "requirements": {
+      "owned": [
+        "pepper"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -939,9 +1051,11 @@
   {
     "id": "anchor",
     "display_name": "Anchor",
-    "requirements": [
-      "treasures"
-    ],
+    "requirements": {
+      "owned": [
+        "treasures"
+      ]
+    },
     "parent": "treasures",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -952,9 +1066,11 @@
   {
     "id": "plane_model",
     "display_name": "Plane Model",
-    "requirements": [
-      "eye_of_truth"
-    ],
+    "requirements": {
+      "owned": [
+        "eye_of_truth"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -964,9 +1080,11 @@
   {
     "id": "philosophers_ocarina",
     "display_name": "Philosophers Ocarina",
-    "requirements": [
-      "maternity_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "maternity_statue"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -976,9 +1094,11 @@
   {
     "id": "feather",
     "display_name": "Feather",
-    "requirements": [
-      "serpent_staff"
-    ],
+    "requirements": {
+      "owned": [
+        "serpent_staff"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -988,10 +1108,12 @@
   {
     "id": "book_of_the_dead",
     "display_name": "Book of the Dead",
-    "requirements": [
-      "bronze_mirror",
-      "mulbruk"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "mulbruk"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -1001,11 +1123,13 @@
   {
     "id": "fairy_clothes",
     "display_name": "Fairy Clothes",
-    "requirements": [
-      "bronze_mirror",
-      "fruit_of_eden",
-      "fairies"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "fruit_of_eden",
+        "fairies"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1016,10 +1140,12 @@
   {
     "id": "scriptures",
     "display_name": "Scriptures",
-    "requirements": [
-      "bronze_mirror",
-      "bomb"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "bomb"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1039,9 +1165,11 @@
   {
     "id": "fruit_of_eden",
     "display_name": "Fruit of Eden",
-    "requirements": [
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -1051,9 +1179,11 @@
   {
     "id": "twin_statue",
     "display_name": "Twin Statue",
-    "requirements": [
-      "key_of_eternity"
-    ],
+    "requirements": {
+      "owned": [
+        "key_of_eternity"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -1063,9 +1193,11 @@
   {
     "id": "bracelet",
     "display_name": "Bracelet",
-    "requirements": [
-      "twin_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "twin_statue"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1076,10 +1208,12 @@
   {
     "id": "perfume",
     "display_name": "Perfume",
-    "requirements": [
-      "cog_of_the_soul",
-      "bronze_mirror"
-    ],
+    "requirements": {
+      "owned": [
+        "cog_of_the_soul",
+        "bronze_mirror"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1090,10 +1224,12 @@
   {
     "id": "spaulder",
     "display_name": "Spaulder",
-    "requirements": [
-      "bronze_mirror",
-      "feather"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "feather"
+      ]
+    },
     "optional": true,
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1104,15 +1240,17 @@
   {
     "id": "dimensional_key",
     "display_name": "Dimensional Key",
-    "requirements": [
-      "maternity_statue",
-      "dragon_bone",
-      "key_of_eternity",
-      "mulana_talisman",
-      "crystal_skull",
-      "cog_of_the_soul",
-      "dance_of_life"
-    ],
+    "requirements": {
+      "owned": [
+        "maternity_statue",
+        "dragon_bone",
+        "key_of_eternity",
+        "mulana_talisman",
+        "crystal_skull",
+        "cog_of_the_soul",
+        "dance_of_life"
+      ]
+    },
     "category": "inventory",
     "sub_category": "treasures_category",
     "description": {
@@ -1131,9 +1269,11 @@
   {
     "id": "surf_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "sits_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "sits_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "surface",
     "description": {
@@ -1152,6 +1292,7 @@
   {
     "id": "gog_jewel",
     "display_name": "Ankh Jewel",
+    "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
     "description": {
@@ -1170,9 +1311,16 @@
   {
     "id": "gog_boss",
     "display_name": "Amphisbaena Defeated",
-    "requirements": [
-      "gog_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "gog_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
     "description": {
@@ -1191,6 +1339,7 @@
   {
     "id": "motg_jewel",
     "display_name": "Ankh Jewel",
+    "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1209,9 +1358,16 @@
   {
     "id": "motg_boss",
     "display_name": "Sakit Defeated",
-    "requirements": [
-      "motg_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "motg_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1221,9 +1377,11 @@
   {
     "id": "prove_small",
     "display_name": "\"Prove Thou Art Small\"",
-    "requirements": [
-      "mini_doll"
-    ],
+    "requirements": {
+      "owned": [
+        "mini_doll"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
     "description": {
@@ -1242,6 +1400,7 @@
   {
     "id": "tots_jewel",
     "display_name": "Ankh Jewel",
+    "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1260,9 +1419,16 @@
   {
     "id": "tots_boss",
     "display_name": "Ellmac Defeated",
-    "requirements": [
-      "tots_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "tots_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1272,10 +1438,15 @@
   {
     "id": "mulbruk",
     "display_name": "Mulbruk Woken",
-    "requirements": [
-      "origin_seal"
-    ],
-    "num_of_bosses": 1,
+    "requirements": {
+      "owned": [
+        "origin_seal"
+      ],
+      "greater_than": [
+        "num_of_bosses",
+        0
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
     "description": {
@@ -1285,9 +1456,11 @@
   {
     "id": "sits_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "birth_seal"
-    ],
+    "requirements": {
+      "owned": [
+        "birth_seal"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1297,9 +1470,12 @@
   {
     "id": "sits_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "scalesphere"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "scalesphere"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1309,9 +1485,11 @@
   {
     "id": "sits_ankh",
     "display_name": "Bahamut's Ankh",
-    "requirements": [
-      "scalesphere"
-    ],
+    "requirements": {
+      "owned": [
+        "scalesphere"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1321,9 +1499,16 @@
   {
     "id": "sits_boss",
     "display_name": "Bahamut Defeated",
-    "requirements": [
-      "sits_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "sits_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1333,9 +1518,11 @@
   {
     "id": "flood_temple",
     "display_name": "Temple of the Sun Flooded",
-    "requirements": [
-      "scalesphere"
-    ],
+    "requirements": {
+      "owned": [
+        "scalesphere"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1345,9 +1532,11 @@
   {
     "id": "flood_tower",
     "display_name": "Tower of the Goddess Flooded",
-    "requirements": [
-      "ic_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "ic_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1357,9 +1546,11 @@
   {
     "id": "giltoriyo",
     "display_name": "Talked to Giltoriyo",
-    "requirements": [
-      "philosophers_ocarina"
-    ],
+    "requirements": {
+      "owned": [
+        "philosophers_ocarina"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "spring_in_the_sky",
     "description": {
@@ -1369,11 +1560,13 @@
   {
     "id": "coe_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "flare_gun",
-      "birth_seal",
-      "flood_temple"
-    ],
+    "requirements": {
+      "owned": [
+        "flare_gun",
+        "birth_seal",
+        "flood_temple"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_extinction",
     "description": {
@@ -1383,9 +1576,11 @@
   {
     "id": "coe_ankh",
     "display_name": "Palenque's Ankh",
-    "requirements": [
-      "pochette_key"
-    ],
+    "requirements": {
+      "owned": [
+        "pochette_key"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_extinction",
     "description": {
@@ -1395,10 +1590,17 @@
   {
     "id": "coe_boss",
     "display_name": "Palenque Defeated",
-    "requirements": [
-      "plane_model",
-      "coe_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "plane_model",
+        "coe_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_extinction",
     "description": {
@@ -1408,10 +1610,12 @@
   {
     "id": "light_chamber",
     "display_name": "Chamber of Extinction Lit",
-    "requirements": [
-      "plane_model",
-      "life_seal"
-    ],
+    "requirements": {
+      "owned": [
+        "plane_model",
+        "life_seal"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_extinction",
     "description": {
@@ -1421,10 +1625,12 @@
   {
     "id": "ic_ankh",
     "display_name": "Viy's Ankh",
-    "requirements": [
-      "earth_spear",
-      "sits_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "earth_spear",
+        "sits_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "inferno_cavern",
     "description": {
@@ -1434,9 +1640,16 @@
   {
     "id": "ic_boss",
     "display_name": "Viy Defeated",
-    "requirements": [
-      "ic_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "ic_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "inferno_cavern",
     "description": {
@@ -1446,9 +1659,11 @@
   {
     "id": "tl_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "poison_lifted"
-    ],
+    "requirements": {
+      "owned": [
+        "poison_lifted"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "twin_labyrinths",
     "description": {
@@ -1458,10 +1673,13 @@
   {
     "id": "tl_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "poison_lifted",
-      "flare_gun"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "poison_lifted",
+        "flare_gun"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "twin_labyrinths",
     "description": {
@@ -1471,9 +1689,11 @@
   {
     "id": "tl_ankh",
     "display_name": "Baphomet's Ankh",
-    "requirements": [
-      "poison_lifted"
-    ],
+    "requirements": {
+      "owned": [
+        "poison_lifted"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "twin_labyrinths",
     "description": {
@@ -1483,9 +1703,16 @@
   {
     "id": "tl_boss",
     "display_name": "Baphomet Defeated",
-    "requirements": [
-      "tl_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "tl_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "twin_labyrinths",
     "description": {
@@ -1495,9 +1722,11 @@
   {
     "id": "poison_lifted",
     "display_name": "Poison Lifted",
-    "requirements": [
-      "twin_statue"
-    ],
+    "requirements": {
+      "owned": [
+        "twin_statue"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "twin_labyrinths",
     "description": {
@@ -1507,9 +1736,11 @@
   {
     "id": "fairies",
     "display_name": "Fairies",
-    "requirements": [
-      "isis_pendant"
-    ],
+    "requirements": {
+      "owned": [
+        "isis_pendant"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "endless_corridor",
     "description": {
@@ -1519,9 +1750,11 @@
   {
     "id": "som_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "key_of_eternity"
-    ],
+    "requirements": {
+      "owned": [
+        "key_of_eternity"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "shrine_of_the_mother",
     "description": {
@@ -1531,12 +1764,14 @@
   {
     "id": "skull_walls_removed",
     "display_name": "Removed Skull Walls",
-    "requirements": [
-      "key_of_eternity",
-      "dragon_bone",
-      "yagomap",
-      "yagostr"
-    ],
+    "requirements": {
+      "owned": [
+        "key_of_eternity",
+        "dragon_bone",
+        "yagomap",
+        "yagostr"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "shrine_of_the_mother",
     "description": {
@@ -1546,10 +1781,12 @@
   {
     "id": "som_la_mulanese",
     "display_name": "Learned La-Mulanese",
-    "requirements": [
-      "giltoriyo",
-      "key_of_eternity"
-    ],
+    "requirements": {
+      "owned": [
+        "giltoriyo",
+        "key_of_eternity"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "shrine_of_the_mother",
     "description": {
@@ -1559,9 +1796,11 @@
   {
     "id": "sacrifices",
     "display_name": "Maiden Sacrifices Stopped",
-    "requirements": [
-      "prove_small"
-    ],
+    "requirements": {
+      "owned": [
+        "prove_small"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "gate_of_illusion",
     "description": {
@@ -1571,9 +1810,11 @@
   {
     "id": "alsedana",
     "display_name": "Talked to Alsedana",
-    "requirements": [
-      "philosophers_ocarina"
-    ],
+    "requirements": {
+      "owned": [
+        "philosophers_ocarina"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "temple_of_moonlight",
     "description": {
@@ -1583,9 +1824,11 @@
   {
     "id": "samaranta",
     "display_name": "Talked to Samaranta",
-    "requirements": [
-      "philosophers_ocarina"
-    ],
+    "requirements": {
+      "owned": [
+        "philosophers_ocarina"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "tower_of_the_goddess",
     "description": {
@@ -1595,9 +1838,12 @@
   {
     "id": "cob_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "ic_boss"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "ic_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_birth",
     "description": {
@@ -1607,11 +1853,13 @@
   {
     "id": "dance_of_life",
     "display_name": "Dance of Life Performed",
-    "requirements": [
-      "ic_boss",
-      "serpent_staff",
-      "chakram"
-    ],
+    "requirements": {
+      "owned": [
+        "ic_boss",
+        "serpent_staff",
+        "chakram"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_birth",
     "description": {
@@ -1621,9 +1869,11 @@
   {
     "id": "cob_la_mulanese",
     "display_name": "Learned La-Mulanese",
-    "requirements": [
-      "coe_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "coe_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "chamber_of_birth",
     "description": {
@@ -1633,10 +1883,12 @@
   {
     "id": "tor_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "bronze_mirror",
-      "motg_boss"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "motg_boss"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "tower_of_ruin",
     "description": {
@@ -1646,11 +1898,14 @@
   {
     "id": "tor_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "bronze_mirror",
-      "motg_boss",
-      "feather"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "motg_boss",
+        "feather"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "tower_of_ruin",
     "description": {
@@ -1660,11 +1915,13 @@
   {
     "id": "tor_la_mulanese",
     "display_name": "Learned La-Mulanese",
-    "requirements": [
-      "bronze_mirror",
-      "motg_boss",
-      "feather"
-    ],
+    "requirements": {
+      "owned": [
+        "bronze_mirror",
+        "motg_boss",
+        "feather"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "tower_of_ruin",
     "description": {
@@ -1674,11 +1931,13 @@
   {
     "id": "dc_so",
     "display_name": "Sacred Orb",
-    "requirements": [
-      "crystal_skull",
-      "lamp_of_time",
-      "dimensional_key"
-    ],
+    "requirements": {
+      "owned": [
+        "crystal_skull",
+        "lamp_of_time",
+        "dimensional_key"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "dimensional_corridor",
     "description": {
@@ -1688,10 +1947,13 @@
   {
     "id": "dc_jewel",
     "display_name": "Ankh Jewel",
-    "requirements": [
-      "crystal_skull",
-      "dimensional_key"
-    ],
+    "totals_to": "num_of_ankh_jewels",
+    "requirements": {
+      "owned": [
+        "crystal_skull",
+        "dimensional_key"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "dimensional_corridor",
     "description": {
@@ -1701,10 +1963,12 @@
   {
     "id": "dc_ankh",
     "display_name": "Tiamat's Ankh",
-    "requirements": [
-      "crystal_skull",
-      "dimensional_key"
-    ],
+    "requirements": {
+      "owned": [
+        "crystal_skull",
+        "dimensional_key"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "dimensional_corridor",
     "description": {
@@ -1714,9 +1978,16 @@
   {
     "id": "dc_boss",
     "display_name": "Tiamat Defeated",
-    "requirements": [
-      "dc_ankh"
-    ],
+    "totals_to": "num_of_bosses",
+    "requirements": {
+      "owned": [
+        "dc_ankh"
+      ],
+      "greater_than": [
+        "num_of_ankh_jewels",
+        "num_of_bosses"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "dimensional_corridor",
     "description": {
@@ -1726,10 +1997,12 @@
   {
     "id": "fobos",
     "display_name": "Talked to Fobos",
-    "requirements": [
-      "philosophers_ocarina",
-      "dimensional_key"
-    ],
+    "requirements": {
+      "owned": [
+        "philosophers_ocarina",
+        "dimensional_key"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "dimensional_corridor",
     "description": {
@@ -1739,10 +2012,12 @@
   {
     "id": "powered_grail",
     "display_name": "Powered Grail",
-    "requirements": [
-      "holy_grail",
-      "dimensional_key"
-    ],
+    "requirements": {
+      "owned": [
+        "holy_grail",
+        "dimensional_key"
+      ]
+    },
     "parent": "holy_grail",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1753,14 +2028,16 @@
   {
     "id": "mantras",
     "display_name": "All Mantras Performed",
-    "requirements": [
-      "djed_pillar",
-      "mantra",
-      "fobos",
-      "samaranta",
-      "alsedana",
-      "giltoriyo"
-    ],
+    "requirements": {
+      "owned": [
+        "djed_pillar",
+        "mantra",
+        "fobos",
+        "samaranta",
+        "alsedana",
+        "giltoriyo"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "true_shrine_of_the_mother",
     "description": {
@@ -1770,11 +2047,13 @@
   {
     "id": "medicine",
     "display_name": "Medicine",
-    "requirements": [
-      "vessel",
-      "fobos",
-      "lamp_of_time"
-    ],
+    "requirements": {
+      "owned": [
+        "vessel",
+        "fobos",
+        "lamp_of_time"
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "tower_of_ruin",
     "description": {
@@ -1784,13 +2063,18 @@
   {
     "id": "mother",
     "display_name": "Mother Defeated!",
-    "requirements": [
-      "powered_grail",
-      "medicine",
-      "mantras",
-      "key_sword"
-    ],
-    "num_of_bosses": 8,
+    "requirements": {
+      "owned": [
+        "powered_grail",
+        "medicine",
+        "mantras",
+        "key_sword"
+      ],
+      "greater_than": [
+        "num_of_bosses",
+        7
+      ]
+    },
     "category": "accomplishments",
     "sub_category": "true_shrine_of_the_mother",
     "description": {

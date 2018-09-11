@@ -15,7 +15,7 @@ class SubCategory extends React.Component {
         let items = this.props.items;
         return _.map(items, (item) => {
             if(!item.parent) {
-                return <Item item={item} category_items={items} dataStore={this.props.dataStore}/>;
+                return <Item key={item.id} item={item} dataStore={this.props.dataStore}/>;
             }
         });
     };
@@ -24,7 +24,7 @@ class SubCategory extends React.Component {
         const category = this.prettifyCategory();
 
         return (
-            <div className="col-4">
+            <div className="col-3">
                 <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">{category}</h5>

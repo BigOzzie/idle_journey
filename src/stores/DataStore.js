@@ -46,7 +46,41 @@ class DataStore {
         });
     };
 
-    @computed get dataFiltered() {
+    totalNumber = (totals_to) => {
+        if(typeof totals_to === "number") {
+            return totals_to;
+        }
+
+        return this.data.filter((el) => {
+            return (el.totals_to === totals_to && !!el.owned);
+        }).length;
+    };
+
+    @computed get meetPrereqs() {
+        const owned = this.data.filter((el) => {
+            return !!el.owned;
+        }, this);
+        let owned_ids = owned.map((el) => {
+            return el.id;
+        });
+        const not_owned = this.data.filter((el) => {
+            return !el.owned;
+        }, this);
+        return not_owned.filter((el) => {
+            if(!el.requirements) return true;
+
+            let prereqs_met = _.every(el.requirements.owned, (requirement) => {
+                return owned_ids.includes(requirement);
+            });
+            if(el.requirements.greater_than) {
+                const gt = el.requirements.greater_than;
+                prereqs_met = prereqs_met && (this.totalNumber(gt[0]) > this.totalNumber(gt[1]));
+            }
+            return prereqs_met;
+        }, this);
+    }
+
+    @computed get dataForCurrentView() {
         const filtered = this.data.filter((el) => {
             return el.category === this.view;
         }, this);

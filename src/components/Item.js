@@ -21,19 +21,23 @@ class Item extends React.Component {
 
         if(children.length === 0) {
             return <div style={{"paddingLeft": "0.5em"}}>
-                <input type="checkbox" className="form-check-input" value={item.owned} id={item.id} onChange={() => { dataStore.toggleItemOwned(item.id);}}/>
+                <input type="checkbox" className="form-check-input" id={item.id} checked={!!item.owned} onChange={() => { dataStore.toggleItemOwned(item.id);}}/>
                 <label className="form-check-label" htmlFor={item.id}>{item.display_name}</label>
             </div>;
         } else {
+            children = [item].concat(children);
+            let default_value = -1;
             let options = [
                 <option key={-1} value={-1}>None</option>,
-                <option key={item.id} value={item.id} selected={item.owned}>{item.display_name}</option>
             ];
             _.each(children, (child) => {
-                options.push(<option key={child.id} value={child.id} selected={child.owned}>{child.display_name}</option>);
+                if(child.owned) {
+                    default_value = child.id;
+                }
+                options.push(<option key={child.id} value={child.id}>{child.display_name}</option>);
             });
 
-            return <select id={item.id} onChange={this.handleSelectChange}>{options}</select>;
+            return <select id={item.id} onChange={this.handleSelectChange} defaultValue={default_value}>{options}</select>;
         }
     };
 

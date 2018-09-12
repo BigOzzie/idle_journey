@@ -1,6 +1,6 @@
 import {observable, action, computed} from "mobx";
 import data from "../db/data.json";
-import _ from "lodash/core";
+import _ from "lodash";
 
 class DataStore {
     VIEW_INVENTORY = "inventory";
@@ -57,24 +57,24 @@ class DataStore {
     };
 
     @computed get meetPrereqs() {
-        const owned = this.data.filter((el) => {
+        const owned_partition = _.partition(this.data, (el) => {
             return !!el.owned;
         }, this);
+        const owned = owned_partition[0];
+        const not_owned = owned_partition[1];
+
         let owned_ids = owned.map((el) => {
             return el.id;
         });
-        const not_owned = this.data.filter((el) => {
-            return !el.owned;
-        }, this);
         return not_owned.filter((el) => {
             if(!el.requirements) return true;
 
             let prereqs_met = _.every(el.requirements.owned, (requirement) => {
                 return owned_ids.includes(requirement);
             });
-            if(el.requirements.greater_than) {
+            if(prereqs_met && el.requirements.greater_than) {
                 const gt = el.requirements.greater_than;
-                prereqs_met = prereqs_met && (this.totalNumber(gt[0]) > this.totalNumber(gt[1]));
+                prereqs_met = (this.totalNumber(gt[0]) > this.totalNumber(gt[1]));
             }
             return prereqs_met;
         }, this);

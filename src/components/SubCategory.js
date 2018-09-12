@@ -24,7 +24,7 @@ class SubCategory extends React.Component {
         const category = this.prettifyCategory();
 
         return (
-            <div className="col-3">
+            <div className="col-lg-3 col-md-6">
                 <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">{category}</h5>

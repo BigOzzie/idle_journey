@@ -5,7 +5,9 @@ import _ from 'lodash';
 @observer
 class WhatToDo extends React.Component {
     render = () => {
-        const unattained = this.props.dataStore.meetPrereqs;
+        const dataStore = this.props.dataStore;
+
+        const unattained = dataStore.meetPrereqs;
         const partitioned = _.partition(unattained, (el) => {return !el.optional;});
 
         return (
@@ -17,7 +19,7 @@ class WhatToDo extends React.Component {
                                 <h5 className="card-title">REQUIRED</h5>
                                 <ul className="list-group list-group-flush">
                                     {_.map(partitioned[0], (el) => {
-                                        return  <li className="list-group-item" key={el.id}>
+                                        return  <li className="list-group-item" style={{"cursor":"pointer"}} key={el.id} onClick={() => { dataStore.toggleItemOwned(el.id);}}>
                                             {el.description.vague}
                                         </li>
                                     })}
@@ -31,7 +33,7 @@ class WhatToDo extends React.Component {
                                 <h5 className="card-title">OPTIONAL</h5>
                                 <ul className="list-group list-group-flush">
                                     {_.map(partitioned[1], (el) => {
-                                        return  <li className="list-group-item" key={el.id}>
+                                        return  <li className="list-group-item" style={{"cursor":"pointer"}} key={el.id} onClick={() => { dataStore.toggleItemOwned(el.id);}}>
                                             {el.description.vague}
                                         </li>
                                     })}

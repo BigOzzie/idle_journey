@@ -57,6 +57,11 @@
   },
   {
     "id": "holy_grail",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Holy Grail",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -155,6 +160,11 @@
   },
   {
     "id": "shuriken",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Shuriken",
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -164,6 +174,11 @@
   },
   {
     "id": "rolling_shuriken",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Rolling Shuriken",
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -189,6 +204,11 @@
   },
   {
     "id": "flare_gun",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Flare Gun",
     "category": "inventory",
     "sub_category": "sub_weapons",
@@ -637,6 +657,11 @@
   },
   {
     "id": "bunemon",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "bunemon.exe",
     "optional": true,
     "category": "inventory",
@@ -647,6 +672,11 @@
   },
   {
     "id": "bunplus",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "bunplus.com",
     "optional": true,
     "category": "inventory",
@@ -672,6 +702,11 @@
   },
   {
     "id": "guild",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "guild.exe",
     "optional": true,
     "category": "inventory",
@@ -760,6 +795,11 @@
   },
   {
     "id": "capstar",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "capstar.exe",
     "optional": true,
     "category": "inventory",
@@ -890,6 +930,11 @@
   },
   {
     "id": "heatproof_case",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Heatproof Case",
     "optional": true,
     "category": "inventory",
@@ -915,6 +960,11 @@
   },
   {
     "id": "isis_pendant",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Isis Pendant",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -939,6 +989,11 @@
   },
   {
     "id": "helmet",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Helmet",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -948,6 +1003,11 @@
   },
   {
     "id": "grapple_claw",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Grapple Claw",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1155,6 +1215,11 @@
   },
   {
     "id": "hermes_boots",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Hermes Boots",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1259,6 +1324,11 @@
   },
   {
     "id": "ice_cape",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Ice Cape",
     "category": "inventory",
     "sub_category": "treasures_category",
@@ -1282,6 +1352,11 @@
   },
   {
     "id": "gog_so",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
@@ -1291,6 +1366,11 @@
   },
   {
     "id": "gog_jewel",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Ankh Jewel",
     "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
@@ -1301,6 +1381,11 @@
   },
   {
     "id": "gog_ankh",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Amphisbaena's Ankh",
     "category": "accomplishments",
     "sub_category": "gate_of_guidance",
@@ -1329,6 +1414,11 @@
   },
   {
     "id": "motg_so",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
@@ -1338,6 +1428,11 @@
   },
   {
     "id": "motg_jewel",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Ankh Jewel",
     "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
@@ -1348,6 +1443,11 @@
   },
   {
     "id": "motg_ankh",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Sakit's Ankh",
     "category": "accomplishments",
     "sub_category": "mausoleum_of_the_giants",
@@ -1390,6 +1490,11 @@
   },
   {
     "id": "tots_so",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Sacred Orb",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",
@@ -1399,6 +1504,11 @@
   },
   {
     "id": "tots_jewel",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Ankh Jewel",
     "totals_to": "num_of_ankh_jewels",
     "category": "accomplishments",
@@ -1409,6 +1519,11 @@
   },
   {
     "id": "tots_ankh",
+    "requirements": {
+      "owned": [
+        "hand_scanner"
+      ]
+    },
     "display_name": "Ellmac's Ankh",
     "category": "accomplishments",
     "sub_category": "temple_of_the_sun",

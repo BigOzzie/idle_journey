@@ -6,6 +6,7 @@ class DataStore {
     VIEW_INVENTORY = "inventory";
     VIEW_ACCOMPLISHMENTS = "accomplishments";
     VIEW_WHAT_TO_DO = "what_do_i_do";
+    VIEW_OPTIONS = "options";
 
     @observable data = [];
     @observable view = this.VIEW_INVENTORY;

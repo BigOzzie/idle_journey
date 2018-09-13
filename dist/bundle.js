@@ -57261,7 +57261,7 @@ var App = (0, _mobxReact.observer)(_class = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     "div",
-                    { className: "row justify-content-center" },
+                    { className: "row justify-content-center", style: { "marginBottom": "1em" } },
                     _react2.default.createElement(
                         "div",
                         { className: "col-md-12 col-lg-4" },
@@ -57302,7 +57302,11 @@ var App = (0, _mobxReact.observer)(_class = function (_React$Component) {
                                 )
                             )
                         )
-                    ),
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "row justify-content-center" },
                     _react2.default.createElement(
                         "div",
                         { className: "col-12" },

@@ -1,7 +1,6 @@
 import React from 'react';
 import dataStore from "../stores/DataStore";
 import {observer} from "mobx-react";
-import PartyDisplay from "./Characters/PartyDisplay";
 import MainContainer from "./MainContainer";
 
 @observer
@@ -18,7 +17,7 @@ class App extends React.Component {
                         <h2>HOW TO LA MULANA</h2>
                     </div>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center" style={{"marginBottom": "1em"}}>
                     <div className="col-md-12 col-lg-4">
                         <div className="row">
                             <div className="col-4 text-center">
@@ -32,6 +31,8 @@ class App extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="row justify-content-center">
                     <div className="col-12">
                         <MainContainer dataStore={dataStore}/>
                     </div>

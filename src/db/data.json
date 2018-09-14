@@ -826,11 +826,6 @@
   {
     "id": "mekuri",
     "display_name": "mekuri.exe",
-    "requirements": {
-      "owned": [
-        "feather"
-      ]
-    },
     "optional": true,
     "category": "inventory",
     "sub_category": "software",
@@ -962,7 +957,8 @@
     "id": "isis_pendant",
     "requirements": {
       "owned": [
-        "hand_scanner"
+        "hand_scanner",
+        "reader"
       ]
     },
     "display_name": "Isis Pendant",
@@ -1020,8 +1016,7 @@
     "display_name": "Bronze Mirror",
     "requirements": {
       "owned": [
-        "birth_seal",
-        "flare_gun",
+        "origin_seal",
         "flood_temple"
       ]
     },
@@ -1232,7 +1227,9 @@
     "display_name": "Fruit of Eden",
     "requirements": {
       "owned": [
-        "bronze_mirror"
+        "bronze_mirror",
+        "motg_boss",
+        "flare_gun"
       ]
     },
     "category": "inventory",

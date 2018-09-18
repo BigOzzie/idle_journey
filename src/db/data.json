@@ -724,7 +724,8 @@
         "torude",
         "som_la_mulanese",
         "cob_la_mulanese",
-        "tor_la_mulanese"
+        "tor_la_mulanese",
+        "coe_boss"
       ]
     },
     "category": "inventory",
@@ -2163,7 +2164,9 @@
       "owned": [
         "vessel",
         "fobos",
-        "lamp_of_time"
+        "lamp_of_time",
+        "djed_pillar",
+        "mantra"
       ]
     },
     "category": "accomplishments",
@@ -2181,7 +2184,8 @@
         "medicine",
         "mantras",
         "key_sword",
-        "fairies"
+        "fairies",
+        "death_seal"
       ],
       "greater_than": [
         "num_of_bosses",

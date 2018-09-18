@@ -61,8 +61,11 @@ class DataStore {
     };
 
     saveData = () => {
-        const owned = _.filter(this.data, (el) => {
+        let owned = _.filter(this.data, (el) => {
             return !!el.owned;
+        });
+        owned = _.map(owned, (el) => {
+            return el.id;
         });
         let next_month = new Date();
         next_month.setMonth(next_month.getMonth()+1);

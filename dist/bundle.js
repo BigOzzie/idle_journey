@@ -58418,6 +58418,9 @@ var DataStore = (_class = function () {
             var owned = _lodash2.default.filter(_this.data, function (el) {
                 return !!el.owned;
             });
+            owned = _lodash2.default.map(owned, function (el) {
+                return el.id;
+            });
             var next_month = new Date();
             next_month.setMonth(next_month.getMonth() + 1);
             _this.cookies.set(_this.COOKIE_NAME, owned, { expires: next_month });

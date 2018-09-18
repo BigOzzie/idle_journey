@@ -2180,7 +2180,8 @@
         "powered_grail",
         "medicine",
         "mantras",
-        "key_sword"
+        "key_sword",
+        "fairies"
       ],
       "greater_than": [
         "num_of_bosses",

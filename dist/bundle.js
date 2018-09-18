@@ -548,14 +548,6 @@ module.exports = function (TYPE, $create) {
 
 /***/ }),
 /* 27 */
-/***/ (function(module, exports) {
-
-var core = module.exports = { version: '2.5.3' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1042,7 +1034,7 @@ if (__webpack_require__(6)) {
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Map = __webpack_require__(150);
@@ -1099,7 +1091,7 @@ module.exports = {
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1111,10 +1103,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(389);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -1301,6 +1293,14 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.5.3' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
 /***/ }),
@@ -1704,7 +1704,7 @@ module.exports = function (it, TYPE) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(34);
-var core = __webpack_require__(27);
+var core = __webpack_require__(31);
 var ctx = __webpack_require__(169);
 var hide = __webpack_require__(55);
 var PROTOTYPE = 'prototype';
@@ -2103,7 +2103,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return Provider; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inject", function() { return inject; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
@@ -4601,7 +4601,7 @@ exports.f = __webpack_require__(58);
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(34);
-var core = __webpack_require__(27);
+var core = __webpack_require__(31);
 var LIBRARY = __webpack_require__(118);
 var wksExt = __webpack_require__(124);
 var defineProperty = __webpack_require__(47).f;
@@ -22785,7 +22785,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 164 */
@@ -22831,7 +22831,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(394);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 165 */
@@ -22846,7 +22846,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(393);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 166 */
@@ -22884,7 +22884,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 // most Object methods by ES6 should accept primitives
 var $export = __webpack_require__(54);
-var core = __webpack_require__(27);
+var core = __webpack_require__(31);
 var fails = __webpack_require__(66);
 module.exports = function (KEY, exec) {
   var fn = (core.Object || {})[KEY] || Object[KEY];
@@ -33955,7 +33955,7 @@ $export($export.G + $export.W + $export.F * !__webpack_require__(80).ABV, {
 /* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Int8', 1, function (init) {
+__webpack_require__(27)('Int8', 1, function (init) {
   return function Int8Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -33966,7 +33966,7 @@ __webpack_require__(28)('Int8', 1, function (init) {
 /* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Uint8', 1, function (init) {
+__webpack_require__(27)('Uint8', 1, function (init) {
   return function Uint8Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -33977,7 +33977,7 @@ __webpack_require__(28)('Uint8', 1, function (init) {
 /* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Uint8', 1, function (init) {
+__webpack_require__(27)('Uint8', 1, function (init) {
   return function Uint8ClampedArray(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -33988,7 +33988,7 @@ __webpack_require__(28)('Uint8', 1, function (init) {
 /* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Int16', 2, function (init) {
+__webpack_require__(27)('Int16', 2, function (init) {
   return function Int16Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -33999,7 +33999,7 @@ __webpack_require__(28)('Int16', 2, function (init) {
 /* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Uint16', 2, function (init) {
+__webpack_require__(27)('Uint16', 2, function (init) {
   return function Uint16Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -34010,7 +34010,7 @@ __webpack_require__(28)('Uint16', 2, function (init) {
 /* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Int32', 4, function (init) {
+__webpack_require__(27)('Int32', 4, function (init) {
   return function Int32Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -34021,7 +34021,7 @@ __webpack_require__(28)('Int32', 4, function (init) {
 /* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Uint32', 4, function (init) {
+__webpack_require__(27)('Uint32', 4, function (init) {
   return function Uint32Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -34032,7 +34032,7 @@ __webpack_require__(28)('Uint32', 4, function (init) {
 /* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Float32', 4, function (init) {
+__webpack_require__(27)('Float32', 4, function (init) {
   return function Float32Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -34043,7 +34043,7 @@ __webpack_require__(28)('Float32', 4, function (init) {
 /* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28)('Float64', 8, function (init) {
+__webpack_require__(27)('Float64', 8, function (init) {
   return function Float64Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
   };
@@ -35090,7 +35090,7 @@ $export($export.S, 'Promise', { 'try': function (callbackfn) {
 /* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var toMetaKey = metadata.key;
 var ordinaryDefineOwnMetadata = metadata.set;
@@ -35104,7 +35104,7 @@ metadata.exp({ defineMetadata: function defineMetadata(metadataKey, metadataValu
 /* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var toMetaKey = metadata.key;
 var getOrCreateMetadataMap = metadata.map;
@@ -35125,7 +35125,7 @@ metadata.exp({ deleteMetadata: function deleteMetadata(metadataKey, target /* , 
 /* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var getPrototypeOf = __webpack_require__(17);
 var ordinaryHasOwnMetadata = metadata.has;
@@ -35150,7 +35150,7 @@ metadata.exp({ getMetadata: function getMetadata(metadataKey, target /* , target
 
 var Set = __webpack_require__(152);
 var from = __webpack_require__(161);
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var getPrototypeOf = __webpack_require__(17);
 var ordinaryOwnMetadataKeys = metadata.keys;
@@ -35173,7 +35173,7 @@ metadata.exp({ getMetadataKeys: function getMetadataKeys(target /* , targetKey *
 /* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var ordinaryGetOwnMetadata = metadata.get;
 var toMetaKey = metadata.key;
@@ -35188,7 +35188,7 @@ metadata.exp({ getOwnMetadata: function getOwnMetadata(metadataKey, target /* , 
 /* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var ordinaryOwnMetadataKeys = metadata.keys;
 var toMetaKey = metadata.key;
@@ -35202,7 +35202,7 @@ metadata.exp({ getOwnMetadataKeys: function getOwnMetadataKeys(target /* , targe
 /* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var getPrototypeOf = __webpack_require__(17);
 var ordinaryHasOwnMetadata = metadata.has;
@@ -35224,7 +35224,7 @@ metadata.exp({ hasMetadata: function hasMetadata(metadataKey, target /* , target
 /* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metadata = __webpack_require__(29);
+var metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var ordinaryHasOwnMetadata = metadata.has;
 var toMetaKey = metadata.key;
@@ -35239,7 +35239,7 @@ metadata.exp({ hasOwnMetadata: function hasOwnMetadata(metadataKey, target /* , 
 /* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $metadata = __webpack_require__(29);
+var $metadata = __webpack_require__(28);
 var anObject = __webpack_require__(1);
 var aFunction = __webpack_require__(10);
 var toMetaKey = $metadata.key;
@@ -36365,7 +36365,7 @@ module.exports = function (regExp, replace) {
 "use strict";
 
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -38093,7 +38093,7 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 390 */
@@ -38131,7 +38131,7 @@ module.exports = ReactPropTypesSecret;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(30),n=__webpack_require__(63),ba=__webpack_require__(165);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(29),n=__webpack_require__(63),ba=__webpack_require__(165);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function w(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:w("227");function da(a,b,c,d,e,f,g,k,h){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,k,h){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,k,h){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else w("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:w("96",a);if(!pa[c]){b.extractEvents?void 0:w("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,k=d;qa.hasOwnProperty(k)?w("99",k):void 0;qa[k]=f;var h=f.phasedRegistrationNames;if(h){for(e in h)h.hasOwnProperty(e)&&ra(h[e],g,k);e=!0}else f.registrationName?(ra(f.registrationName,g,k),e=!0):e=!1;e?void 0:w("98",d,a)}}}}
@@ -38800,7 +38800,7 @@ if (!canUseDOM) {
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 394 */
@@ -38824,7 +38824,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(30);
+var React = __webpack_require__(29);
 var _assign = __webpack_require__(63);
 var checkPropTypes = __webpack_require__(163);
 var schedule = __webpack_require__(165);
@@ -56896,7 +56896,7 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 395 */
@@ -56911,7 +56911,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(397);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 396 */
@@ -57377,7 +57377,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(30)))
 
 /***/ }),
 /* 398 */
@@ -57408,7 +57408,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -57418,7 +57418,7 @@ var _DataStore2 = _interopRequireDefault(_DataStore);
 
 var _mobxReact = __webpack_require__(69);
 
-var _MainContainer = __webpack_require__(447);
+var _MainContainer = __webpack_require__(445);
 
 var _MainContainer2 = _interopRequireDefault(_MainContainer);
 
@@ -57542,7 +57542,7 @@ exports.default = App;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(400);
-module.exports = __webpack_require__(27).Object.getPrototypeOf;
+module.exports = __webpack_require__(31).Object.getPrototypeOf;
 
 
 /***/ }),
@@ -57841,7 +57841,7 @@ __webpack_require__(419);
 __webpack_require__(424);
 __webpack_require__(425);
 __webpack_require__(426);
-module.exports = __webpack_require__(27).Symbol;
+module.exports = __webpack_require__(31).Symbol;
 
 
 /***/ }),
@@ -58232,7 +58232,7 @@ module.exports = { "default": __webpack_require__(428), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(429);
-module.exports = __webpack_require__(27).Object.setPrototypeOf;
+module.exports = __webpack_require__(31).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -58286,7 +58286,7 @@ module.exports = { "default": __webpack_require__(432), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(433);
-var $Object = __webpack_require__(27).Object;
+var $Object = __webpack_require__(31).Object;
 module.exports = function create(P, D) {
   return $Object.create(P, D);
 };
@@ -58320,15 +58320,11 @@ var _getOwnPropertyDescriptor = __webpack_require__(437);
 
 var _getOwnPropertyDescriptor2 = _interopRequireDefault(_getOwnPropertyDescriptor);
 
-var _stringify = __webpack_require__(440);
-
-var _stringify2 = _interopRequireDefault(_stringify);
-
 var _classCallCheck2 = __webpack_require__(57);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(442);
+var _createClass2 = __webpack_require__(440);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
@@ -58336,7 +58332,7 @@ var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4
 
 var _mobx = __webpack_require__(180);
 
-var _data = __webpack_require__(443);
+var _data = __webpack_require__(441);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -58344,7 +58340,7 @@ var _lodash = __webpack_require__(128);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _universalCookie = __webpack_require__(444);
+var _universalCookie = __webpack_require__(442);
 
 var _universalCookie2 = _interopRequireDefault(_universalCookie);
 
@@ -58424,7 +58420,7 @@ var DataStore = (_class = function () {
             });
             var next_month = new Date();
             next_month.setMonth(next_month.getMonth() + 1);
-            _this.cookies.set(_this.COOKIE_NAME, (0, _stringify2.default)(owned), { expires: next_month });
+            _this.cookies.set(_this.COOKIE_NAME, owned, { expires: next_month });
         };
 
         this.findChildren = function (item_id) {
@@ -58509,7 +58505,6 @@ var DataStore = (_class = function () {
         return function () {
             var saved = _this4.cookies.get(_this4.COOKIE_NAME);
             if (saved) {
-                saved = JSON.parse(saved);
                 _this4.data = _this4.data.map(function (el) {
                     if (saved.includes(el.id)) {
                         el.owned = true;
@@ -58579,7 +58574,7 @@ exports.default = dataStore;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(436);
-var $Object = __webpack_require__(27).Object;
+var $Object = __webpack_require__(31).Object;
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
@@ -58605,7 +58600,7 @@ module.exports = { "default": __webpack_require__(438), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(439);
-var $Object = __webpack_require__(27).Object;
+var $Object = __webpack_require__(31).Object;
 module.exports = function getOwnPropertyDescriptor(it, key) {
   return $Object.getOwnPropertyDescriptor(it, key);
 };
@@ -58628,23 +58623,6 @@ __webpack_require__(168)('getOwnPropertyDescriptor', function () {
 
 /***/ }),
 /* 440 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(441), __esModule: true };
-
-/***/ }),
-/* 441 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var core = __webpack_require__(27);
-var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
-module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
-  return $JSON.stringify.apply($JSON, arguments);
-};
-
-
-/***/ }),
-/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58677,7 +58655,7 @@ exports.default = function () {
 }();
 
 /***/ }),
-/* 443 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58686,24 +58664,24 @@ exports.default = function () {
 module.exports = [{ "id": "whip", "display_name": "Whip", "category": "inventory", "sub_category": "weapons", "owned": true, "description": { "vague": "You should have a whip.  Why don't you have a whip??" } }, { "id": "mobile_super_x", "display_name": "Mobile Super X", "category": "inventory", "sub_category": "treasures_category", "owned": true, "description": { "vague": "You don't have a Mobile Super X?  Seriously, stop messing around with stuff." } }, { "id": "hand_scanner", "display_name": "Hand Scanner", "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Buy the Hand Scanner from a shop in the Surface." } }, { "id": "reader", "display_name": "reader.exe", "category": "inventory", "sub_category": "software", "description": { "vague": "Buy reader.exe from a shop in the Surface." } }, { "id": "xmailer", "display_name": "xmailer.exe", "category": "inventory", "sub_category": "software", "description": { "vague": "Get xmailer.exe from Xelpud in the Surface." } }, { "id": "shell_horn", "display_name": "Shell Horn", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Shell Horn in the Surface." } }, { "id": "holy_grail", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Holy Grail", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Holy Grail from the Gate of Guidance." } }, { "id": "chain_whip", "display_name": "Chain Whip", "requirements": { "owned": ["birth_seal", "grapple_claw"] }, "category": "inventory", "sub_category": "weapons", "parent": "whip", "description": { "vague": "Get the Chain Whip from the Inferno Cavern." } }, { "id": "flail_whip", "display_name": "Flail Whip", "requirements": { "owned": ["feather", "samaranta", "bronze_mirror"] }, "category": "inventory", "sub_category": "weapons", "parent": "whip", "description": { "vague": "Get the Flail Whip from the Tower of the Goddess." } }, { "id": "knife", "display_name": "Knife", "requirements": { "owned": ["shuriken"] }, "category": "inventory", "sub_category": "weapons", "description": { "vague": "Get the Knife from the Temple of the Sun." } }, { "id": "key_sword", "display_name": "Key Sword", "requirements": { "owned": ["key_of_eternity"] }, "category": "inventory", "sub_category": "weapons", "description": { "vague": "Get the Key Sword from the Endless Corridor." } }, { "id": "axe", "display_name": "Axe", "requirements": { "owned": ["hermes_boots"] }, "category": "inventory", "sub_category": "weapons", "description": { "vague": "Get the Axe from the Temple of Moonlight." } }, { "id": "katana", "display_name": "Katana", "requirements": { "owned": ["twin_statue"] }, "category": "inventory", "sub_category": "weapons", "description": { "vague": "Get the Katana from the Twin Labyrinths." } }, { "id": "shuriken", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Shuriken", "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Shuriken from the Gate of Guidance." } }, { "id": "rolling_shuriken", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Rolling Shuriken", "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Rolling Shuriken from the Mausoleum of the Giants." } }, { "id": "earth_spear", "display_name": "Earth Spear", "requirements": { "owned": ["feather", "bronze_mirror", "motg_boss"] }, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Earth Spear from the Tower of Ruin." } }, { "id": "flare_gun", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Flare Gun", "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Flare Gun from the Inferno Cavern." } }, { "id": "bomb", "display_name": "Bomb", "requirements": { "owned": ["plane_model"] }, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Bomb from the Graveyard of the Giants." } }, { "id": "chakram", "display_name": "Chakram", "requirements": { "owned": ["flare_gun", "birth_seal", "flood_temple"] }, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Chakram from the Chamber of Extinction." } }, { "id": "caltrops", "display_name": "Caltrops", "requirements": { "owned": ["helmet"] }, "optional": true, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Caltrops from the Spring in the Sky." } }, { "id": "pistol", "display_name": "Pistol", "optional": true, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Buy the Pistol from a shop in the Surface." } }, { "id": "buckler", "display_name": "Buckler", "optional": true, "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Buy the Buckler from a shop in the Surface." } }, { "id": "silver_shield", "display_name": "Silver Shield", "requirements": { "owned": ["bronze_mirror", "motg_boss"] }, "parent": "buckler", "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Silver Shield from the Graveyard of the Giants." } }, { "id": "angel_shield", "display_name": "Angel Shield", "requirements": { "owned": ["dimensional_key", "crystal_skull", "bronze_mirror"] }, "parent": "buckler", "category": "inventory", "sub_category": "sub_weapons", "description": { "vague": "Get the Angel Shield from the Dimensional Corridor." } }, { "id": "djed_pillar", "display_name": "Djed Pillar", "requirements": { "owned": ["coe_boss", "tl_boss"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Djed Pillar from the Tower of Ruin." } }, { "id": "mini_doll", "display_name": "Mini Doll", "requirements": { "owned": ["fruit_of_eden", "anchor"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Mini Doll from the Gate of Illusion." } }, { "id": "magatama_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["mulana_talisman", "dimensional_key", "crystal_skull"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Magatama Jewel from the Dimensional Corridor." } }, { "id": "cog_of_the_soul", "display_name": "Cog of the Soul", "requirements": { "owned": ["fruit_of_eden", "mulana_talisman", "lamp_of_time"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Cog of the Soul from the Gate of Illusion." } }, { "id": "lamp_of_time", "display_name": "Lamp of Time", "requirements": { "owned": ["bomb"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Buy the Lamp of Time from a shop in the Twin Labyrinths." } }, { "id": "pochette_key", "display_name": "Pochette Key", "requirements": { "owned": ["cog_of_the_soul", "bronze_mirror"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Pochette Key from the Chamber of Birth." } }, { "id": "dragon_bone", "display_name": "Dragon Bone", "requirements": { "owned": ["twin_statue"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Dragon Bone from the Twin Labyrinths." } }, { "id": "crystal_skull", "display_name": "Crystal Skull", "requirements": { "owned": ["life_seal", "mulana_talisman"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Crystal Skull from the Shrine of the Mother." } }, { "id": "vessel", "display_name": "Vessel", "requirements": { "owned": ["angel_shield", "bronze_mirror"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Vessel from the Chamber of Birth." } }, { "id": "pepper", "display_name": "Pepper", "requirements": { "owned": ["fruit_of_eden"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Pepper from the Gate of Illusion." } }, { "id": "woman_statue", "display_name": "Woman Statue", "requirements": { "owned": ["pochette_key", "bronze_mirror", "dance_of_life"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Woman Statue from the Chamber of Birth." } }, { "id": "maternity_statue", "display_name": "Maternity Statue", "requirements": { "owned": ["woman_statue"] }, "parent": "woman_statue", "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Turn the Woman Statue into the Maternity Statue in the Temple of the Sun." } }, { "id": "key_of_eternity", "display_name": "Key of Eternity", "requirements": { "owned": ["fruit_of_eden", "birth_seal", "sacrifices", "book_of_the_dead"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Key of Eternity from the Gate of Illusion." } }, { "id": "serpent_staff", "display_name": "Serpent Staff", "requirements": { "owned": ["book_of_the_dead"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Serpent Staff from the Temple of Moonlight." } }, { "id": "talisman", "display_name": "Talisman", "requirements": { "owned": ["ic_boss"] }, "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Talisman from the Temple of the Sun." } }, { "id": "diary", "display_name": "Diary", "requirements": { "owned": ["skull_walls_removed", "talisman"] }, "parent": "talisman", "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Diary from the Shrine of the Mother." } }, { "id": "mulana_talisman", "display_name": "Mulana Talisman", "requirements": { "owned": ["diary"] }, "parent": "talisman", "category": "inventory", "sub_category": "usable_items", "description": { "vague": "Get the Mulana Talisman from Xelpud in the Surface." } }, { "id": "origin_seal", "display_name": "Origin Seal", "requirements": { "owned": ["helmet"] }, "category": "inventory", "sub_category": "seals", "description": { "vague": "Get the Origin Seal from the Spring in the Sky." } }, { "id": "birth_seal", "display_name": "Birth Seal", "requirements": { "owned": ["origin_seal", "scalesphere"] }, "category": "inventory", "sub_category": "seals", "description": { "vague": "Get the Birth Seal from the Surface." } }, { "id": "life_seal", "display_name": "Life Seal", "requirements": { "owned": ["birth_seal", "flare_gun", "flood_temple"] }, "category": "inventory", "sub_category": "seals", "description": { "vague": "Get the Life Seal from the Chamber of Extinction." } }, { "id": "death_seal", "display_name": "Death Seal", "requirements": { "owned": ["life_seal", "giltoriyo", "skull_walls_removed"] }, "category": "inventory", "sub_category": "seals", "description": { "vague": "Get the Death Seal from the Shrine of the Mother." } }, { "id": "yagomap", "display_name": "yagomap.exe", "category": "inventory", "sub_category": "software", "description": { "vague": "Buy yagomap.exe from a shop in the Surface." } }, { "id": "yagostr", "display_name": "yagostr.exe", "requirements": { "owned": ["fruit_of_eden"] }, "category": "inventory", "sub_category": "software", "description": { "vague": "Get yagostr.exe from the Gate of Guidance." } }, { "id": "bunemon", "requirements": { "owned": ["hand_scanner"] }, "display_name": "bunemon.exe", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Buy bunemon.exe from a shop in the Temple of the Sun." } }, { "id": "bunplus", "requirements": { "owned": ["hand_scanner"] }, "display_name": "bunplus.com", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get bunplus.com from the Inferno Cavern." } }, { "id": "torude", "display_name": "torude.exe", "requirements": { "owned": ["feather", "bronze_mirror"] }, "category": "inventory", "sub_category": "software", "description": { "vague": "Buy torude.exe from a shop in the Tower of Ruin." } }, { "id": "guild", "requirements": { "owned": ["hand_scanner"] }, "display_name": "guild.exe", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get guild.exe from the Gate of Guidance." } }, { "id": "mantra", "display_name": "mantra.exe", "requirements": { "owned": ["magatama_jewel", "torude", "som_la_mulanese", "cob_la_mulanese", "tor_la_mulanese"] }, "category": "inventory", "sub_category": "software", "description": { "vague": "Get mantra.exe from the Chamber of Extinction." } }, { "id": "emusic", "display_name": "emusic.exe", "requirements": { "owned": ["bomb", "torude", "bronze_mirror", "motg_boss"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get emusic.exe from the Graveyard of the Giants." } }, { "id": "beolamu", "display_name": "beolamu.exe", "requirements": { "owned": ["dimensional_key", "torude"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get beolamu.exe from the Dimensional Corridor." } }, { "id": "deathv", "display_name": "deathv.exe", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get deathv.exe from the Surface." } }, { "id": "randc", "display_name": "randc.exe", "requirements": { "owned": ["fairies", "helmet"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get randc.exe from the Spring in the Sky." } }, { "id": "capstar", "requirements": { "owned": ["hand_scanner"] }, "display_name": "capstar.exe", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Buy capstar.exe from a shop in the Inferno Cavern." } }, { "id": "move", "display_name": "move.exe", "requirements": { "owned": ["fruit_of_eden"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get move.exe from the Gate of Illusion." } }, { "id": "mekuri", "display_name": "mekuri.exe", "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get mekuri.exe from the Surface." } }, { "id": "bounce", "display_name": "bounce.exe", "requirements": { "owned": ["feather"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get bounce.exe from the Shrine of the Mother." } }, { "id": "miracle", "display_name": "miracle.exe", "requirements": { "owned": ["lamp_of_time", "bronze_mirror"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get miracle.exe from the Tower of the Goddess." } }, { "id": "mirai", "display_name": "mirai.exe", "requirements": { "owned": ["feather", "bronze_mirror", "motg_boss"] }, "category": "inventory", "sub_category": "software", "description": { "vague": "Get mirai.exe from the Graveyard of the Giants." } }, { "id": "lamulana", "display_name": "lamulana.exe", "requirements": { "owned": ["feather", "fairies"] }, "optional": true, "category": "inventory", "sub_category": "software", "description": { "vague": "Get lamulana.exe from the Gate of Time." } }, { "id": "mobile_super_x2", "display_name": "Mobile Super X2", "requirements": { "greater_than": ["num_of_bosses", 3] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "parent": "mobile_super_x", "description": { "vague": "Buy the Mobile Super X2 from a shop in the Surface." } }, { "id": "waterproof_case", "display_name": "Waterproof Case", "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Buy the Waterproof Case from a shop in the Surface." } }, { "id": "heatproof_case", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Heatproof Case", "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Buy the Heatproof Case from a shop in the Temple of the Sun." } }, { "id": "glove", "display_name": "Glove", "requirements": { "owned": ["helmet"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Glove from the Spring in the Sky." } }, { "id": "isis_pendant", "requirements": { "owned": ["hand_scanner", "reader"] }, "display_name": "Isis Pendant", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Isis Pendant from the Temple of the Sun." } }, { "id": "crucifix", "display_name": "Crucifix", "requirements": { "owned": ["life_seal"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Crucifix from the Gate of Guidance." } }, { "id": "helmet", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Helmet", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Buy the Helmet from a shop in the Twin Labyrinths." } }, { "id": "grapple_claw", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Grapple Claw", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Grapple Claw from the Temple of Moonlight." } }, { "id": "bronze_mirror", "display_name": "Bronze Mirror", "requirements": { "owned": ["origin_seal", "flood_temple"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Bronze Mirror from the Temple of the Sun." } }, { "id": "eye_of_truth", "display_name": "Eye of Truth", "requirements": { "owned": ["feather", "bronze_mirror", "flood_tower"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Eye of Truth from the Tower of the Goddess." } }, { "id": "ring", "display_name": "Ring", "requirements": { "owned": ["twin_statue"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Ring from the Twin Labyrinths." } }, { "id": "scalesphere", "display_name": "Scalesphere", "requirements": { "owned": ["helmet"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Scalesphere from the Spring in the Sky." } }, { "id": "gauntlet", "display_name": "Gauntlet", "requirements": { "owned": ["feather", "grapple_claw", "bronze_mirror", "motg_boss"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Gauntlet from the Graveyard of the Giants." } }, { "id": "treasures", "display_name": "Treasures", "requirements": { "owned": ["pepper"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Treasures from the Gate of Guidance." } }, { "id": "anchor", "display_name": "Anchor", "requirements": { "owned": ["treasures"] }, "parent": "treasures", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Anchor from the Gate of Illusion." } }, { "id": "plane_model", "display_name": "Plane Model", "requirements": { "owned": ["eye_of_truth"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Plane Model from the Tower of the Goddess." } }, { "id": "philosophers_ocarina", "display_name": "Philosophers Ocarina", "requirements": { "owned": ["maternity_statue"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Philosopher's Ocarina from the Temple of Moonlight." } }, { "id": "feather", "display_name": "Feather", "requirements": { "owned": ["serpent_staff"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Feather from the Surface." } }, { "id": "book_of_the_dead", "display_name": "Book of the Dead", "requirements": { "owned": ["bronze_mirror", "mulbruk"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Book of the Dead from Mulbruk in the Temple of the Sun." } }, { "id": "fairy_clothes", "display_name": "Fairy Clothes", "requirements": { "owned": ["bronze_mirror", "fruit_of_eden", "fairies"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Fairy Clothes from the Gate of Illusion." } }, { "id": "scriptures", "display_name": "Scriptures", "requirements": { "owned": ["bronze_mirror", "bomb"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Scriptures from the Temple of Moonlight." } }, { "id": "hermes_boots", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Hermes Boots", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Buy the Hermes' Boots in the Mausoleum of the Giants." } }, { "id": "fruit_of_eden", "display_name": "Fruit of Eden", "requirements": { "owned": ["bronze_mirror", "motg_boss", "flare_gun"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Fruit of Eden in the Temple of Moonlight." } }, { "id": "twin_statue", "display_name": "Twin Statue", "requirements": { "owned": ["key_of_eternity"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Twin Statue in the Endless Corridor." } }, { "id": "bracelet", "display_name": "Bracelet", "requirements": { "owned": ["twin_statue"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Bracelet in the Twin Labyrinths." } }, { "id": "perfume", "display_name": "Perfume", "requirements": { "owned": ["cog_of_the_soul", "bronze_mirror"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Perfume in the Chamber of Birth." } }, { "id": "spaulder", "display_name": "Spaulder", "requirements": { "owned": ["bronze_mirror", "feather"] }, "optional": true, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Spaulder in the Chamber of Birth." } }, { "id": "dimensional_key", "display_name": "Dimensional Key", "requirements": { "owned": ["maternity_statue", "dragon_bone", "key_of_eternity", "mulana_talisman", "crystal_skull", "cog_of_the_soul", "dance_of_life"] }, "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Dimensional Key in the Chamber of Birth." } }, { "id": "ice_cape", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Ice Cape", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Get the Ice Cape in the Inferno Cavern." } }, { "id": "surf_so", "display_name": "Sacred Orb", "requirements": { "owned": ["sits_boss"] }, "category": "accomplishments", "sub_category": "surface", "description": { "vague": "Get the Sacred Orb from the Surface." } }, { "id": "gog_so", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Sacred Orb", "category": "accomplishments", "sub_category": "gate_of_guidance", "description": { "vague": "Get the Sacred Orb from the Gate of Guidance." } }, { "id": "gog_jewel", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "category": "accomplishments", "sub_category": "gate_of_guidance", "description": { "vague": "Get the Ankh Jewel from the Gate of Guidance." } }, { "id": "gog_ankh", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Amphisbaena's Ankh", "category": "accomplishments", "sub_category": "gate_of_guidance", "description": { "vague": "Reveal Amphisbaena's Ankh in the Gate of Guidance." } }, { "id": "gog_boss", "display_name": "Amphisbaena Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["gog_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "gate_of_guidance", "description": { "vague": "Defeat Amphisbaena!" } }, { "id": "motg_so", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Sacred Orb", "category": "accomplishments", "sub_category": "mausoleum_of_the_giants", "description": { "vague": "Get the Sacred Orb from the Mausoleum of the Giants." } }, { "id": "motg_jewel", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "category": "accomplishments", "sub_category": "mausoleum_of_the_giants", "description": { "vague": "Get the Ankh Jewel from the Mausoleum of the Giants." } }, { "id": "motg_ankh", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Sakit's Ankh", "category": "accomplishments", "sub_category": "mausoleum_of_the_giants", "description": { "vague": "Reveal Sakit's Ankh in the Mausoleum of the Giants." } }, { "id": "motg_boss", "display_name": "Sakit Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["motg_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "mausoleum_of_the_giants", "description": { "vague": "Defeat Sakit!" } }, { "id": "prove_small", "display_name": "\"Prove Thou Art Small\"", "requirements": { "owned": ["mini_doll"] }, "category": "accomplishments", "sub_category": "mausoleum_of_the_giants", "description": { "vague": "\"Prove Thou Art Small\" in the Mausoleum of the Giants." } }, { "id": "tots_so", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Sacred Orb", "category": "accomplishments", "sub_category": "temple_of_the_sun", "description": { "vague": "Get the Sacred Orb from the Temple of the Sun." } }, { "id": "tots_jewel", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "category": "accomplishments", "sub_category": "temple_of_the_sun", "description": { "vague": "Get the Ankh Jewel from the Temple of the Sun." } }, { "id": "tots_ankh", "requirements": { "owned": ["hand_scanner"] }, "display_name": "Ellmac's Ankh", "category": "accomplishments", "sub_category": "temple_of_the_sun", "description": { "vague": "Reveal Ellmac's Ankh in the Temple of the Sun." } }, { "id": "tots_boss", "display_name": "Ellmac Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["tots_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "temple_of_the_sun", "description": { "vague": "Defeat Ellmac!" } }, { "id": "mulbruk", "display_name": "Mulbruk Woken", "requirements": { "owned": ["origin_seal"], "greater_than": ["num_of_bosses", 0] }, "category": "accomplishments", "sub_category": "temple_of_the_sun", "description": { "vague": "Wake up Mulbruk." } }, { "id": "sits_so", "display_name": "Sacred Orb", "requirements": { "owned": ["birth_seal"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Get the Sacred Orb from the Spring in the Sky." } }, { "id": "sits_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["scalesphere"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Get the Ankh Jewel from the Spring in the Sky." } }, { "id": "sits_ankh", "display_name": "Bahamut's Ankh", "requirements": { "owned": ["scalesphere"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Reveal Bahamut's Ankh in the Spring in the Sky." } }, { "id": "sits_boss", "display_name": "Bahamut Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["sits_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Defeat Bahamut!" } }, { "id": "flood_temple", "display_name": "Temple of the Sun Flooded", "requirements": { "owned": ["scalesphere"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Flood the Temple of the Sun." } }, { "id": "flood_tower", "display_name": "Tower of the Goddess Flooded", "requirements": { "owned": ["ic_boss"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Flood the Tower of the Goddess." } }, { "id": "giltoriyo", "display_name": "Talked to Giltoriyo", "requirements": { "owned": ["philosophers_ocarina"] }, "category": "accomplishments", "sub_category": "spring_in_the_sky", "description": { "vague": "Talk to Giltoriyo in the Spring in the Sky." } }, { "id": "coe_so", "display_name": "Sacred Orb", "requirements": { "owned": ["flare_gun", "birth_seal", "flood_temple"] }, "category": "accomplishments", "sub_category": "chamber_of_extinction", "description": { "vague": "Get the Sacred Orb from the Chamber of Extinction." } }, { "id": "coe_ankh", "display_name": "Palenque's Ankh", "requirements": { "owned": ["pochette_key"] }, "category": "accomplishments", "sub_category": "chamber_of_extinction", "description": { "vague": "Reveal Palenque's Ankh in the Chamber of Extinction." } }, { "id": "coe_boss", "display_name": "Palenque Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["plane_model", "coe_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "chamber_of_extinction", "description": { "vague": "Defeat Palenque!" } }, { "id": "light_chamber", "display_name": "Chamber of Extinction Lit", "requirements": { "owned": ["plane_model", "life_seal"] }, "category": "accomplishments", "sub_category": "chamber_of_extinction", "description": { "vague": "Light the Chamber of Extinction permanently." } }, { "id": "ic_ankh", "display_name": "Viy's Ankh", "requirements": { "owned": ["earth_spear", "sits_boss"] }, "category": "accomplishments", "sub_category": "inferno_cavern", "description": { "vague": "Reveal Viy's Ankh in the Inferno Cavern." } }, { "id": "ic_boss", "display_name": "Viy Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["ic_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "inferno_cavern", "description": { "vague": "Defeat Viy!" } }, { "id": "tl_so", "display_name": "Sacred Orb", "requirements": { "owned": ["poison_lifted"] }, "category": "accomplishments", "sub_category": "twin_labyrinths", "description": { "vague": "Get the Sacred Orb from the Twin Labyrinths." } }, { "id": "tl_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["poison_lifted", "flare_gun"] }, "category": "accomplishments", "sub_category": "twin_labyrinths", "description": { "vague": "Get the Ankh Jewel from the Twin Labyrinths." } }, { "id": "tl_ankh", "display_name": "Baphomet's Ankh", "requirements": { "owned": ["poison_lifted"] }, "category": "accomplishments", "sub_category": "twin_labyrinths", "description": { "vague": "Reveal Baphomet's Ankh in the Twin Labyrinths." } }, { "id": "tl_boss", "display_name": "Baphomet Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["tl_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "twin_labyrinths", "description": { "vague": "Defeat Baphomet!" } }, { "id": "poison_lifted", "display_name": "Poison Lifted", "requirements": { "owned": ["twin_statue"] }, "category": "accomplishments", "sub_category": "twin_labyrinths", "description": { "vague": "Lift the poison in the Twin Labyrinths." } }, { "id": "fairies", "display_name": "Fairies", "requirements": { "owned": ["isis_pendant"] }, "category": "accomplishments", "sub_category": "endless_corridor", "description": { "vague": "Show the fairy queen Isis' Pendant to gain her trust." } }, { "id": "som_so", "display_name": "Sacred Orb", "requirements": { "owned": ["key_of_eternity"] }, "category": "accomplishments", "sub_category": "shrine_of_the_mother", "description": { "vague": "Get the Sacred Orb from the Shrine of the Mother." } }, { "id": "skull_walls_removed", "display_name": "Removed Skull Walls", "requirements": { "owned": ["key_of_eternity", "dragon_bone", "yagomap", "yagostr"] }, "category": "accomplishments", "sub_category": "shrine_of_the_mother", "description": { "vague": "Remove the skull walls from the Shrine of the Mother." } }, { "id": "som_la_mulanese", "display_name": "Learned La-Mulanese", "requirements": { "owned": ["giltoriyo", "key_of_eternity"] }, "category": "accomplishments", "sub_category": "shrine_of_the_mother", "description": { "vague": "Learn some of La-Mulanese in the Shrine of the Mother." } }, { "id": "sacrifices", "display_name": "Maiden Sacrifices Stopped", "requirements": { "owned": ["prove_small"] }, "category": "accomplishments", "sub_category": "gate_of_illusion", "description": { "vague": "Stop the maiden sacrifices in the Gate of Illusion." } }, { "id": "alsedana", "display_name": "Talked to Alsedana", "requirements": { "owned": ["philosophers_ocarina"] }, "category": "accomplishments", "sub_category": "temple_of_moonlight", "description": { "vague": "Talk to Alsedana in the Temple of Moonlight." } }, { "id": "samaranta", "display_name": "Talked to Samaranta", "requirements": { "owned": ["philosophers_ocarina"] }, "category": "accomplishments", "sub_category": "tower_of_the_goddess", "description": { "vague": "Talk to Samaranta in the Tower of the Goddess." } }, { "id": "cob_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["ic_boss"] }, "category": "accomplishments", "sub_category": "chamber_of_birth", "description": { "vague": "Buy the Ankh Jewel from the Chamber of Birth." } }, { "id": "dance_of_life", "display_name": "Dance of Life Performed", "requirements": { "owned": ["ic_boss", "serpent_staff", "chakram"] }, "category": "accomplishments", "sub_category": "chamber_of_birth", "description": { "vague": "Perform the Dance of Life in the Chamber of Birth." } }, { "id": "cob_la_mulanese", "display_name": "Learned La-Mulanese", "requirements": { "owned": ["coe_boss"] }, "category": "accomplishments", "sub_category": "chamber_of_birth", "description": { "vague": "Learn some of La-Mulanese in the Chamber of Birth." } }, { "id": "tor_so", "display_name": "Sacred Orb", "requirements": { "owned": ["bronze_mirror", "motg_boss"] }, "category": "accomplishments", "sub_category": "tower_of_ruin", "description": { "vague": "Get the Sacred Orb from the Tower of Ruin." } }, { "id": "tor_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["bronze_mirror", "motg_boss", "feather"] }, "category": "accomplishments", "sub_category": "tower_of_ruin", "description": { "vague": "Get the Ankh Jewel from the Tower of Ruin." } }, { "id": "tor_la_mulanese", "display_name": "Learned La-Mulanese", "requirements": { "owned": ["bronze_mirror", "motg_boss", "feather"] }, "category": "accomplishments", "sub_category": "tower_of_ruin", "description": { "vague": "Learn some of La-Mulanese in the Tower of Ruin." } }, { "id": "dc_so", "display_name": "Sacred Orb", "requirements": { "owned": ["crystal_skull", "lamp_of_time", "dimensional_key"] }, "category": "accomplishments", "sub_category": "dimensional_corridor", "description": { "vague": "Get the Sacred Orb from the Dimensional Corridor." } }, { "id": "dc_jewel", "display_name": "Ankh Jewel", "totals_to": "num_of_ankh_jewels", "requirements": { "owned": ["crystal_skull", "dimensional_key"] }, "category": "accomplishments", "sub_category": "dimensional_corridor", "description": { "vague": "Get the Ankh Jewel from the Dimensional Corridor." } }, { "id": "dc_ankh", "display_name": "Tiamat's Ankh", "requirements": { "owned": ["crystal_skull", "dimensional_key"] }, "category": "accomplishments", "sub_category": "dimensional_corridor", "description": { "vague": "Reveal Tiamat's Ankh in the Dimensional Corridor." } }, { "id": "dc_boss", "display_name": "Tiamat Defeated", "totals_to": "num_of_bosses", "requirements": { "owned": ["dc_ankh"], "greater_than": ["num_of_ankh_jewels", "num_of_bosses"] }, "category": "accomplishments", "sub_category": "dimensional_corridor", "description": { "vague": "Defeat Tiamat!" } }, { "id": "fobos", "display_name": "Talked to Fobos", "requirements": { "owned": ["philosophers_ocarina", "dimensional_key"] }, "category": "accomplishments", "sub_category": "dimensional_corridor", "description": { "vague": "Talk to Fobos in the Dimensional Corridor." } }, { "id": "powered_grail", "display_name": "Powered Grail", "requirements": { "owned": ["holy_grail", "dimensional_key"] }, "parent": "holy_grail", "category": "inventory", "sub_category": "treasures_category", "description": { "vague": "Power the Holy Grail by reading all the Grail Tablets." } }, { "id": "mantras", "display_name": "All Mantras Performed", "requirements": { "owned": ["djed_pillar", "mantra", "fobos", "samaranta", "alsedana", "giltoriyo"] }, "category": "accomplishments", "sub_category": "true_shrine_of_the_mother", "description": { "vague": "Chant the mantras throughout the ruins." } }, { "id": "medicine", "display_name": "Medicine", "requirements": { "owned": ["vessel", "fobos", "lamp_of_time"] }, "category": "accomplishments", "sub_category": "tower_of_ruin", "description": { "vague": "Collect the Medicine of the Mind in the Tower of Ruin." } }, { "id": "mother", "display_name": "Mother Defeated!", "requirements": { "owned": ["powered_grail", "medicine", "mantras", "key_sword"], "greater_than": ["num_of_bosses", 7] }, "category": "accomplishments", "sub_category": "true_shrine_of_the_mother", "description": { "vague": "Defeat Mother!" } }];
 
 /***/ }),
-/* 444 */
+/* 442 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Cookies__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Cookies__ = __webpack_require__(443);
 
 /* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__Cookies__["a" /* default */]);
 
 
 /***/ }),
-/* 445 */
+/* 443 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cookie__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cookie__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(444);
 
 
 // We can't please Rollup and TypeScript at the same time
@@ -58778,7 +58756,7 @@ var Cookies = /** @class */ (function () {
 
 
 /***/ }),
-/* 446 */
+/* 444 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58835,7 +58813,7 @@ function readCookie(value, options) {
 
 
 /***/ }),
-/* 447 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58863,7 +58841,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -58873,11 +58851,11 @@ var _core = __webpack_require__(183);
 
 var _core2 = _interopRequireDefault(_core);
 
-var _SubCategory = __webpack_require__(448);
+var _SubCategory = __webpack_require__(446);
 
 var _SubCategory2 = _interopRequireDefault(_SubCategory);
 
-var _WhatToDo = __webpack_require__(450);
+var _WhatToDo = __webpack_require__(448);
 
 var _WhatToDo2 = _interopRequireDefault(_WhatToDo);
 
@@ -58938,7 +58916,7 @@ var MainContainer = (0, _mobxReact.observer)(_class = function (_React$Component
 exports.default = MainContainer;
 
 /***/ }),
-/* 448 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58966,7 +58944,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -58976,7 +58954,7 @@ var _lodash = __webpack_require__(128);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _Item = __webpack_require__(449);
+var _Item = __webpack_require__(447);
 
 var _Item2 = _interopRequireDefault(_Item);
 
@@ -59040,7 +59018,7 @@ var SubCategory = (0, _mobxReact.observer)(_class = function (_React$Component) 
 exports.default = SubCategory;
 
 /***/ }),
-/* 449 */
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59068,7 +59046,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -59160,7 +59138,7 @@ var Item = (0, _mobxReact.observer)(_class = function (_React$Component) {
 exports.default = Item;
 
 /***/ }),
-/* 450 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59188,7 +59166,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _react = __webpack_require__(30);
+var _react = __webpack_require__(29);
 
 var _react2 = _interopRequireDefault(_react);
 

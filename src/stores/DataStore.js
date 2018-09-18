@@ -19,7 +19,6 @@ class DataStore {
     @action importInitialData = () => {
         let saved = this.cookies.get(this.COOKIE_NAME);
         if(saved) {
-            saved = JSON.parse(saved);
             this.data = this.data.map((el) => {
                 if(saved.includes(el.id)) {
                     el.owned = true;
@@ -67,7 +66,7 @@ class DataStore {
         });
         let next_month = new Date();
         next_month.setMonth(next_month.getMonth()+1);
-        this.cookies.set(this.COOKIE_NAME, JSON.stringify(owned), {expires: next_month});
+        this.cookies.set(this.COOKIE_NAME, owned, {expires: next_month});
     };
 
 

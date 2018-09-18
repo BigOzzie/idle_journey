@@ -3,6 +3,7 @@ import {observer} from "mobx-react";
 import _ from 'lodash/core';
 import SubCategory from "./SubCategory";
 import WhatToDo from "./WhatToDo";
+import Options from "./Options";
 
 @observer
 class MainContainer extends React.Component {
@@ -22,7 +23,7 @@ class MainContainer extends React.Component {
                 return <WhatToDo dataStore={dataStore}/>;
             case dataStore.VIEW_OPTIONS:
             default:
-                return <div></div>;
+                return <Options dataStore={dataStore}/>;
         }
     };
 
@@ -30,7 +31,7 @@ class MainContainer extends React.Component {
         return (
             <div className="row justify-content-center">
                 <div className="col-12">
-                    <div className="row">
+                    <div className="row" style={{padding: "0em 1em"}}>
                         {this.renderProperView()}
                     </div>
                 </div>

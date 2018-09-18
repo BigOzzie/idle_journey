@@ -28,6 +28,11 @@ class DataStore {
         }
     };
 
+    @action resetData = () => {
+        this.data = data;
+        this.saveData();
+    };
+
     @action changeView = (view) => {
         this.view = view;
     };

@@ -6,6 +6,9 @@ import MainContainer from "./MainContainer";
 @observer
 class App extends React.Component {
 
+    componentDidMount = () => {
+        this.props.dataStore.importInitialData();
+    };
 
     render = () => {
         const dataStore = this.props.dataStore;

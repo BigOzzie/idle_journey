@@ -1,6 +1,7 @@
 import {observable, action, computed} from "mobx";
 import data from "../db/data.json";
 import _ from "lodash";
+import Cookies from 'universal-cookie';
 
 class DataStore {
     VIEW_INVENTORY = "inventory";
@@ -8,8 +9,25 @@ class DataStore {
     VIEW_WHAT_TO_DO = "what_do_i_do";
     VIEW_OPTIONS = "options";
 
+    COOKIE_NAME = "saved_progress";
+
     @observable data = [];
     @observable view = this.VIEW_INVENTORY;
+
+    cookies = new Cookies();
+
+    @action importInitialData = () => {
+        let saved = this.cookies.get(this.COOKIE_NAME);
+        if(saved) {
+            saved = JSON.parse(saved);
+            this.data = this.data.map((el) => {
+                if(saved.includes(el.id)) {
+                    el.owned = true;
+                }
+                return el;
+            });
+        }
+    };
 
     @action changeView = (view) => {
         this.view = view;
@@ -22,6 +40,7 @@ class DataStore {
             }
             return el;
         });
+        this.saveData();
     };
 
     @action setAllOwnedThroughItemId = (ids, target_id) => {
@@ -39,7 +58,18 @@ class DataStore {
                 owned = false;
             }
         });
+        this.saveData();
     };
+
+    saveData = () => {
+        const owned = _.filter(this.data, (el) => {
+            return !!el.owned;
+        });
+        let next_month = new Date();
+        next_month.setMonth(next_month.getMonth()+1);
+        this.cookies.set(this.COOKIE_NAME, JSON.stringify(owned), {expires: next_month});
+    };
+
 
     findChildren = (item_id) => {
         return _.filter(this.data, (el) => {

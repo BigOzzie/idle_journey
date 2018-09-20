@@ -12,7 +12,7 @@ class DataStore {
     COOKIE_NAME = "saved_progress";
 
     @observable data = [];
-    @observable view = this.VIEW_INVENTORY;
+    @observable view = this.VIEW_WHAT_TO_DO;
 
     cookies = new Cookies();
 
